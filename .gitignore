@@ -31,3 +31,5 @@ public/images/pdf-pages/
 # Temporary files
 .steps-extract.txt
 .steps-snippet.txt
+scratch/
+scripts/
