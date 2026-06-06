@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { Menu, X, GraduationCap, CheckSquare, Mail, Layers, CheckCircle2, ChevronRight, AlertTriangle, Eye, FileDown, LayoutGrid, Columns, Play, Pause, Printer, ListTree, Moon, Sun, Search, ArrowRight, Sparkles } from 'lucide-react';
+import { Menu, X, GraduationCap, CheckSquare, Mail, Layers, CheckCircle2, ChevronRight, AlertTriangle, Eye, FileDown, LayoutGrid, Columns, Play, Pause, Printer, ListTree, Moon, Sun, Search, ArrowRight, Sparkles, BookOpen, FileText } from 'lucide-react';
 import stepEvidenceByProject from './data/step-evidence.json';
 import { ProcessStepAccordion, getDefaultExpandedSteps } from './components/ProcessStepAccordion';
 import {
@@ -1598,8 +1598,102 @@ function App() {
           </div>
         </section>
 
-        {/* 4. Page: Lời mở đầu (Giới thiệu) - Elegant colorful background */}
-        <section id="gioi-thieu" className="py-16 sm:py-20 px-6 sm:px-10 md:px-16 max-w-5xl mx-auto w-full relative">
+        <div className="max-w-[1360px] mx-auto px-4 lg:px-6 xl:px-8 flex flex-col xl:flex-row gap-8 items-start w-full relative z-10">
+          {/* Sticky Left Sidebar Navigation */}
+          <aside className="hidden xl:flex flex-col w-[300px] sticky top-24 self-start shrink-0 z-30 p-6 bg-white/70 dark:bg-slate-900/70 backdrop-blur-md border border-slate-200/50 dark:border-slate-800 rounded-3xl shadow-sm no-print max-h-[calc(100vh-140px)] overflow-y-auto custom-scrollbar">
+            {/* 1. Header with DS Badge */}
+            <div className="flex flex-col items-center text-center pb-5 border-b border-slate-100 dark:border-slate-800/80 mb-5">
+              <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-500 flex items-center justify-center text-white font-extrabold text-lg shadow-md mb-3">
+                DS
+              </div>
+              <span className="text-emerald-800 dark:text-emerald-400 text-xs font-black tracking-widest uppercase mb-1 font-sans">
+                {TRANSLATED_STRINGS[lang].portfolioBrand}
+              </span>
+              <h4 className="text-slate-900 dark:text-white text-base font-black uppercase font-sans tracking-tight mb-0.5">
+                {TRANSLATED_STRINGS[lang].studentName}
+              </h4>
+              <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 font-sans">
+                {TRANSLATED_STRINGS[lang].footerSchool}
+              </span>
+            </div>
+
+            {/* 2. Navigation List */}
+            <div className="flex-1 space-y-4">
+              <div className="space-y-1">
+                {/* Lời Mở Đầu */}
+                <a
+                  href="#gioi-thieu"
+                  className={cn(
+                    "sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold w-full transition-all",
+                    currentSection === 'gioi-thieu' ? 'active' : ''
+                  )}
+                >
+                  <GraduationCap className="w-4.5 h-4.5 shrink-0 text-emerald-600 dark:text-emerald-400" />
+                  <span className="font-sans">{TRANSLATED_STRINGS[lang].intro}</span>
+                </a>
+
+                {/* Bài Tập Thực Hành */}
+                <a
+                  href="#du-an"
+                  className={cn(
+                    "sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold w-full transition-all",
+                    currentSection === 'du-an' ? 'active' : ''
+                  )}
+                >
+                  <FileText className="w-4.5 h-4.5 shrink-0 text-emerald-600 dark:text-emerald-400" />
+                  <span className="font-sans">{TRANSLATED_STRINGS[lang].practicalExercises}</span>
+                </a>
+
+                {/* Sub-navigation list of exercises */}
+                <div className="pl-4 border-l border-slate-100 dark:border-slate-800 ml-5 mt-1 space-y-1">
+                  {portfolioProjects.map((proj, idx) => (
+                    <button
+                      key={proj.id}
+                      onClick={() => navigateToLesson(idx)}
+                      className={cn(
+                        "w-full text-left py-2 px-2.5 rounded-lg text-[11px] font-bold transition-all truncate block cursor-pointer",
+                        viewMode === 'dashboard' && activeTab === idx && currentSection === 'du-an'
+                          ? "text-emerald-700 bg-emerald-50 dark:bg-emerald-950/40 dark:text-emerald-300 font-extrabold"
+                          : "text-slate-500 hover:text-slate-900 dark:hover:text-white"
+                      )}
+                    >
+                      {lang === 'en' ? `Lesson ${idx + 1}` : `Bài ${idx + 1}`}: {proj.label.split(':')[1]?.trim() || proj.label}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Tổng Kết & Suy Ngẫm */}
+                <a
+                  href="#tong-ket"
+                  className={cn(
+                    "sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold w-full transition-all",
+                    currentSection === 'tong-ket' ? 'active' : ''
+                  )}
+                >
+                  <BookOpen className="w-4.5 h-4.5 shrink-0 text-emerald-600 dark:text-emerald-400" />
+                  <span className="font-sans">{TRANSLATED_STRINGS[lang].summaryTitle}</span>
+                </a>
+              </div>
+            </div>
+
+            {/* 3. Footer support contact info */}
+            <div className="pt-5 border-t border-slate-100 dark:border-slate-800/80 mt-5 text-center space-y-1.5">
+              <span className="text-[9px] font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 block">
+                {lang === 'en' ? 'Support Contact' : 'Liên hệ hỗ trợ'}
+              </span>
+              <a
+                href="mailto:22100241@vnu.edu.vn"
+                className="text-[11px] font-bold text-emerald-600 dark:text-emerald-400 hover:underline block truncate"
+              >
+                22100241@vnu.edu.vn
+              </a>
+            </div>
+          </aside>
+
+          {/* Right Main Content */}
+          <div className="flex-1 min-w-0">
+            {/* 4. Page: Lời mở đầu (Giới thiệu) - Elegant colorful background */}
+            <section id="gioi-thieu" className="py-16 sm:py-20 px-6 sm:px-10 md:px-16 max-w-5xl mx-auto w-full relative">
           <div className="text-center mb-12">
             <h3 className="academic-section-title uppercase">
               {TRANSLATED_STRINGS[lang].intro}
@@ -2195,6 +2289,8 @@ function App() {
             </div>
           </div>
         </section>
+          </div>
+        </div>
 
         {/* 7. Academic Footer */}
         <footer className="bg-slate-950 border-t border-slate-900 py-12 px-6 text-center text-slate-400 relative z-10">
