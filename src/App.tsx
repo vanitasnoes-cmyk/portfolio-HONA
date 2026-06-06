@@ -1303,7 +1303,7 @@ function App() {
     }
   };
   return (
-    <div className="flex flex-col min-h-screen gradient-bg-elegant text-[#1f2937] relative overflow-x-hidden">
+    <div className="flex flex-col min-h-screen gradient-bg-elegant text-[#1f2937] relative">
       {/* Fixed Background Image - Elegant, Lightweight & High Performance */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         <img 
@@ -1598,10 +1598,8 @@ function App() {
           </div>
         </section>
 
-        {/* Elegant Horizontal Divider with Amber Gold Accent */}
-        <div className="w-full h-[2px] bg-emerald-100 dark:bg-emerald-950/20 relative z-20 flex justify-center">
-          <div className="w-40 h-full bg-amber-500 rounded-full" />
-        </div>
+        {/* Elegant Horizontal Divider */}
+        <div className="w-full h-[2px] bg-emerald-100 dark:bg-emerald-950/20 relative z-20" />
 
         <div className="max-w-[1360px] mx-auto px-4 lg:px-6 xl:px-8 flex flex-col xl:flex-row gap-8 items-start w-full relative z-10">
           {/* Sticky Left Sidebar Navigation */}
