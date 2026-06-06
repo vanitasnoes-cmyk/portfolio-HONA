@@ -358,206 +358,191 @@ function App() {
       switch (tabIndex) {
         case 0:
           return (
-            <div className="space-y-4 bg-slate-50/70 p-5 border border-slate-100 rounded-2xl">
-              <h6 className="text-xs font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-2 flex items-center gap-1.5">
-                📁 Directory Structure Diagram & File Naming Rules
+            <div className="space-y-6 bg-slate-50/70 p-6 sm:p-8 border border-slate-100 rounded-2xl">
+              <h6 className="text-sm font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-3 flex items-center gap-2">
+                📁 Directory Structure Diagram & File Lifecycles
               </h6>
               
               {/* Tree View */}
-              <div className="bg-slate-900 text-slate-100 font-mono text-[11px] sm:text-xs p-4 rounded-xl shadow-inner leading-relaxed overflow-x-auto">
-                <div className="text-teal-400">📁 ThucHanh_BuiCaoHoan/ &lt;-- Academic Root Directory</div>
-                <div className="pl-4 border-l border-slate-700 ml-2 mt-1">
-                  <div className="text-yellow-400">📁 Chuong1_OS_Files/</div>
-                  <div className="pl-6 border-l border-slate-700 ml-2 text-slate-300">
-                    📄 GhiChuQuanTrong.txt <span className="text-slate-500 font-semibold italic">(Establish File Lifecycle)</span>
+              <div className="bg-slate-900 text-slate-100 font-mono text-xs sm:text-sm p-5 sm:p-6 rounded-xl shadow-inner leading-relaxed overflow-x-auto">
+                <div className="text-teal-400">📁 ThucHanh_BuiCaoHoan/ &lt;-- Root Academic Folder</div>
+                <div className="pl-6 border-l border-slate-700 ml-3 mt-1 space-y-1">
+                  <div className="text-yellow-400">📁 TaiLieu/ &lt;-- Subfolder for categorizing files</div>
+                  <div className="pl-8 border-l border-slate-700 ml-3 text-slate-300">
+                    📄 GhiChuQuanTrong.txt <span className="text-slate-500 font-semibold italic">(Copied important note file)</span>
                   </div>
-                  
-                  <div className="text-yellow-400 mt-1">📁 Chuong2_AcademicSearch/</div>
-                  <div className="pl-6 border-l border-slate-700 ml-2 text-slate-300">
-                    📄 BT2_Chuong2_BuiCaoHoan.pdf <span className="text-slate-500 font-semibold italic">(Appraisal of 11 Medical Literature Sources)</span>
-                  </div>
-                  
-                  <div className="text-yellow-400 mt-1">📁 Chuong3_PromptAI/</div>
-                  <div className="pl-6 border-l border-slate-700 ml-2 text-slate-300">
-                    📄 BT2_Chuong3_BuiCaoHoan.pdf <span className="text-slate-500 font-semibold italic">(Comparison of 3 Prompt Levels)</span>
-                  </div>
-                  
-                  <div className="text-yellow-400 mt-1">📁 Chuong4_CloudCollaboration/</div>
-                  <div className="pl-6 border-l border-slate-700 ml-2 text-slate-300">
-                    📄 BT3_Chuong4_BuiCaoHoan.pdf <span className="text-slate-500 font-semibold italic">(Kanban Trello & Drive Workspace)</span>
-                  </div>
-                  
-                  <div className="text-yellow-400 mt-1">📁 Chuong5_ContentCreation/</div>
-                  <div className="pl-6 border-l border-slate-700 ml-2 text-slate-300">
-                    📄 BT2_Chuong5_BuiCaoHoan.pdf <span className="text-slate-500 font-semibold italic">(Green Life Blog & Canva Infographic)</span>
-                  </div>
-                  
-                  <div className="text-yellow-400 mt-1">📁 Chuong6_AIEthics/</div>
-                  <div className="pl-6 border-l border-slate-700 ml-2 text-slate-300">
-                    📄 BT4_Chuong6_BuiCaoHoan.pdf <span className="text-slate-500 font-semibold italic">(AS Clinical Case Analysis & Mendeley)</span>
+                  <div className="text-slate-300">
+                    📄 GhiChuQuanTrong.txt <span className="text-slate-500 font-semibold italic">(Original note file created at root)</span>
                   </div>
                 </div>
               </div>
 
               {/* Naming Rules */}
-              <div className="space-y-2 pt-2">
-                <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider block font-sans">
-                  Standardized File Naming Rules:
+              <div className="space-y-3 pt-3">
+                <span className="text-xs uppercase font-bold text-slate-500 tracking-wider block font-sans">
+                  Standardized Operations Summary:
                 </span>
-                <ul className="text-xs text-slate-600 space-y-1.5 list-disc pl-4 font-semibold leading-relaxed">
-                  <li><strong className="text-slate-800">Rule 1 (No accents):</strong> Root and subfolders are written continuously or with underscores, avoiding Vietnamese accents and special characters to ensure absolute system compatibility.</li>
-                  <li><strong className="text-slate-800">Rule 2 (Consistency):</strong> File naming follows the exact structure: <code className="bg-slate-100 px-1 py-0.5 rounded text-indigo-600 font-mono text-[10px]">BT[No]_Chuong[No]_[FullName]</code>.</li>
-                  <li><strong className="text-slate-800">Rule 3 (Hierarchy):</strong> Classify resources clearly under each training chapter of VNU-UMP to simplify management, search, and retrieval.</li>
+                <ul className="text-sm sm:text-base text-slate-600 space-y-2.5 list-disc pl-5 font-semibold leading-relaxed">
+                  <li><strong className="text-slate-800">Folder Creation:</strong> Created the main academic folder <code className="bg-slate-100 px-1.5 py-0.5 rounded text-indigo-600 font-mono text-xs">ThucHanh_BuiCaoHoan</code> inside a non-system drive or Documents directory using File Explorer.</li>
+                  <li><strong className="text-slate-800">Note File Lifecycle:</strong> Created <code className="bg-slate-100 px-1.5 py-0.5 rounded text-indigo-600 font-mono text-xs">GhiChu.txt</code>, renamed it to <code className="bg-slate-100 px-1.5 py-0.5 rounded text-indigo-600 font-mono text-xs">GhiChuQuanTrong.txt</code>, copied it into the subfolder <code className="bg-slate-100 px-1.5 py-0.5 rounded text-indigo-600 font-mono text-xs">TaiLieu</code>, deleted it from the subfolder, and restored it successfully from the Recycle Bin.</li>
+                  <li><strong className="text-slate-800">Permanent Deletion:</strong> Created a temporary file <code className="bg-slate-100 px-1.5 py-0.5 rounded text-indigo-600 font-mono text-xs">DiChuyen.txt</code>, moved it to the subfolder using Cut & Paste, and deleted it permanently using the <kbd className="bg-slate-100 px-1 py-0.5 rounded text-indigo-600 font-mono text-xs">Shift + Delete</kbd> shortcut.</li>
                 </ul>
               </div>
             </div>
           );
         case 1:
           return (
-            <div className="space-y-4 bg-slate-50/70 p-5 border border-slate-100 rounded-2xl">
-              <h6 className="text-xs font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-2">
+            <div className="space-y-6 bg-slate-50/70 p-6 sm:p-8 border border-slate-100 rounded-2xl">
+              <h6 className="text-sm font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-3">
                 🔍 Academic Search Operators & Medical Source Appraisal Table
               </h6>
               
               {/* Boolean Query Box */}
-              <div className="space-y-1.5">
-                <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider block font-sans">
+              <div className="space-y-2">
+                <span className="text-xs uppercase font-bold text-slate-500 tracking-wider block font-sans">
                   Professional Boolean Query Expression:
                 </span>
-                <div className="bg-indigo-50 border border-indigo-100 text-indigo-950 font-mono text-[10px] sm:text-xs p-3 rounded-lg leading-relaxed select-all">
+                <div className="bg-indigo-50 border border-indigo-100 text-indigo-950 font-mono text-xs sm:text-sm p-4 rounded-lg leading-relaxed select-all">
                   ("Vitamin D" OR "25(OH)D3") AND ("HPLC" OR "LC-MS/MS") AND "plasma"
                 </div>
               </div>
 
               {/* Scholarly Evaluation Table */}
-              <div className="space-y-2 pt-2">
-                <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider block font-sans">
-                  Scholarly Appraisal Table (Extracting 5 representative sources out of 12):
+              <div className="space-y-3 pt-3">
+                <span className="text-xs uppercase font-bold text-slate-500 tracking-wider block font-sans">
+                  Complete Scholarly Appraisal Table (All 12 Sources):
                 </span>
                 <div className="overflow-x-auto rounded-xl border border-slate-200/50 bg-white">
-                  <table className="w-full text-left border-collapse text-xs font-sans">
+                  <table className="w-full text-left border-collapse text-xs sm:text-sm font-sans">
                     <thead>
                       <tr className="bg-slate-50 text-slate-700 font-bold border-b border-slate-200/60">
+                        <th className="p-3">STT</th>
                         <th className="p-3">Literature / Source</th>
-                        <th className="p-3">Publisher / Reputation</th>
+                        <th className="p-3">Type</th>
                         <th className="p-3">Strengths</th>
                         <th className="p-3">Limitations</th>
                         <th className="p-3 text-center">Credibility</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100 text-slate-600 font-semibold">
-                      <tr>
-                        <td className="p-3 font-bold text-slate-900">FDA Guidance (2018)</td>
-                        <td className="p-3">US FDA / Official Guideline</td>
-                        <td className="p-3">International standard for bioanalysis</td>
-                        <td className="p-3">No raw experimental data</td>
-                        <td className="p-3 text-center text-indigo-600">10/10</td>
-                      </tr>
-                      <tr>
-                        <td className="p-3 font-bold text-slate-900">Brown et al., 2021</td>
-                        <td className="p-3">Analytical Chemistry / Q1 Journal</td>
-                        <td className="p-3">High sensitivity LC-MS/MS techniques</td>
-                        <td className="p-3">Complex instrument setup</td>
-                        <td className="p-3 text-center text-indigo-600">9.5/10</td>
-                      </tr>
-                      <tr>
-                        <td className="p-3 font-bold text-slate-900">Smith et al., 2020</td>
-                        <td className="p-3">Journal of Chromatography B / Q1 Journal</td>
-                        <td className="p-3">Clear HPLC method for plasma Vitamin D</td>
-                        <td className="p-3">Small clinical sample size</td>
-                        <td className="p-3 text-center text-indigo-600">9/10</td>
-                      </tr>
-                      <tr>
-                        <td className="p-3 font-bold text-slate-900">WHO Guidance (2020)</td>
-                        <td className="p-3">World Health Organization / Official</td>
-                        <td className="p-3">High authority, general standards</td>
-                        <td className="p-3">Too general, lacks implementation details</td>
-                        <td className="p-3 text-center text-indigo-600">9/10</td>
-                      </tr>
-                      <tr>
-                        <td className="p-3 font-bold text-slate-900">Jones et al., 2019</td>
-                        <td className="p-3">Clinical Chemistry / Q1 Journal</td>
-                        <td className="p-3">Direct comparison of HPLC and LC-MS/MS</td>
-                        <td className="p-3">Lacks extensive clinical patient data</td>
-                        <td className="p-3 text-center text-indigo-600">8.5/10</td>
-                      </tr>
+                      {[
+                        { id: 1, name: 'Smith et al., 2020', type: 'Article', pros: 'Clear method, published in Q1', cons: 'Small sample size', score: '9/10' },
+                        { id: 2, name: 'Jones et al., 2019', type: 'Article', pros: 'Compares HPLC & LC-MS/MS', cons: 'Lacks clinical data', score: '8.5/10' },
+                        { id: 3, name: 'FDA, 2018', type: 'Guidance', pros: 'International standard', cons: 'No raw experimental data', score: '10/10' },
+                        { id: 4, name: 'WHO, 2020', type: 'Guidance', pros: 'High reputation', cons: 'General overview, lacks detail', score: '9/10' },
+                        { id: 5, name: 'Brown et al., 2021', type: 'Article', pros: 'High sensitivity', cons: 'Complex instrument setup', score: '9.5/10' },
+                        { id: 6, name: 'Miller, 2017', type: 'Book', pros: 'Fundamental knowledge', cons: 'Not updated', score: '7.5/10' },
+                        { id: 7, name: 'Lee et al., 2022', type: 'Article', pros: 'New technology', cons: 'Few citations', score: '8/10' },
+                        { id: 8, name: 'Nguyen et al., 2023', type: 'Article', pros: 'Suitable for Vietnamese labs', cons: 'Small scale', score: '8.5/10' },
+                        { id: 9, name: 'PubMed review', type: 'Review', pros: 'Good synthesization', cons: 'Not in-depth', score: '7/10' },
+                        { id: 10, name: 'Google Scholar source', type: 'Open', pros: 'Easily accessible', cons: 'Uneven reliability', score: '6.5/10' },
+                        { id: 11, name: 'Harris et al., 2018', type: 'Article', pros: 'Multi-method comparison study', cons: 'Old data', score: '8/10' },
+                        { id: 12, name: 'Taylor, 2021', type: 'Book', pros: 'In-depth analysis', cons: 'Limited application value', score: '8/10' }
+                      ].map((item) => (
+                        <tr key={item.id}>
+                          <td className="p-3 text-slate-400">{item.id}</td>
+                          <td className="p-3 font-bold text-slate-900">{item.name}</td>
+                          <td className="p-3">{item.type}</td>
+                          <td className="p-3 text-emerald-700">{item.pros}</td>
+                          <td className="p-3 text-rose-700">{item.cons}</td>
+                          <td className="p-3 text-center text-indigo-600 font-bold">{item.score}</td>
+                        </tr>
+                      ))}
                     </tbody>
                   </table>
                 </div>
-                <span className="text-[10px] text-slate-400 italic block leading-relaxed mt-1">
-                  * All 12 literature sources are strictly appraised based on 5 criteria: Author Reputation, Publisher Status, Research Methodology, Citation Frequency, and Currency.
+                <span className="text-xs text-slate-400 italic block leading-relaxed mt-2">
+                  * All 12 literature sources are appraised based on 5 criteria: Author Reputation, Publisher Status, Research Methodology, Citation Frequency, and Currency.
                 </span>
               </div>
             </div>
           );
         case 2:
           return (
-            <div className="space-y-4 bg-slate-50/70 p-5 border border-slate-100 rounded-2xl">
-              <h6 className="text-xs font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-2">
-                💡 Prompt Engineering Comparison & AI Response Output
+            <div className="space-y-6 bg-slate-50/70 p-6 sm:p-8 border border-slate-100 rounded-2xl">
+              <h6 className="text-sm font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-3">
+                💡 Prompt Engineering Comparison & AI Response Output (3 Levels)
               </h6>
               
-              <div className="space-y-4">
+              <div className="space-y-5">
                 {/* Task 1 */}
-                <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2.5 shadow-xs">
-                  <span className="text-xs font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
+                <div className="bg-white p-5 rounded-xl border border-slate-100 space-y-3 shadow-xs">
+                  <span className="text-sm font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
                     Task 1: Summarizing COVID-19 mRNA Vaccine Mechanism
                   </span>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
-                    <div className="p-3 bg-rose-50/50 rounded-lg border border-rose-100/30">
-                      <span className="font-bold text-rose-800 block mb-1">Initial Prompt (Unimproved):</span>
+                  <div className="space-y-2.5 text-xs sm:text-sm">
+                    <div className="p-3 bg-rose-50/40 rounded-lg border border-rose-100/20">
+                      <span className="font-bold text-rose-800 block mb-1">a. Basic Prompt:</span>
                       <p className="text-slate-600 italic">"Summarize the paper on COVID-19 mRNA vaccine mechanism."</p>
                     </div>
-                    <div className="p-3 bg-emerald-50/50 rounded-lg border border-emerald-100/30">
-                      <span className="font-bold text-emerald-800 block mb-1">Improved Prompt (CLEAR/CRAC):</span>
-                      <p className="text-slate-700 font-semibold italic">"Acting as an immunology lecturer, summarize the mRNA vaccine paper structured as: Background, Mechanism (mRNA → protein → immune response), Advantages/Limitations, and Significance. Require conciseness, scientific terms, no external info."</p>
+                    <div className="p-3 bg-amber-50/40 rounded-lg border border-amber-100/20">
+                      <span className="font-bold text-amber-800 block mb-1">b. Improved Prompt:</span>
+                      <p className="text-slate-600 italic">"Summarize the paper on COVID-19 mRNA vaccine mechanism structured as: Objectives, Mechanism, Advantages, Conclusions. Limit to 250 words."</p>
+                    </div>
+                    <div className="p-3 bg-emerald-50/40 rounded-lg border border-emerald-100/20">
+                      <span className="font-bold text-emerald-800 block mb-1">c. Advanced Prompt (Role-play & Constraints):</span>
+                      <p className="text-slate-700 font-semibold italic">"Acting as an immunology lecturer, summarize the mRNA vaccine paper structured as: Background, Mechanism (mRNA → protein → đáp ứng miễn dịch), Advantages/Limitations, and Significance. Requirements: concise, accurate, use scientific terms, do not add external info."</p>
                     </div>
                   </div>
-                  <div className="p-3 bg-slate-50 rounded-lg border border-slate-100 text-xs">
-                    <span className="font-bold text-slate-800 block mb-1">Superior Outcome from AI:</span>
-                    <p className="text-slate-600 text-justify leading-relaxed">AI generates a structured summary under 250 words, precisely separating background, biomedical mechanism, and scientific significance with high academic rigor.</p>
+                  <div className="p-3.5 bg-slate-50 rounded-lg border border-slate-100 text-xs sm:text-sm">
+                    <span className="font-bold text-slate-800 block mb-1">AI Output Appraisal:</span>
+                    <p className="text-slate-600 text-justify leading-relaxed">
+                      Basic prompt gives short, unstructured paragraphs. Improved prompt provides structure but lacks depth. Advanced prompt yields high-quality academic summarization with accurate immunology jargon under strict word bounds.
+                    </p>
                   </div>
                 </div>
 
                 {/* Task 2 */}
-                <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2.5 shadow-xs">
-                  <span className="text-xs font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
+                <div className="bg-white p-5 rounded-xl border border-slate-100 space-y-3 shadow-xs">
+                  <span className="text-sm font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
                     Task 2: Explaining Lipid Nanoparticles (LNP)
                   </span>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
-                    <div className="p-3 bg-rose-50/50 rounded-lg border border-rose-100/30">
-                      <span className="font-bold text-rose-800 block mb-1">Initial Prompt (Unimproved):</span>
+                  <div className="space-y-2.5 text-xs sm:text-sm">
+                    <div className="p-3 bg-rose-50/40 rounded-lg border border-rose-100/20">
+                      <span className="font-bold text-rose-800 block mb-1">a. Basic Prompt:</span>
                       <p className="text-slate-600 italic">"Explain what a Lipid Nanoparticle is."</p>
                     </div>
-                    <div className="p-3 bg-emerald-50/50 rounded-lg border border-emerald-100/30">
-                      <span className="font-bold text-emerald-800 block mb-1">Improved Prompt (Chain-of-Thought):</span>
-                      <p className="text-slate-700 font-semibold italic">"Acting as a pharmaceutical nanotechnology lecturer, explain Lipid Nanoparticles in sequence: Definition, Composition of components, Step-by-step mechanism, Comparison with traditional drug delivery, and Real-world applications."</p>
+                    <div className="p-3 bg-amber-50/40 rounded-lg border border-amber-100/20">
+                      <span className="font-bold text-amber-800 block mb-1">b. Improved Prompt:</span>
+                      <p className="text-slate-600 italic">"Explain Lipid Nanoparticles under: Definition, Structure, mRNA delivery mechanism, Applications."</p>
+                    </div>
+                    <div className="p-3 bg-emerald-50/40 rounded-lg border border-emerald-100/20">
+                      <span className="font-bold text-emerald-800 block mb-1">c. Advanced Prompt (Chain-of-Thought):</span>
+                      <p className="text-slate-700 font-semibold italic">"Acting as a pharmaceutical nanotechnology lecturer, explain Lipid Nanoparticles in sequence: Definition, Composition of components, Step-by-step mechanism, Comparison with traditional drug delivery, and Real-world applications. Requirements: explain from basic to advanced, include examples, clarify intermediate steps."</p>
                     </div>
                   </div>
-                  <div className="p-3 bg-slate-50 rounded-lg border border-slate-100 text-xs">
-                    <span className="font-bold text-slate-800 block mb-1">Superior Outcome from AI:</span>
-                    <p className="text-slate-600 text-justify leading-relaxed">AI details the LNP structure and component lipids, systematically tracking the cellular uptake and mRNA release process in a logical, step-by-step manner.</p>
+                  <div className="p-3.5 bg-slate-50 rounded-lg border border-slate-100 text-xs sm:text-sm">
+                    <span className="font-bold text-slate-800 block mb-1">AI Output Appraisal:</span>
+                    <p className="text-slate-600 text-justify leading-relaxed">
+                      Advanced prompt triggers systematic CoT detailing the LNP lipid bilayer, cholesterol, PEG-lipids, and how they protect mRNA to facilitate cellular endocytosis and cargo release, comparing it logically to conventional drug carrier systems.
+                    </p>
                   </div>
                 </div>
 
                 {/* Task 3 */}
-                <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2.5 shadow-xs">
-                  <span className="text-xs font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
+                <div className="bg-white p-5 rounded-xl border border-slate-100 space-y-3 shadow-xs">
+                  <span className="text-sm font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
                     Task 3: Generating HPLC Revision Questions
                   </span>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
-                    <div className="p-3 bg-rose-50/50 rounded-lg border border-rose-100/30">
-                      <span className="font-bold text-rose-800 block mb-1">Initial Prompt (Unimproved):</span>
+                  <div className="space-y-2.5 text-xs sm:text-sm">
+                    <div className="p-3 bg-rose-50/40 rounded-lg border border-rose-100/20">
+                      <span className="font-bold text-rose-800 block mb-1">a. Basic Prompt:</span>
                       <p className="text-slate-600 italic">"Create revision questions on HPLC."</p>
                     </div>
-                    <div className="p-3 bg-emerald-50/50 rounded-lg border border-emerald-100/30">
-                      <span className="font-bold text-emerald-800 block mb-1">Improved Prompt (Few-shot):</span>
-                      <p className="text-slate-700 font-semibold italic">"Acting as a pharmaceutical analysis lecturer, create HPLC questions stratified by Bloom's taxonomy: Remembering, Understanding, Applying, and Analyzing. Include answers and explanations. Link to a practical example (e.g., paracetamol - aspirin separation)."</p>
+                    <div className="p-3 bg-amber-50/40 rounded-lg border border-amber-100/20">
+                      <span className="font-bold text-amber-800 block mb-1">b. Improved Prompt:</span>
+                      <p className="text-slate-600 italic">"Create 10 revision questions on HPLC including: 5 multiple-choice questions, 5 essay questions. Include answers."</p>
+                    </div>
+                    <div className="p-3 bg-emerald-50/40 rounded-lg border border-emerald-100/20">
+                      <span className="font-bold text-emerald-800 block mb-1">c. Advanced Prompt (Few-shot & Stratification):</span>
+                      <p className="text-slate-700 font-semibold italic">"Acting as a pharmaceutical analysis lecturer, create HPLC questions stratified by Bloom's taxonomy: Remembering, Understanding, Applying, and Analyzing. Requirements: include answers and explanations, link to practical practice (e.g., paracetamol - aspirin separation), ensure increasing difficulty."</p>
                     </div>
                   </div>
-                  <div className="p-3 bg-slate-50 rounded-lg border border-slate-100 text-xs">
-                    <span className="font-bold text-slate-800 block mb-1">Superior Outcome from AI:</span>
-                    <p className="text-slate-600 text-justify leading-relaxed">AI designs a structured exam set that ranges from fundamental recognition questions to complex analytical case solving, matching real-world exam standards.</p>
+                  <div className="p-3.5 bg-slate-50 rounded-lg border border-slate-100 text-xs sm:text-sm">
+                    <span className="font-bold text-slate-800 block mb-1">AI Output Appraisal:</span>
+                    <p className="text-slate-600 text-justify leading-relaxed">
+                      The advanced prompt results in a balanced, multi-tier exam set that successfully integrates chromatography principles and practical pharmaceutical lab parameters, complete with comprehensive answer keys.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -565,49 +550,49 @@ function App() {
           );
         case 3:
           return (
-            <div className="space-y-4 bg-slate-50/70 p-5 border border-slate-100 rounded-2xl">
-              <h6 className="text-xs font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-2">
+            <div className="space-y-6 bg-slate-50/70 p-6 sm:p-8 border border-slate-100 rounded-2xl">
+              <h6 className="text-sm font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-3">
                 🤝 Cloud Collaboration Workspace & Group Task Allocation
               </h6>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {/* Trello */}
-                <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2 shadow-xs hover-lift">
-                  <span className="text-xs font-black text-indigo-950 uppercase tracking-wide block font-sans border-b border-slate-50 pb-1.5 flex items-center gap-1">
-                    📋 Kanban Trello
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                {/* Jira */}
+                <div className="bg-white p-5 rounded-xl border border-slate-100 space-y-3 shadow-xs hover-lift flex flex-col justify-start">
+                  <span className="text-sm font-black text-indigo-950 uppercase tracking-wide block font-sans border-b border-slate-50 pb-2 flex items-center gap-1.5">
+                    📋 Jira Project Board
                   </span>
-                  <p className="text-xs text-slate-600 leading-relaxed text-justify font-semibold">
-                    Set up a workspace for 5 members (Team Leader: Bui Cao Hoan). Applied a color-coded label system (Blue: In Progress, Red: High Priority, Green: Done) along with detailed checklists and strict due dates to control the project lifecycle.
-                  </p>
-                </div>
-
-                {/* Zoom */}
-                <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2 shadow-xs hover-lift">
-                  <span className="text-xs font-black text-indigo-950 uppercase tracking-wide block font-sans border-b border-slate-50 pb-1.5 flex items-center gap-1">
-                    💬 Zoom Meetings
-                  </span>
-                  <p className="text-xs text-slate-600 leading-relaxed text-justify font-semibold">
-                    Organized 90-minute high-quality group project discussion sessions. Used live screen sharing to review medical slides, activated breakout rooms to pair members for content drafting, and automatically recorded minutes via Google Meet.
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed text-justify font-semibold">
+                    Used Jira as a central tool to manage and assign work. From the beginning, tasks were divided into specific parts and created as separate tasks on the system. Each task had a clear description of the work content, the person in charge, and the completion deadline. Task statuses such as To Do, In Progress, and Done helped the group easily monitor general progress. Personally, I regularly accessed Jira to check assigned tasks and update my work progress, helping me be more proactive in scheduling and preventing missed deadlines. When changes occurred, I updated them directly on the system to keep everyone aligned.
                   </p>
                 </div>
 
                 {/* Google Docs */}
-                <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2 shadow-xs hover-lift">
-                  <span className="text-xs font-black text-indigo-950 uppercase tracking-wide block font-sans border-b border-slate-50 pb-1.5 flex items-center gap-1">
-                    📝 Google Docs
+                <div className="bg-white p-5 rounded-xl border border-slate-100 space-y-3 shadow-xs hover-lift flex flex-col justify-start">
+                  <span className="text-sm font-black text-indigo-950 uppercase tracking-wide block font-sans border-b border-slate-50 pb-2 flex items-center gap-1.5">
+                    📝 Google Docs Collaboration
                   </span>
-                  <p className="text-xs text-slate-600 leading-relaxed text-justify font-semibold">
-                    Co-authored the Hypertension clinical case presentation script. Activated Suggesting Mode for clinical cross-editing, commented inline to resolve discrepancies, and tracked revisions via Version History to prevent scientific data loss.
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed text-justify font-semibold">
+                    Google Docs was used by our group to co-author and edit the presentation content simultaneously. All members could access the same document and make real-time edits, saving time compared to sending files back and forth. During the workflow, I directly participated in writing the content for my assigned section while also reading and editing other members' sections when necessary. When detecting issues with the content, I used the comment feature to suggest edits instead of editing directly, helping to maintain consistency and avoid affecting others' work. The version history allowed the group to track contributions and restore previous versions.
                   </p>
                 </div>
 
                 {/* Google Drive */}
-                <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2 shadow-xs hover-lift">
-                  <span className="text-xs font-black text-indigo-950 uppercase tracking-wide block font-sans border-b border-slate-50 pb-1.5 flex items-center gap-1">
-                    ☁️ Google Drive
+                <div className="bg-white p-5 rounded-xl border border-slate-100 space-y-3 shadow-xs hover-lift flex flex-col justify-start">
+                  <span className="text-sm font-black text-indigo-950 uppercase tracking-wide block font-sans border-b border-slate-50 pb-2 flex items-center gap-1.5">
+                    ☁️ Google Drive Storage
                   </span>
-                  <p className="text-xs text-slate-600 leading-relaxed text-justify font-semibold">
-                    Established a hierarchical, scientifically organized storage space under a consistent naming convention. Configured granular access control for members and enforced Two-Factor Authentication (2FA) to secure critical research files.
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed text-justify font-semibold">
+                    To manage project documents, our group used Google Drive as a shared storage space. From the start, a main folder was created for the project, inside of which subfolders were structured to categorize documents such as content, images, and references. During the process, I uploaded documents I was responsible for and organized them into the correct folder locations. Simultaneously, I followed file naming rules to ensure consistency and ease of search. Giving all members edit access made file sharing rapid and convenient, which managed resources scientifically and reduced file loss.
+                  </p>
+                </div>
+
+                {/* Google Meet */}
+                <div className="bg-white p-5 rounded-xl border border-slate-100 space-y-3 shadow-xs hover-lift flex flex-col justify-start">
+                  <span className="text-sm font-black text-indigo-950 uppercase tracking-wide block font-sans border-b border-slate-50 pb-2 flex items-center gap-1.5">
+                    💬 Google Meet Meetings
+                  </span>
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed text-justify font-semibold">
+                    Throughout the project execution, our group used Google Meet to organize online meetings to discuss and align on work content. Meetings were usually scheduled in advance to ensure full participation. Personally, I always made an effort to attend all meetings and actively contribute ideas during discussions. At the same time, I recorded important details after each meeting to ensure no information was missed. Issues arising during work were resolved quickly through these meetings, helping the team stay connected and monitor progress.
                   </p>
                 </div>
               </div>
@@ -617,7 +602,7 @@ function App() {
                   href={GROUP_VIDEO_YOUTUBE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-rose-50 text-rose-900 border border-rose-100 text-[11px] font-bold hover:bg-rose-100 transition-colors"
+                  className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-lg bg-rose-50 text-rose-900 border border-rose-100 text-xs font-bold hover:bg-rose-100 transition-colors"
                 >
                   ▶ Watch project video on YouTube
                 </a>
@@ -626,81 +611,83 @@ function App() {
           );
         case 4:
           return (
-            <div className="space-y-4 bg-slate-50/70 p-5 border border-slate-100 rounded-2xl">
-              <h6 className="text-xs font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-2">
+            <div className="space-y-6 bg-slate-50/70 p-6 sm:p-8 border border-slate-100 rounded-2xl">
+              <h6 className="text-sm font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-3">
                 🌱 Generative AI Creative Content & Canva Infographic Design
               </h6>
               
-              <div className="space-y-4">
+              <div className="space-y-5">
                 {/* Topic Intro */}
-                <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2 shadow-xs">
-                  <span className="text-[10px] uppercase font-black text-indigo-600 tracking-wider font-sans">
+                <div className="bg-white p-5 rounded-xl border border-slate-100 space-y-2 shadow-xs">
+                  <span className="text-xs uppercase font-black text-indigo-600 tracking-wider font-sans">
                     Infographic Topic
                   </span>
-                  <h5 className="text-slate-900 text-sm font-black font-sans leading-snug">
+                  <h5 className="text-slate-900 text-base font-black font-sans leading-snug">
                     Effective Prompt Writing for Building Job & Internship Portfolios
                   </h5>
-                  <p className="text-slate-600 text-xs leading-relaxed text-justify font-semibold">
+                  <p className="text-slate-600 text-sm leading-relaxed text-justify font-semibold">
                     Aim: Master generative AI tools (ChatGPT, DALL·E, and Canva AI) to co-create a professional infographic demonstrating effective prompt engineering for portfolio building.
                   </p>
                 </div>
 
                 {/* Prompt Comparison */}
-                <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2.5 shadow-xs">
-                  <span className="text-xs font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
+                <div className="bg-white p-5 rounded-xl border border-slate-100 space-y-3 shadow-xs">
+                  <span className="text-sm font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
                     Prompt Engineering Evolution
                   </span>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-                    <div className="p-3 bg-slate-50 rounded-lg border border-slate-150">
-                      <span className="font-bold text-slate-800 block mb-1">ChatGPT Text Prompts:</span>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
+                    <div className="p-4 bg-slate-50 rounded-lg border border-slate-150 space-y-2">
+                      <span className="font-bold text-slate-800 block border-b pb-1">ChatGPT Text Prompts:</span>
                       <p className="text-slate-600 italic">Initial: "Write infographic content about effective prompt writing for job and internship portfolio..."</p>
-                      <p className="text-slate-700 font-bold italic mt-1.5">Improved: "Summarize the prompt writing content into main points, bullet format, each point under 15 words."</p>
+                      <p className="text-slate-700 font-bold italic">Improved: "Summarize the prompt writing content into main points, bullet format, each point under 15 words."</p>
                     </div>
-                    <div className="p-3 bg-slate-50 rounded-lg border border-slate-150">
-                      <span className="font-bold text-slate-800 block mb-1">DALL·E Image Prompts:</span>
+                    <div className="p-4 bg-slate-50 rounded-lg border border-slate-150 space-y-2">
+                      <span className="font-bold text-slate-800 block border-b pb-1">DALL·E Image Prompts:</span>
                       <p className="text-slate-600 italic">Initial: "Flat illustration showing clear vs unclear prompt, modern style, minimal, blue tone..."</p>
-                      <p className="text-slate-700 font-bold italic mt-1.5">Improved: "Split-screen illustration comparing vague prompt vs clear prompt, labeled, modern infographic style."</p>
+                      <p className="text-slate-700 font-bold italic">Improved: "Split-screen illustration comparing vague prompt vs clear prompt, labeled, modern infographic style."</p>
                     </div>
                   </div>
                 </div>
 
                 {/* AI Tool Matrix Table */}
-                <div className="space-y-2">
-                  <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider block font-sans">
-                    AI Tool Evaluation Matrix:
+                <div className="space-y-3">
+                  <span className="text-xs uppercase font-bold text-slate-500 tracking-wider block font-sans">
+                    AI Tool Evaluation Matrix (Transposed):
                   </span>
                   <div className="overflow-x-auto rounded-xl border border-slate-200/50 bg-white">
-                    <table className="w-full text-left border-collapse text-xs font-sans">
+                    <table className="w-full text-left border-collapse text-xs sm:text-sm font-sans">
                       <thead>
                         <tr className="bg-slate-50 text-slate-700 font-bold border-b border-slate-200/60">
-                          <th className="p-3">AI Tool</th>
-                          <th className="p-3">Main Function</th>
-                          <th className="p-3">Strengths</th>
-                          <th className="p-3">Limitations</th>
-                          <th className="p-3 text-center">Effectiveness</th>
+                          <th className="p-3">Criteria</th>
+                          <th className="p-3">ChatGPT</th>
+                          <th className="p-3">DALL·E</th>
+                          <th className="p-3">Canva AI</th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-slate-100 text-slate-600 font-semibold">
                         <tr>
-                          <td className="p-3 font-bold text-slate-900">ChatGPT</td>
-                          <td className="p-3">Content generation</td>
-                          <td className="p-3">Fast, logical structure</td>
-                          <td className="p-3">Sometimes wordy, needs refining</td>
-                          <td className="p-3 text-center text-teal-600">High</td>
+                          <td className="p-3 font-bold text-slate-900">Main Function</td>
+                          <td className="p-3 text-emerald-800">Content generation</td>
+                          <td className="p-3 text-emerald-800">Image generation</td>
+                          <td className="p-3 text-emerald-800">Design layout</td>
                         </tr>
                         <tr>
-                          <td className="p-3 font-bold text-slate-900">DALL·E</td>
-                          <td className="p-3">Image generation</td>
-                          <td className="p-3">Creative, highly visual</td>
-                          <td className="p-3">Can deviate from exact prompt</td>
-                          <td className="p-3 text-center text-teal-600">Medium-High</td>
+                          <td className="p-3 font-bold text-slate-900">Strengths</td>
+                          <td className="p-3 text-slate-700">Fast, logical structure</td>
+                          <td className="p-3 text-slate-700">Creative, highly visual</td>
+                          <td className="p-3 text-slate-700">Easy to use, pre-built templates</td>
                         </tr>
                         <tr>
-                          <td className="p-3 font-bold text-slate-900">Canva AI</td>
-                          <td className="p-3">Infographic layout</td>
-                          <td className="p-3">Easy to customize & design</td>
-                          <td className="p-3">Depends heavily on input quality</td>
-                          <td className="p-3 text-center text-teal-600">High</td>
+                          <td className="p-3 font-bold text-slate-900">Limitations</td>
+                          <td className="p-3 text-rose-700">Wordy, needs manual refining</td>
+                          <td className="p-3 text-rose-700">Can deviate from exact prompt</td>
+                          <td className="p-3 text-rose-700">Depends heavily on input quality</td>
+                        </tr>
+                        <tr>
+                          <td className="p-3 font-bold text-slate-900">Effectiveness</td>
+                          <td className="p-3 text-indigo-700">High</td>
+                          <td className="p-3 text-indigo-700">Medium–High</td>
+                          <td className="p-3 text-indigo-700">High</td>
                         </tr>
                       </tbody>
                     </table>
@@ -708,14 +695,14 @@ function App() {
                 </div>
 
                 {/* Design Guidelines */}
-                <div className="bg-indigo-50/50 p-4 rounded-xl border border-indigo-100/30 space-y-2">
-                  <span className="text-xs font-black text-indigo-900 uppercase tracking-wide block font-sans">
+                <div className="bg-indigo-50/50 p-5 rounded-xl border border-indigo-100/30 space-y-3">
+                  <span className="text-sm font-black text-indigo-900 uppercase tracking-wide block font-sans">
                     📐 Applied Infographic Design Principles:
                   </span>
-                  <ul className="text-xs text-slate-700 space-y-1.5 list-disc pl-4 font-semibold leading-relaxed">
-                    <li><strong className="text-slate-900">Color Scheme:</strong> Used a clean blue-white color palette to convey professionalism and optimize contrast.</li>
-                    <li><strong className="text-slate-900">Visual Weight & Hierarchy:</strong> Balanced 3-part layout (Concept &rarr; Rules &rarr; Portfolio application) utilizing bullet points under 15 words to facilitate rapid scanning.</li>
-                    <li><strong className="text-slate-900">Human-AI Collaboration:</strong> Leveraged AI for initial ideas, text summarizing, and background graphics while human editor maintained &gt;50% contribution through structural customization and content personalization.</li>
+                  <ul className="text-sm sm:text-base text-slate-700 space-y-2 list-disc pl-5 font-semibold leading-relaxed">
+                    <li><strong className="text-slate-900">Color Scheme:</strong> Clean blue-white palette used to convey professional, healthcare-aligned visual appeal.</li>
+                    <li><strong className="text-slate-900">Visual Weight & Hierarchy:</strong> Bullet points kept under 15 words to facilitate rapid scanning and optimal readability.</li>
+                    <li><strong className="text-slate-900">Human-AI Collaboration:</strong> Leveraged AI for content suggestions and image assets while the human designer maintained &gt;50% contribution by structural customization and copy refinement.</li>
                   </ul>
                 </div>
               </div>
@@ -723,49 +710,117 @@ function App() {
           );
         case 5:
           return (
-            <div className="space-y-4 bg-slate-50/70 p-5 border border-slate-100 rounded-2xl">
-              <h6 className="text-xs font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-2">
-                ⚖️ Personal "7 Gold Principles" of AI Ethics for Future Digital Pharmacists
+            <div className="space-y-6 bg-slate-50/70 p-6 sm:p-8 border border-slate-100 rounded-2xl">
+              <h6 className="text-sm font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-3">
+                ⚖️ VNU Guidelines, Claude 3.5 Sonnet Audit & 7 AI Ethical Principles
               </h6>
-              
-              {/* 7 Gold Principles Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                {[
-                  { num: "1", title: "TRANSPARENCY", en: "Transparency", desc: "Always declare the level of AI assistance in all submitted exercises, essays, or research reports to ensure academic honesty." },
-                  { num: "2", title: "VERIFICATION", en: "Verification", desc: "Never trust AI blindly. Every clinical dose, drug mechanism, or diagnostic study must be cross-checked against official databases (PubMed, UpToDate)." },
-                  { num: "3", title: "PRIVACY", en: "Privacy", desc: "Strictly protect patient confidentiality. Never upload identifying details or sensitive clinical medical records to public AI models." },
-                  { num: "4", title: "FAIRNESS", en: "Fairness", desc: "Never use AI to gain unfair advantages in exams, or to falsify or manipulate scientific data in academic research." },
-                  { num: "5", title: "ORIGINALITY", en: "Originality", desc: "AI serves only as a helper. The core arguments, analytical logic, and final conclusions must represent your own cognitive effort." },
-                  { num: "6", title: "ACCOUNTABILITY", en: "Accountability", desc: "Bear sole responsibility before the university, lecturers, and law for the accuracy and legality of all submitted papers." },
-                  { num: "7", title: "CONTINUOUS LEARNING", en: "Continuous Learning", desc: "Actively update knowledge on digital ethics, national laws, and VNU regulations to adjust AI adoption behaviors accordingly." }
-                ].map((rule) => (
-                  <div key={rule.num} className="bg-white p-4 rounded-xl border border-slate-100 space-y-1.5 shadow-xs hover-lift">
-                    <div className="flex items-center gap-2">
-                      <span className="w-5.5 h-5.5 rounded-lg bg-gradient-to-tr from-indigo-600 to-teal-500 flex items-center justify-center text-white text-[10px] font-black shrink-0">
-                        {rule.num}
-                      </span>
-                      <span className="text-slate-900 text-xs font-black font-sans leading-tight">
-                        {rule.title}
-                      </span>
-                    </div>
-                    <span className="text-[9px] uppercase font-extrabold text-teal-600 tracking-wider block font-sans">
-                      {rule.en}
-                    </span>
-                    <p className="text-[11px] text-slate-500 leading-relaxed text-justify font-semibold">
-                      {rule.desc}
-                    </p>
-                  </div>
-                ))}
+
+              {/* Table 1: VNU Policies */}
+              <div className="space-y-3">
+                <span className="text-xs uppercase font-bold text-slate-500 tracking-wider block font-sans">
+                  Table 1: VNU-UMP AI Academic Policies & Student Compliance:
+                </span>
+                <div className="overflow-x-auto rounded-xl border border-slate-200/50 bg-white">
+                  <table className="w-full text-left border-collapse text-xs sm:text-sm font-sans">
+                    <thead>
+                      <tr className="bg-slate-50 text-slate-700 font-bold border-b border-slate-200/60">
+                        <th className="p-3 w-1/4">Policy Axis</th>
+                        <th className="p-3 w-1/3">Regulation Content</th>
+                        <th className="p-3 w-5/12">Compliance Requirements</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-100 text-slate-600 font-semibold leading-relaxed">
+                      <tr>
+                        <td className="p-3 font-bold text-slate-900">1. Medical Data Privacy</td>
+                        <td className="p-3 text-justify">Strictly protect patient identity, clinical history, and clinical photos in all hospital practice environments (Bach Mai, Hospital E, 108...).</td>
+                        <td className="p-3 text-justify text-rose-700">Never upload raw patient data or medical records to public AI models. Violations face severe disciplinary action.</td>
+                      </tr>
+                      <tr>
+                        <td className="p-3 font-bold text-slate-900">2. Verification of Knowledge</td>
+                        <td className="p-3 text-justify">AI is only a language/search assistant. AI outputs do not replace official guidelines of the Ministry of Health or clinical textbooks.</td>
+                        <td className="p-3 text-justify text-emerald-800">Must verify all medical facts from AI using reputable databases (PubMed, Cochrane Library, UpToDate, National Drug Formulary).</td>
+                      </tr>
+                      <tr>
+                        <td className="p-3 font-bold text-slate-900">3. Academic Transparency</td>
+                        <td className="p-3 text-justify">Mandatory disclosure of AI assistance level in all essays, reports, clinical internships, and graduation theses.</td>
+                        <td className="p-3 text-justify text-indigo-700">Must include an "AI Declaration Appendix" documenting the tools used, purposes, and key prompt commands.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
 
-              {/* Case Study alert */}
-              <div className="p-4 bg-amber-50 border border-amber-100 rounded-xl space-y-1 mt-2">
-                <span className="text-[10px] uppercase font-black text-amber-800 tracking-wider block font-sans">
-                  ⚠️ Academic Audit of Lung Cancer CT Scan AI Report:
+              {/* Table 2: Claude IMRAD Audit */}
+              <div className="space-y-3">
+                <span className="text-xs uppercase font-bold text-slate-500 tracking-wider block font-sans">
+                  Table 2: Claude 3.5 Sonnet Audit (Early Lung Cancer CT Scan Paper):
                 </span>
-                <p className="text-xs text-amber-950 font-semibold leading-relaxed text-justify">
-                  Applied standard research analysis on Claude 3.5 Sonnet IMRAD outputs for lung cancer CT scan early diagnosis. Detected and corrected a critical AI hallucination (inversion of False Positive and False Negative rate percentage values) and highlighted racial data bias, ensuring strict scientific accuracy.
-                </p>
+                <div className="overflow-x-auto rounded-xl border border-slate-200/50 bg-white">
+                  <table className="w-full text-left border-collapse text-xs sm:text-sm font-sans">
+                    <thead>
+                      <tr className="bg-slate-50 text-slate-700 font-bold border-b border-slate-200/60">
+                        <th className="p-3 w-5/12">AI Generated Output (Pros & Cons)</th>
+                        <th className="p-3 w-5/12">Identified Errors & Technical Loopholes</th>
+                        <th className="p-3 w-1/6">Student Auditing Action</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-100 text-slate-600 font-semibold leading-relaxed">
+                      <tr>
+                        <td className="p-3 text-justify">
+                          <strong className="text-emerald-800 block mb-0.5">Pros:</strong> Rapidly extracted IMRAD structures, logically classified information, and smoothly translated complex medical terms to Vietnamese.
+                        </td>
+                        <td className="p-3 text-justify text-rose-700">
+                          <strong className="block mb-0.5">Critical Hallucination:</strong> Inverted percentages of False Positive and False Negative values in the discussion section, altering the algorithm's clinical mathematical meaning.
+                        </td>
+                        <td className="p-3 text-justify">Cross-referenced the paper's original tables and corrected the percentage figures.</td>
+                      </tr>
+                      <tr>
+                        <td className="p-3 text-justify">
+                          <strong className="text-amber-800 block mb-0.5">Cons:</strong> Generalizes the discussion section, obscuring study limitations such as limited and homogenous training dataset.
+                        </td>
+                        <td className="p-3 text-justify text-rose-700">
+                          <strong className="block mb-0.5">Omission:</strong> Missed warning on racial/demographic data bias in AI model training.
+                        </td>
+                        <td className="p-3 text-justify">Added critical remarks regarding local clinical applicability in Vietnam.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              
+              {/* 7 Gold Principles Grid */}
+              <div className="space-y-3 pt-3">
+                <span className="text-xs uppercase font-bold text-slate-500 tracking-wider block font-sans">
+                  Personal "7 Gold Principles" of AI Ethics:
+                </span>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {[
+                    { num: "1", title: "TRANSPARENCY", en: "Transparency", desc: "Always declare the level of AI assistance in all submitted exercises, essays, or research reports to ensure academic honesty." },
+                    { num: "2", title: "VERIFICATION", en: "Verification", desc: "Never trust AI blindly. Every clinical dose, drug mechanism, or diagnostic study must be cross-checked against official databases (PubMed, UpToDate)." },
+                    { num: "3", title: "PRIVACY", en: "Privacy", desc: "Strictly protect patient confidentiality. Never upload identifying details or sensitive clinical medical records to public AI models." },
+                    { num: "4", title: "FAIRNESS", en: "Fairness", desc: "Never use AI to gain unfair advantages in exams, or to falsify or manipulate scientific data in academic research." },
+                    { num: "5", title: "ORIGINALITY", en: "Originality", desc: "AI serves only as a helper. The core arguments, analytical logic, and final conclusions must represent your own cognitive effort." },
+                    { num: "6", title: "ACCOUNTABILITY", en: "Accountability", desc: "Bear sole responsibility before the university, lecturers, and law for the accuracy and legality of all submitted papers." },
+                    { num: "7", title: "CONTINUOUS LEARNING", en: "Continuous Learning", desc: "Actively update knowledge on digital ethics, national laws, and VNU regulations to adjust AI adoption behaviors accordingly." }
+                  ].map((rule) => (
+                    <div key={rule.num} className="bg-white p-5 rounded-xl border border-slate-100 space-y-2 shadow-xs hover-lift">
+                      <div className="flex items-center gap-2">
+                        <span className="w-6 h-6 rounded-lg bg-gradient-to-tr from-indigo-600 to-teal-500 flex items-center justify-center text-white text-xs font-black shrink-0">
+                          {rule.num}
+                        </span>
+                        <span className="text-slate-900 text-xs sm:text-sm font-black font-sans leading-tight">
+                          {rule.title}
+                        </span>
+                      </div>
+                      <span className="text-[10px] uppercase font-extrabold text-teal-600 tracking-wider block font-sans">
+                        {rule.en}
+                      </span>
+                      <p className="text-xs text-slate-500 leading-relaxed text-justify font-semibold">
+                        {rule.desc}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           );
@@ -777,133 +832,100 @@ function App() {
     switch (tabIndex) {
       case 0:
         return (
-          <div className="space-y-4 bg-slate-50/70 p-5 border border-slate-100 rounded-2xl">
-            <h6 className="text-xs font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-2 flex items-center gap-1.5">
-              📁 Sơ đồ Cấu trúc Thư mục và Quy tắc Đặt tên Tệp
+          <div className="space-y-6 bg-slate-50/70 p-6 sm:p-8 border border-slate-100 rounded-2xl">
+            <h6 className="text-sm font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-3 flex items-center gap-2">
+              📁 Sơ đồ Cấu trúc Thư mục & Vòng đời Thao tác Tệp tin
             </h6>
             
             {/* Tree View */}
-            <div className="bg-slate-900 text-slate-100 font-mono text-[11px] sm:text-xs p-4 rounded-xl shadow-inner leading-relaxed overflow-x-auto">
-              <div className="text-teal-400">📁 ThucHanh_BuiCaoHoan/ &lt;-- Thư mục gốc học thuật</div>
-              <div className="pl-4 border-l border-slate-700 ml-2 mt-1">
-                <div className="text-yellow-400">📁 Chuong1_OS_Files/</div>
-                <div className="pl-6 border-l border-slate-700 ml-2 text-slate-300">
-                  📄 GhiChuQuanTrong.txt <span className="text-slate-500 font-semibold italic">(Thiết lập vòng đời tệp tin)</span>
+            <div className="bg-slate-900 text-slate-100 font-mono text-xs sm:text-sm p-5 sm:p-6 rounded-xl shadow-inner leading-relaxed overflow-x-auto">
+              <div className="text-teal-400">📁 ThucHanh_BuiCaoHoan/ &lt;-- Thư mục gốc Học thuật</div>
+              <div className="pl-6 border-l border-slate-700 ml-3 mt-1 space-y-1">
+                <div className="text-yellow-400">📁 TaiLieu/ &lt;-- Thư mục con phân loại tài liệu</div>
+                <div className="pl-8 border-l border-slate-700 ml-3 text-slate-300">
+                  📄 GhiChuQuanTrong.txt <span className="text-slate-500 font-semibold italic">(Bản sao tệp ghi chú)</span>
                 </div>
-                
-                <div className="text-yellow-400 mt-1">📁 Chuong2_AcademicSearch/</div>
-                <div className="pl-6 border-l border-slate-700 ml-2 text-slate-300">
-                  📄 BT2_Chuong2_BuiCaoHoan.pdf <span className="text-slate-500 font-semibold italic">(Thẩm định 11 tài liệu y khoa)</span>
-                </div>
-                
-                <div className="text-yellow-400 mt-1">📁 Chuong3_PromptAI/</div>
-                <div className="pl-6 border-l border-slate-700 ml-2 text-slate-300">
-                  📄 BT2_Chuong3_BuiCaoHoan.pdf <span className="text-slate-500 font-semibold italic">(So sánh 3 cấp độ Prompt)</span>
-                </div>
-                
-                <div className="text-yellow-400 mt-1">📁 Chuong4_CloudCollaboration/</div>
-                <div className="pl-6 border-l border-slate-700 ml-2 text-slate-300">
-                  📄 BT3_Chuong4_BuiCaoHoan.pdf <span className="text-slate-500 font-semibold italic">(Không gian Kanban Trello & Drive)</span>
-                </div>
-                
-                <div className="text-yellow-400 mt-1">📁 Chuong5_ContentCreation/</div>
-                <div className="pl-6 border-l border-slate-700 ml-2 text-slate-300">
-                  📄 BT2_Chuong5_BuiCaoHoan.pdf <span className="text-slate-500 font-semibold italic">(Bài Blog Sống Xanh & Canva Infographic)</span>
-                </div>
-                
-                <div className="text-yellow-400 mt-1">📁 Chuong6_AIEthics/</div>
-                <div className="pl-6 border-l border-slate-700 ml-2 text-slate-300">
-                  📄 BT4_Chuong6_BuiCaoHoan.pdf <span className="text-slate-500 font-semibold italic">(Bản phân tích ca lâm sàng AS & Mendeley)</span>
+                <div className="text-slate-300">
+                  📄 GhiChuQuanTrong.txt <span className="text-slate-500 font-semibold italic">(Tệp ghi chú gốc tạo ban đầu)</span>
                 </div>
               </div>
             </div>
 
             {/* Naming Rules */}
-            <div className="space-y-2 pt-2">
-              <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider block font-sans">
-                Quy tắc đặt tên tệp tin chuẩn hóa:
+            <div className="space-y-3 pt-3">
+              <span className="text-xs uppercase font-bold text-slate-500 tracking-wider block font-sans">
+                Tóm tắt quy trình thao tác tệp tin:
               </span>
-              <ul className="text-xs text-slate-600 space-y-1.5 list-disc pl-4 font-semibold leading-relaxed">
-                <li><strong className="text-slate-800">Quy tắc 1 (Không dấu):</strong> Thư mục gốc và thư mục con viết liền hoặc dùng dấu gạch dưới, không sử dụng dấu tiếng Việt và ký tự đặc biệt để đảm bảo tính tương thích hệ thống tuyệt đối.</li>
-                <li><strong className="text-slate-800">Quy tắc 2 (Nhất quán):</strong> Định dạng tên tệp tin sản phẩm luôn tuân thủ cấu trúc: <code className="bg-slate-100 px-1 py-0.5 rounded text-indigo-600 font-mono text-[10px]">BT[Số]_Chuong[Số]_[HọTên]</code>.</li>
-                <li><strong className="text-slate-800">Quy tắc 3 (Phân cấp):</strong> Phân chia tài nguyên rõ ràng theo từng chương đào tạo của VNU-UMP để dễ dàng quản trị, tìm kiếm và truy xuất.</li>
+              <ul className="text-sm sm:text-base text-slate-600 space-y-2.5 list-disc pl-5 font-semibold leading-relaxed">
+                <li><strong className="text-slate-800">Khởi tạo thư mục:</strong> Tạo thư mục làm việc chính <code className="bg-slate-100 px-1.5 py-0.5 rounded text-indigo-600 font-mono text-xs">ThucHanh_BuiCaoHoan</code> tại phân vùng đĩa không thuộc hệ điều hành hoặc thư mục Documents bằng File Explorer.</li>
+                <li><strong className="text-slate-800">Vòng đời tệp tin ghi chú:</strong> Khởi tạo tệp tin <code className="bg-slate-100 px-1.5 py-0.5 rounded text-indigo-600 font-mono text-xs">GhiChu.txt</code>, đổi tên thành <code className="bg-slate-100 px-1.5 py-0.5 rounded text-indigo-600 font-mono text-xs">GhiChuQuanTrong.txt</code>, sao chép (Copy-Paste) vào thư mục con <code className="bg-slate-100 px-1.5 py-0.5 rounded text-indigo-600 font-mono text-xs">TaiLieu</code>, thực hành xóa và khôi phục thành công từ Recycle Bin.</li>
+                <li><strong className="text-slate-800">Xóa vĩnh viễn:</strong> Tạo tệp tin tạm <code className="bg-slate-100 px-1.5 py-0.5 rounded text-indigo-600 font-mono text-xs">DiChuyen.txt</code> ở gốc, di chuyển (Cut-Paste) vào thư mục <code className="bg-slate-100 px-1.5 py-0.5 rounded text-indigo-600 font-mono text-xs">TaiLieu</code> và xóa vĩnh viễn thông qua tổ hợp phím <kbd className="bg-slate-100 px-1 py-0.5 rounded text-indigo-600 font-mono text-xs">Shift + Delete</kbd>.</li>
               </ul>
             </div>
           </div>
         );
       case 1:
         return (
-          <div className="space-y-4 bg-slate-50/70 p-5 border border-slate-100 rounded-2xl">
-            <h6 className="text-xs font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-2">
+          <div className="space-y-6 bg-slate-50/70 p-6 sm:p-8 border border-slate-100 rounded-2xl">
+            <h6 className="text-sm font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-3">
               🔍 Toán tử Tìm kiếm Học thuật & Bảng Thẩm định Nguồn Y khoa
             </h6>
             
             {/* Boolean Query Box */}
-            <div className="space-y-1.5">
-              <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider block font-sans">
+            <div className="space-y-2">
+              <span className="text-xs uppercase font-bold text-slate-500 tracking-wider block font-sans">
                 Biểu thức Boolean truy vấn chuyên nghiệp (Boolean Query):
               </span>
-              <div className="bg-indigo-50 border border-indigo-100 text-indigo-950 font-mono text-[10px] sm:text-xs p-3 rounded-lg leading-relaxed select-all">
+              <div className="bg-indigo-50 border border-indigo-100 text-indigo-950 font-mono text-xs sm:text-sm p-4 rounded-lg leading-relaxed select-all">
                 ("Vitamin D" OR "25(OH)D3") AND ("HPLC" OR "LC-MS/MS") AND "plasma"
               </div>
             </div>
 
             {/* Scholarly Evaluation Table */}
-            <div className="space-y-2 pt-2">
-              <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider block font-sans">
-                Bảng thẩm định học thuật (Trích xuất 5 nguồn tiêu biểu trong số 12 nguồn):
+            <div className="space-y-3 pt-3">
+              <span className="text-xs uppercase font-bold text-slate-500 tracking-wider block font-sans">
+                Bảng thẩm định học thuật chi tiết (Đầy đủ 12 nguồn tài liệu):
               </span>
               <div className="overflow-x-auto rounded-xl border border-slate-200/50 bg-white">
-                <table className="w-full text-left border-collapse text-xs font-sans">
+                <table className="w-full text-left border-collapse text-xs sm:text-sm font-sans">
                   <thead>
                     <tr className="bg-slate-50 text-slate-700 font-bold border-b border-slate-200/60">
+                      <th className="p-3">STT</th>
                       <th className="p-3">Tài liệu / Nguồn</th>
-                      <th className="p-3">Nhà xuất bản / Uy tín</th>
+                      <th className="p-3">Loại</th>
                       <th className="p-3">Ưu điểm</th>
                       <th className="p-3">Hạn chế</th>
                       <th className="p-3 text-center">Điểm tin cậy</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-600 font-semibold">
-                    <tr>
-                      <td className="p-3 font-bold text-slate-900">Hướng dẫn FDA (2018)</td>
-                      <td className="p-3">US FDA / Hướng dẫn chính thức</td>
-                      <td className="p-3">Chuẩn mực quốc tế về thẩm định sinh học</td>
-                      <td className="p-3">Không có dữ liệu thực nghiệm</td>
-                      <td className="p-3 text-center text-indigo-600">10/10</td>
-                    </tr>
-                    <tr>
-                      <td className="p-3 font-bold text-slate-900">Brown et al., 2021</td>
-                      <td className="p-3">Analytical Chemistry / Tạp chí Q1</td>
-                      <td className="p-3">Kỹ thuật LC-MS/MS độ nhạy cực cao</td>
-                      <td className="p-3">Thiết bị phức tạp, vận hành tốn kém</td>
-                      <td className="p-3 text-center text-indigo-600">9.5/10</td>
-                    </tr>
-                    <tr>
-                      <td className="p-3 font-bold text-slate-900">Smith et al., 2020</td>
-                      <td className="p-3">Journal of Chromatography B / Tạp chí Q1</td>
-                      <td className="p-3">Phương pháp HPLC định lượng Vitamin D rõ ràng</td>
-                      <td className="p-3">Cỡ mẫu lâm sàng nhỏ</td>
-                      <td className="p-3 text-center text-indigo-600">9/10</td>
-                    </tr>
-                    <tr>
-                      <td className="p-3 font-bold text-slate-900">Hướng dẫn WHO (2020)</td>
-                      <td className="p-3">Tổ chức Y tế Thế giới / Chính thức</td>
-                      <td className="p-3">Uy tín cao, định hướng tổng quan tốt</td>
-                      <td className="p-3">Tổng quan chung, ít chi tiết kỹ thuật</td>
-                      <td className="p-3 text-center text-indigo-600">9/10</td>
-                    </tr>
-                    <tr>
-                      <td className="p-3 font-bold text-slate-900">Jones et al., 2019</td>
-                      <td className="p-3">Clinical Chemistry / Tạp chí Q1</td>
-                      <td className="p-3">So sánh trực tiếp giữa HPLC và LC-MS/MS</td>
-                      <td className="p-3">Thiếu dữ liệu bệnh nhân thực tế sâu rộng</td>
-                      <td className="p-3 text-center text-indigo-600">8.5/10</td>
-                    </tr>
+                    {[
+                      { id: 1, name: 'Smith et al., 2020', type: 'Bài báo', pros: 'Phương pháp rõ ràng, đăng Q1', cons: 'Cỡ mẫu nhỏ', score: '9/10' },
+                      { id: 2, name: 'Jones et al., 2019', type: 'Bài báo', pros: 'So sánh HPLC & LC-MS/MS', cons: 'Thiếu dữ liệu lâm sàng', score: '8.5/10' },
+                      { id: 3, name: 'FDA, 2018', type: 'Hướng dẫn', pros: 'Chuẩn mực quốc tế', cons: 'Không có dữ liệu thực nghiệm', score: '10/10' },
+                      { id: 4, name: 'WHO, 2020', type: 'Hướng dẫn', pros: 'Uy tín cao', cons: 'Tổng quan, ít chi tiết', score: '9/10' },
+                      { id: 5, name: 'Brown et al., 2021', type: 'Bài báo', pros: 'Độ nhạy cao', cons: 'Phức tạp thiết bị', score: '9.5/10' },
+                      { id: 6, name: 'Miller, 2017', type: 'Sách', pros: 'Kiến thức nền tảng', cons: 'Không cập nhật', score: '7.5/10' },
+                      { id: 7, name: 'Lee et al., 2022', type: 'Bài báo', pros: 'Công nghệ mới', cons: 'Ít trích dẫn', score: '8/10' },
+                      { id: 8, name: 'Nguyen et al., 2023', type: 'Bài báo', pros: 'Phù hợp điều kiện phòng thí nghiệm VN', cons: 'Quy mô nghiên cứu nhỏ', score: '8.5/10' },
+                      { id: 9, name: 'PubMed review', type: 'Tổng quan', pros: 'Tổng hợp tốt', cons: 'Không chuyên sâu', score: '7/10' },
+                      { id: 10, name: 'Google Scholar source', type: 'Mở', pros: 'Dễ tiếp cận', cons: 'Độ tin cậy không đồng đều', score: '6.5/10' },
+                      { id: 11, name: 'Harris et al., 2018', type: 'Bài báo', pros: 'So sánh đa phương pháp', cons: 'Dữ liệu cũ', score: '8/10' },
+                      { id: 12, name: 'Taylor, 2021', type: 'Sách', pros: 'Phân tích sâu', cons: 'Giá trị ứng dụng hạn chế', score: '8/10' }
+                    ].map((item) => (
+                      <tr key={item.id}>
+                        <td className="p-3 text-slate-400">{item.id}</td>
+                        <td className="p-3 font-bold text-slate-900">{item.name}</td>
+                        <td className="p-3">{item.type}</td>
+                        <td className="p-3 text-emerald-700">{item.pros}</td>
+                        <td className="p-3 text-rose-700">{item.cons}</td>
+                        <td className="p-3 text-center text-indigo-600 font-bold">{item.score}</td>
+                      </tr>
+                    ))}
                   </tbody>
                 </table>
               </div>
-              <span className="text-[10px] text-slate-400 italic block leading-relaxed mt-1">
+              <span className="text-xs text-slate-400 italic block leading-relaxed mt-2">
                 * Toàn bộ 12 nguồn tài liệu được thẩm định nghiêm ngặt qua 5 tiêu chí: Uy tín tác giả, vị thế Nhà xuất bản khoa học, Phương pháp nghiên cứu thực nghiệm, Tần suất trích dẫn khoa học và Tính cập nhật.
               </span>
             </div>
@@ -911,72 +933,90 @@ function App() {
         );
       case 2:
         return (
-          <div className="space-y-4 bg-slate-50/70 p-5 border border-slate-100 rounded-2xl">
-            <h6 className="text-xs font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-2">
-              💡 Bảng So sánh Kỹ nghệ Prompt & Kết quả Phản hồi từ AI
+          <div className="space-y-6 bg-slate-50/70 p-6 sm:p-8 border border-slate-100 rounded-2xl">
+            <h6 className="text-sm font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-3">
+              💡 Bảng So sánh Kỹ nghệ Prompt & Kết quả Phản hồi từ AI (3 Cấp độ)
             </h6>
             
-            <div className="space-y-4">
+            <div className="space-y-5">
               {/* Task 1 */}
-              <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2.5 shadow-xs">
-                <span className="text-xs font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
-                  Tác vụ 1: Tóm tắt cơ chế vaccine mRNA phòng COVID-19
+              <div className="bg-white p-5 rounded-xl border border-slate-100 space-y-3 shadow-xs">
+                <span className="text-sm font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
+                  Tác vụ 1: Tóm tắt cơ chế vaccine mRNA phòng bệnh COVID-19
                 </span>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
-                  <div className="p-3 bg-rose-50/50 rounded-lg border border-rose-100/30">
-                    <span className="font-bold text-rose-800 block mb-1">Prompt Ban đầu (Chưa cải tiến):</span>
+                <div className="space-y-2.5 text-xs sm:text-sm">
+                  <div className="p-3 bg-rose-50/40 rounded-lg border border-rose-100/20">
+                    <span className="font-bold text-rose-800 block mb-1">a. Prompt Cơ bản:</span>
                     <p className="text-slate-600 italic">"Hãy tóm tắt bài báo về cơ chế vaccine mRNA trong COVID-19."</p>
                   </div>
-                  <div className="p-3 bg-emerald-50/50 rounded-lg border border-emerald-100/30">
-                    <span className="font-bold text-emerald-800 block mb-1">Prompt Cải tiến (CLEAR/CRAC):</span>
-                    <p className="text-slate-700 font-semibold italic">"Bạn là giảng viên miễn dịch học. Hãy tóm tắt bài báo về vaccine mRNA theo cấu trúc: Bối cảnh, Cơ chế (mRNA → protein → đáp ứng miễn dịch), Ưu điểm và hạn chế, Ý nghĩa. Yêu cầu: Súc tích, chính xác, sử dụng thuật ngữ chuyên ngành."</p>
+                  <div className="p-3 bg-amber-50/40 rounded-lg border border-amber-100/20">
+                    <span className="font-bold text-amber-800 block mb-1">b. Prompt Cải tiến:</span>
+                    <p className="text-slate-600 italic">"Hãy tóm tắt bài báo về cơ chế vaccine mRNA trong COVID-19 theo các nội dung: Mục tiêu nghiên cứu, Cơ chế hoạt động, Ưu điểm, Kết luận. Giới hạn trong 250 từ."</p>
+                  </div>
+                  <div className="p-3 bg-emerald-50/40 rounded-lg border border-emerald-100/20">
+                    <span className="font-bold text-emerald-800 block mb-1">c. Prompt Nâng cao (Gán vai trò & Ràng buộc):</span>
+                    <p className="text-slate-700 font-semibold italic">"Bạn là giảng viên miễn dịch học. Hãy tóm tắt bài báo về vaccine mRNA theo cấu trúc: Bối cảnh, Cơ chế (mRNA → protein → đáp ứng miễn dịch), Ưu điểm và hạn chế, Ý nghĩa. Yêu cầu: Súc tích, chính xác, sử dụng thuật ngữ chuyên ngành, không thêm thông tin ngoài tài liệu."</p>
                   </div>
                 </div>
-                <div className="p-3 bg-slate-50 rounded-lg border border-slate-100 text-xs">
-                  <span className="font-bold text-slate-800 block mb-1">Kết quả vượt trội từ AI:</span>
-                  <p className="text-slate-600 text-justify leading-relaxed">AI xuất ra văn bản tóm tắt có chiều sâu học thuật cao dưới 250 từ, phân tách rõ ràng bối cảnh dịch bệnh, cơ chế biểu hiện kháng nguyên y sinh, ưu nhược điểm của công nghệ mRNA và ý nghĩa thực tế.</p>
+                <div className="p-3.5 bg-slate-50 rounded-lg border border-slate-100 text-xs sm:text-sm">
+                  <span className="font-bold text-slate-800 block mb-1">Đánh giá kết quả từ AI:</span>
+                  <p className="text-slate-600 text-justify leading-relaxed">
+                    Prompt cơ bản cho kết quả nhanh nhưng thiếu cấu trúc. Prompt cải tiến giúp thông tin rõ ràng hơn. Prompt nâng cao cho ra kết quả có tổ chức chặt chẽ, thể hiện rõ mối liên hệ giữa các phần và đặc biệt làm nổi bật được giá trị khoa học.
+                  </p>
                 </div>
               </div>
 
               {/* Task 2 */}
-              <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2.5 shadow-xs">
-                <span className="text-xs font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
+              <div className="bg-white p-5 rounded-xl border border-slate-100 space-y-3 shadow-xs">
+                <span className="text-sm font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
                   Tác vụ 2: Giải thích hệ dẫn truyền thuốc Lipid Nanoparticle (LNP)
                 </span>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
-                  <div className="p-3 bg-rose-50/50 rounded-lg border border-rose-100/30">
-                    <span className="font-bold text-rose-800 block mb-1">Prompt Ban đầu (Chưa cải tiến):</span>
+                <div className="space-y-2.5 text-xs sm:text-sm">
+                  <div className="p-3 bg-rose-50/40 rounded-lg border border-rose-100/20">
+                    <span className="font-bold text-rose-800 block mb-1">a. Prompt Cơ bản:</span>
                     <p className="text-slate-600 italic">"Giải thích Lipid Nanoparticle là gì."</p>
                   </div>
-                  <div className="p-3 bg-emerald-50/50 rounded-lg border border-emerald-100/30">
-                    <span className="font-bold text-emerald-800 block mb-1">Prompt Cải tiến (Chain-of-Thought):</span>
-                    <p className="text-slate-700 font-semibold italic">"Bạn là giảng viên công nghệ nano dược phẩm. Hãy giải thích Lipid Nanoparticle theo trình tự: Định nghĩa, Cấu trúc từng thành phần, Cơ chế hoạt động từng bước, So sánh với hệ truyền thuốc truyền thống, Ứng dụng thực tế."</p>
+                  <div className="p-3 bg-amber-50/40 rounded-lg border border-amber-100/20">
+                    <span className="font-bold text-amber-800 block mb-1">b. Prompt Cải tiến:</span>
+                    <p className="text-slate-600 italic">"Hãy giải thích Lipid Nanoparticle theo các ý: Định nghĩa, Cấu trúc, Cơ chế vận chuyển mRNA, Ứng dụng."</p>
+                  </div>
+                  <div className="p-3 bg-emerald-50/40 rounded-lg border border-emerald-100/20">
+                    <span className="font-bold text-emerald-800 block mb-1">c. Prompt Nâng cao (Chain-of-Thought):</span>
+                    <p className="text-slate-700 font-semibold italic">"Bạn là giảng viên công nghệ nano dược phẩm. Hãy giải thích Lipid Nanoparticle theo trình tự: Định nghĩa, Cấu trúc từng thành phần, Cơ chế hoạt động từng bước, So sánh với hệ truyền thuốc truyền thống, Ứng dụng thực tế. Yêu cầu: Giải thích từ đơn giản đến nâng cao, có ví dụ minh họa, làm rõ các bước trung gian."</p>
                   </div>
                 </div>
-                <div className="p-3 bg-slate-50 rounded-lg border border-slate-100 text-xs">
-                  <span className="font-bold text-slate-800 block mb-1">Kết quả vượt trội từ AI:</span>
-                  <p className="text-slate-600 text-justify leading-relaxed">AI trình bày chi tiết cấu trúc LNP (phân lớp lipid ion hóa, cholesterol, PEG-lipid) và cơ chế bọc bảo vệ phân tử mRNA kém bền vững. Phương pháp Chain-of-Thought giúp người học hiểu rõ từng bước xâm nhập tế bào qua nội bào và phóng thích thuốc.</p>
+                <div className="p-3.5 bg-slate-50 rounded-lg border border-slate-100 text-xs sm:text-sm">
+                  <span className="font-bold text-slate-800 block mb-1">Đánh giá kết quả từ AI:</span>
+                  <p className="text-slate-600 text-justify leading-relaxed">
+                    Prompt nâng cao giúp AI trình bày logic hơn. Việc chia bước (chain-of-thought) chi tiết cấu trúc LNP và cơ chế phóng thích bảo vệ phân tử mRNA giúp người học dễ hiểu sâu sắc bản chất vấn đề.
+                  </p>
                 </div>
               </div>
 
               {/* Task 3 */}
-              <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2.5 shadow-xs">
-                <span className="text-xs font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
+              <div className="bg-white p-5 rounded-xl border border-slate-100 space-y-3 shadow-xs">
+                <span className="text-sm font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
                   Tác vụ 3: Tạo câu hỏi ôn tập Sắc ký lỏng hiệu năng cao (HPLC)
                 </span>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
-                  <div className="p-3 bg-rose-50/50 rounded-lg border border-rose-100/30">
-                    <span className="font-bold text-rose-800 block mb-1">Prompt Ban đầu (Chưa cải tiến):</span>
+                <div className="space-y-2.5 text-xs sm:text-sm">
+                  <div className="p-3 bg-rose-50/40 rounded-lg border border-rose-100/20">
+                    <span className="font-bold text-rose-800 block mb-1">a. Prompt Cơ bản:</span>
                     <p className="text-slate-600 italic">"Tạo câu hỏi ôn tập về HPLC."</p>
                   </div>
-                  <div className="p-3 bg-emerald-50/50 rounded-lg border border-emerald-100/30">
-                    <span className="font-bold text-emerald-800 block mb-1">Prompt Cải tiến (Few-shot Prompting):</span>
-                    <p className="text-slate-700 font-semibold italic">"Bạn là giảng viên phân tích dược phẩm. Hãy tạo bộ câu hỏi về HPLC gồm 4 phần: Nhận biết, Hiểu, Vận dụng, Vận dụng cao. Yêu cầu: Có đáp án và giải thích, gắn với thực tế tách paracetamol – aspirin, đảm bảo độ khó tăng dần."</p>
+                  <div className="p-3 bg-amber-50/40 rounded-lg border border-amber-100/20">
+                    <span className="font-bold text-amber-800 block mb-1">b. Prompt Cải tiến:</span>
+                    <p className="text-slate-600 italic">"Hãy tạo 10 câu hỏi ôn tập về HPLC gồm: 5 câu trắc nghiệm, 5 câu tự luận. Kèm đáp án."</p>
+                  </div>
+                  <div className="p-3 bg-emerald-50/40 rounded-lg border border-emerald-100/20">
+                    <span className="font-bold text-emerald-800 block mb-1">c. Prompt Nâng cao (Few-shot & Phân hóa Bloom):</span>
+                    <p className="text-slate-700 font-semibold italic">"Bạn là giảng viên phân tích dược phẩm. Hãy tạo bộ câu hỏi về HPLC: Phần 1: Nhận biết, Phần 2: Hiểu, Phần 3: Vận dụng, Phần 4: Vận dụng cao. Yêu cầu: Có đáp án và giải thích, gắn với thực hành (ví dụ: tách paracetamol – aspirin), đảm bảo độ khó tăng dần."</p>
                   </div>
                 </div>
-                <div className="p-3 bg-slate-50 rounded-lg border border-slate-100 text-xs">
-                  <span className="font-bold text-slate-800 block mb-1">Kết quả vượt trội từ AI:</span>
-                  <p className="text-slate-600 text-justify leading-relaxed">AI thiết lập thành công đề thi phân hóa năng lực người học rõ rệt theo các cấp độ nhận thức của Bloom. Các câu hỏi vận dụng gắn liền với thực hành kiểm nghiệm dược phẩm thực tế tại VNU-UMP.</p>
+                <div className="p-3.5 bg-slate-50 rounded-lg border border-slate-100 text-xs sm:text-sm">
+                  <span className="font-bold text-slate-800 block mb-1">Đánh giá kết quả từ AI:</span>
+                  <p className="text-slate-600 text-justify leading-relaxed">
+                    Prompt nâng cao giúp phân loại năng lực người học rõ rệt theo 4 cấp độ tư duy Bloom. Nội dung sát với thực tế thi cử, gắn liền với các tình huống phân tích kiểm nghiệm thuốc trong thực tế.
+                  </p>
                 </div>
               </div>
             </div>
@@ -984,49 +1024,49 @@ function App() {
         );
       case 3:
         return (
-          <div className="space-y-4 bg-slate-50/70 p-5 border border-slate-100 rounded-2xl">
-            <h6 className="text-xs font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-2">
+          <div className="space-y-6 bg-slate-50/70 p-6 sm:p-8 border border-slate-100 rounded-2xl">
+            <h6 className="text-sm font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-3">
               🤝 Không gian Cộng tác Đám mây & Phân công Công việc Nhóm
             </h6>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {/* Trello */}
-              <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2 shadow-xs hover-lift">
-                <span className="text-xs font-black text-indigo-950 uppercase tracking-wide block font-sans border-b border-slate-50 pb-1.5 flex items-center gap-1">
-                  📋 Kanban Trello
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              {/* Jira */}
+              <div className="bg-white p-5 rounded-xl border border-slate-100 space-y-3 shadow-xs hover-lift flex flex-col justify-start">
+                <span className="text-sm font-black text-indigo-950 uppercase tracking-wide block font-sans border-b border-slate-50 pb-2 flex items-center gap-1.5">
+                  📋 Công cụ Jira (Quản lý dự án)
                 </span>
-                <p className="text-xs text-slate-600 leading-relaxed text-justify font-semibold">
-                  Thiết lập bảng làm việc cho 5 thành viên (Trưởng nhóm: Bùi Cao Hoàn). Sử dụng hệ thống nhãn dán phân loại màu sắc (Xanh: Đang tiến hành, Đỏ: Cần hoàn thành gấp, Xanh lá: Đã xong) kèm theo danh sách kiểm tra (checklists) và thời hạn hoàn thành (due-dates) nghiêm ngặt để kiểm soát vòng đời dự án.
-                </p>
-              </div>
-
-              {/* Zoom */}
-              <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2 shadow-xs hover-lift">
-                <span className="text-xs font-black text-indigo-950 uppercase tracking-wide block font-sans border-b border-slate-50 pb-1.5 flex items-center gap-1">
-                  💬 Zoom Meetings
-                </span>
-                <p className="text-xs text-slate-600 leading-relaxed text-justify font-semibold">
-                  Tổ chức các cuộc họp thảo luận dự án nhóm chất lượng cao 90 phút. Sử dụng chức năng chia sẻ màn hình trực tiếp để duyệt slide thuyết trình y khoa, kích hoạt các phòng thảo luận nhóm phụ (Breakout Rooms) để phân chia cặp viết nội dung, và lưu biên bản họp tự động thông qua AI Companion.
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed text-justify font-semibold">
+                  Trong quá trình thực hiện dự án, nhóm em đã sử dụng Jira như một công cụ trung tâm để quản lý và phân công công việc. Ngay từ đầu, các nhiệm vụ được chia thành từng phần cụ thể và tạo thành các task riêng biệt trên hệ thống. Mỗi task đều được mô tả rõ ràng về nội dung công việc, người phụ trách và thời hạn hoàn thành. Các trạng thái công việc như To Do, In Progress, Done giúp nhóm dễ dàng theo dõi tiến độ chung. Về phía cá nhân, em thường xuyên truy cập Jira để kiểm tra nhiệm vụ được giao và cập nhật tiến độ làm việc của mình, giúp chủ động sắp xếp thời gian và đảm bảo không bị trễ deadline. Nhờ Jira, việc quản lý rõ ràng, minh bạch, hạn chế bỏ sót công việc.
                 </p>
               </div>
 
               {/* Google Docs */}
-              <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2 shadow-xs hover-lift">
-                <span className="text-xs font-black text-indigo-950 uppercase tracking-wide block font-sans border-b border-slate-50 pb-1.5 flex items-center gap-1">
-                  📝 Google Docs
+              <div className="bg-white p-5 rounded-xl border border-slate-100 space-y-3 shadow-xs hover-lift flex flex-col justify-start">
+                <span className="text-sm font-black text-indigo-950 uppercase tracking-wide block font-sans border-b border-slate-50 pb-2 flex items-center gap-1.5">
+                  📝 Google Docs (Cộng tác tài liệu)
                 </span>
-                <p className="text-xs text-slate-600 leading-relaxed text-justify font-semibold">
-                  Đồng soạn thảo trực tiếp kịch bản thuyết trình phân tích ca lâm sàng Tăng huyết áp số 1. Kích hoạt tính năng đóng góp ý kiến (Suggesting Mode) để chỉnh sửa chéo nội dung lâm sàng, bình luận góp ý (Comments) tại từng dòng và theo dõi chặt chẽ lịch sử phiên bản (Version History) để tránh mất mát dữ liệu nghiên cứu.
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed text-justify font-semibold">
+                  Google Docs được nhóm em sử dụng để soạn thảo và chỉnh sửa nội dung bài thuyết trình một cách đồng thời. Tất cả các thành viên đều có thể truy cập vào cùng một tài liệu và thực hiện chỉnh sửa theo thời gian thực, tiết kiệm thời gian gửi file qua lại. Em trực tiếp tham gia viết phần phân công, đồng thời đọc và hiệu đính các phần khác. Khi phát hiện vấn đề, em ưu tiên dùng tính năng comment để góp ý thay vì chỉnh sửa trực tiếp, từ đó giữ được sự thống nhất. Khả năng lưu lại lịch sử chỉnh sửa (Version History) của Docs giúp nhóm dễ dàng theo dõi đóng góp và khôi phục các phiên bản trước khi cần thiết.
                 </p>
               </div>
 
               {/* Google Drive */}
-              <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2 shadow-xs hover-lift">
-                <span className="text-xs font-black text-indigo-950 uppercase tracking-wide block font-sans border-b border-slate-50 pb-1.5 flex items-center gap-1">
-                  ☁️ Google Drive
+              <div className="bg-white p-5 rounded-xl border border-slate-100 space-y-3 shadow-xs hover-lift flex flex-col justify-start">
+                <span className="text-sm font-black text-indigo-950 uppercase tracking-wide block font-sans border-b border-slate-50 pb-2 flex items-center gap-1.5">
+                  ☁️ Google Drive (Lưu trữ tài nguyên)
                 </span>
-                <p className="text-xs text-slate-600 leading-relaxed text-justify font-semibold">
-                  Khởi tạo không gian lưu trữ phân cấp khoa học cho dự án theo quy chuẩn đặt tên nhất quán. Thiết lập phân quyền truy cập thông minh cho các thành viên và kích hoạt xác thực hai yếu tố (2FA) bảo mật tuyệt đối để bảo vệ các tài liệu nghiên cứu y khoa quan trọng của nhóm.
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed text-justify font-semibold">
+                  Để quản lý tài liệu của dự án, nhóm em sử dụng Google Drive làm nơi lưu trữ chung. Ngay từ đầu, một thư mục chính đã được tạo ra cho dự án và bên trong được chia thành các thư mục con để phân loại tài liệu như nội dung, hình ảnh, tài liệu tham khảo. Em chủ động tải lên các tài liệu do mình phụ trách, sắp xếp chúng đúng vị trí và tuân thủ nghiêm ngặt quy tắc đặt tên file để đảm bảo tính thống nhất và dễ tìm kiếm. Việc tất cả thành viên đều có quyền chỉnh sửa giúp quá trình chia sẻ dữ liệu diễn ra nhanh chóng, khoa học, hạn chế thất lạc file.
+                </p>
+              </div>
+
+              {/* Google Meet */}
+              <div className="bg-white p-5 rounded-xl border border-slate-100 space-y-3 shadow-xs hover-lift flex flex-col justify-start">
+                <span className="text-sm font-black text-indigo-950 uppercase tracking-wide block font-sans border-b border-slate-50 pb-2 flex items-center gap-1.5">
+                  💬 Google Meet (Giao tiếp nhóm)
+                </span>
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed text-justify font-semibold">
+                  Trong suốt quá trình thực hiện dự án, Google Meet được nhóm em sử dụng để tổ chức các buổi họp trực tuyến nhằm trao đổi và thống nhất nội dung công việc. Các buổi họp thường được lên lịch trước để đảm bảo sự tham gia đầy đủ của các thành viên. Cá nhân em luôn cố gắng tham gia đầy đủ các buổi họp và chủ động đóng góp ý kiến khi thảo luận. Đồng thời, em cũng ghi lại những nội dung quan trọng sau mỗi buổi họp để đảm bảo không bỏ sót thông tin. Những vấn đề phát sinh trong quá trình làm việc thường được giải quyết nhanh chóng thông qua các buổi họp này.
                 </p>
               </div>
             </div>
@@ -1036,7 +1076,7 @@ function App() {
                 href={GROUP_VIDEO_YOUTUBE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-rose-50 text-rose-900 border border-rose-100 text-[11px] font-bold hover:bg-rose-100 transition-colors"
+                className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-lg bg-rose-50 text-rose-900 border border-rose-100 text-xs font-bold hover:bg-rose-100 transition-colors"
               >
                 ▶ Xem video sản phẩm trên YouTube
               </a>
@@ -1045,81 +1085,83 @@ function App() {
         );
       case 4:
         return (
-          <div className="space-y-4 bg-slate-50/70 p-5 border border-slate-100 rounded-2xl">
-            <h6 className="text-xs font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-2">
-              🌱 Sản phẩm Sáng tạo Truyền thông & Thiết kế Infographic Canva
+          <div className="space-y-6 bg-slate-50/70 p-6 sm:p-8 border border-slate-100 rounded-2xl">
+            <h6 className="text-sm font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-3">
+              🌱 Báo cáo Dự án Ứng dụng AI tạo sinh & Thiết kế Canva Infographic
             </h6>
             
-            <div className="space-y-4">
+            <div className="space-y-5">
               {/* Topic Intro */}
-              <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2 shadow-xs">
-                <span className="text-[10px] uppercase font-black text-indigo-600 tracking-wider font-sans">
-                  Đề tài Infographic
+              <div className="bg-white p-5 rounded-xl border border-slate-100 space-y-2 shadow-xs">
+                <span className="text-xs uppercase font-black text-indigo-600 tracking-wider font-sans">
+                  Đề tài sản phẩm sáng tạo
                 </span>
-                <h5 className="text-slate-900 text-sm font-black font-sans leading-snug">
+                <h5 className="text-slate-900 text-base font-black font-sans leading-snug">
                   Cách viết prompt hiệu quả để xây dựng portfolio xin việc & thực tập
                 </h5>
-                <p className="text-slate-600 text-xs leading-relaxed text-justify font-semibold">
+                <p className="text-slate-600 text-sm leading-relaxed text-justify font-semibold">
                   Mục tiêu: Thành thạo phối hợp sử dụng các công cụ AI tạo sinh (ChatGPT, DALL·E, và Canva AI) để tạo ra sản phẩm infographic chuyên nghiệp hướng dẫn viết prompt tối ưu cho portfolio sinh viên.
                 </p>
               </div>
 
               {/* Prompt Comparison */}
-              <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2.5 shadow-xs">
-                <span className="text-xs font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
-                  Quá trình thử nghiệm và cải tiến Prompt
+              <div className="bg-white p-5 rounded-xl border border-slate-100 space-y-3 shadow-xs">
+                <span className="text-sm font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
+                  Quá trình thử nghiệm và cải tiến Prompt các công cụ
                 </span>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-                  <div className="p-3 bg-slate-50 rounded-lg border border-slate-150">
-                    <span className="font-bold text-slate-800 block mb-1">ChatGPT (Tạo văn bản):</span>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
+                  <div className="p-4 bg-slate-50 rounded-lg border border-slate-150 space-y-2">
+                    <span className="font-bold text-slate-800 block border-b pb-1">ChatGPT (Tạo văn bản):</span>
                     <p className="text-slate-600 italic">Prompt ban đầu: "Viết nội dung infographic về cách viết prompt hiệu quả để xây dựng portfolio xin việc và thực tập, ngắn gọn, dễ hiểu..."</p>
-                    <p className="text-slate-700 font-bold italic mt-1.5">Prompt cải tiến: "Tóm tắt nội dung về cách viết prompt thành các ý chính, dạng bullet, mỗi ý dưới 15 từ."</p>
+                    <p className="text-slate-700 font-bold italic">Prompt cải tiến: "Tóm tắt nội dung về cách viết prompt thành các ý chính, dạng bullet, mỗi ý dưới 15 từ."</p>
                   </div>
-                  <div className="p-3 bg-slate-50 rounded-lg border border-slate-150">
-                    <span className="font-bold text-slate-800 block mb-1">DALL·E (Tạo hình ảnh):</span>
+                  <div className="p-4 bg-slate-50 rounded-lg border border-slate-150 space-y-2">
+                    <span className="font-bold text-slate-800 block border-b pb-1">DALL·E (Tạo hình ảnh):</span>
                     <p className="text-slate-600 italic">Prompt ban đầu: "Flat illustration showing clear vs unclear prompt, modern style, minimal, blue tone..."</p>
-                    <p className="text-slate-700 font-bold italic mt-1.5">Prompt cải tiến: "Split-screen illustration comparing vague prompt vs clear prompt, labeled, modern infographic style."</p>
+                    <p className="text-slate-700 font-bold italic">Prompt cải tiến: "Split-screen illustration comparing vague prompt vs clear prompt, labeled, modern infographic style."</p>
                   </div>
                 </div>
               </div>
 
               {/* AI Tool Matrix Table */}
               <div className="space-y-2">
-                <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider block font-sans">
-                  Bảng so sánh kết quả giữa các công cụ AI:
+                <span className="text-xs uppercase font-bold text-slate-500 tracking-wider block font-sans">
+                  Bảng so sánh kết quả giữa các công cụ AI (Chuyển vị):
                 </span>
                 <div className="overflow-x-auto rounded-xl border border-slate-200/50 bg-white">
-                  <table className="w-full text-left border-collapse text-xs font-sans">
+                  <table className="w-full text-left border-collapse text-xs sm:text-sm font-sans">
                     <thead>
                       <tr className="bg-slate-50 text-slate-700 font-bold border-b border-slate-200/60">
-                        <th className="p-3">Công cụ AI</th>
-                        <th className="p-3">Chức năng chính</th>
-                        <th className="p-3">Ưu điểm</th>
-                        <th className="p-3">Hạn chế</th>
-                        <th className="p-3 text-center">Hiệu quả</th>
+                        <th className="p-3">Tiêu chí</th>
+                        <th className="p-3">ChatGPT</th>
+                        <th className="p-3">DALL·E</th>
+                        <th className="p-3">Canva AI</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100 text-slate-600 font-semibold">
                       <tr>
-                        <td className="p-3 font-bold text-slate-900">ChatGPT</td>
-                        <td className="p-3">Tạo nội dung văn bản</td>
-                        <td className="p-3">Nhanh chóng, cấu trúc logic</td>
-                        <td className="p-3">Dài dòng, cần chỉnh sửa thủ công</td>
-                        <td className="p-3 text-center text-teal-600">Cao</td>
+                        <td className="p-3 font-bold text-slate-900">Chức năng chính</td>
+                        <td className="p-3 text-emerald-800">Tạo nội dung</td>
+                        <td className="p-3 text-emerald-800">Tạo hình ảnh</td>
+                        <td className="p-3 text-emerald-800">Thiết kế</td>
                       </tr>
                       <tr>
-                        <td className="p-3 font-bold text-slate-900">DALL·E</td>
-                        <td className="p-3">Tạo hình ảnh minh họa</td>
-                        <td className="p-3">Sáng tạo, trực quan sinh động</td>
-                        <td className="p-3">Có thể lệch ý so với prompt ban đầu</td>
-                        <td className="p-3 text-center text-teal-600">Trung bình–cao</td>
+                        <td className="p-3 font-bold text-slate-900">Ưu điểm</td>
+                        <td className="p-3 text-slate-700">Nhanh, logic</td>
+                        <td className="p-3 text-slate-700">Sáng tạo, trực quan</td>
+                        <td className="p-3 text-slate-700">Dễ sử dụng, kéo thả</td>
                       </tr>
                       <tr>
-                        <td className="p-3 font-bold text-slate-900">Canva AI</td>
-                        <td className="p-3">Thiết kế bố cục</td>
-                        <td className="p-3">Dễ sử dụng, giao diện kéo thả</td>
-                        <td className="p-3">Nội dung và bố cục phụ thuộc input</td>
-                        <td className="p-3 text-center text-teal-600">Cao</td>
+                        <td className="p-3 font-bold text-slate-900">Hạn chế</td>
+                        <td className="p-3 text-rose-700">Dài dòng, cần chỉnh sửa lại</td>
+                        <td className="p-3 text-rose-700">Có thể lệch ý prompt gốc</td>
+                        <td className="p-3 text-rose-700">Nội dung phụ thuộc vào input</td>
+                      </tr>
+                      <tr>
+                        <td className="p-3 font-bold text-slate-900">Hiệu quả</td>
+                        <td className="p-3 text-indigo-700">Cao</td>
+                        <td className="p-3 text-indigo-700">Trung bình–cao</td>
+                        <td className="p-3 text-indigo-700">Cao</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1127,14 +1169,14 @@ function App() {
               </div>
 
               {/* Design Guidelines */}
-              <div className="bg-indigo-50/50 p-4 rounded-xl border border-indigo-100/30 space-y-2">
-                <span className="text-xs font-black text-indigo-900 uppercase tracking-wide block font-sans">
-                  📐 Tiêu chuẩn Thiết kế Canva Infographic đã ứng dụng:
+              <div className="bg-indigo-50/50 p-5 rounded-xl border border-indigo-100/30 space-y-3">
+                <span className="text-sm font-black text-indigo-900 uppercase tracking-wide block font-sans">
+                  📐 Nguyên tắc thiết kế Infographic đã ứng dụng:
                 </span>
-                <ul className="text-xs text-slate-700 space-y-1.5 list-disc pl-4 font-semibold leading-relaxed">
-                  <li><strong className="text-slate-900">Màu sắc (Color Palette):</strong> Sử dụng bảng màu xanh - trắng làm chủ đạo để thể hiện sự chuyên nghiệp, sạch sẽ và tối ưu hóa độ tương phản đọc.</li>
-                  <li><strong className="text-slate-900">Trọng lượng thị giác (Visual Weight):</strong> Bố cục 3 phần cân đối (Khái niệm &rarr; Nguyên tắc &rarr; Ứng dụng portfolio), sử dụng danh sách dạng bullet dưới 15 từ giúp quét thông tin nhanh chóng.</li>
-                  <li><strong className="text-slate-900">Vai trò của Con người (Human-in-the-loop):</strong> Kết hợp AI để phác thảo ý tưởng thô và sinh ảnh, con người trực tiếp hiệu đính câu chữ, căn chỉnh bố cục để đóng góp cá nhân sáng tạo &gt;50%.</li>
+                <ul className="text-sm sm:text-base text-slate-700 space-y-2 list-disc pl-5 font-semibold leading-relaxed">
+                  <li><strong className="text-slate-900">Bảng màu:</strong> Sử dụng tông màu xanh-trắng chủ đạo để thể hiện sự sạch sẽ, chuyên nghiệp phù hợp với lĩnh vực sức khỏe.</li>
+                  <li><strong className="text-slate-900">Bố cục trực quan:</strong> Thiết kế dàn trang cân đối, các ý chính viết dạng bullet dưới 15 từ để người xem dễ dàng quét và ghi nhớ.</li>
+                  <li><strong className="text-slate-900">Đóng góp cá nhân:</strong> AI đóng vai trò như trợ lý tạo ý tưởng thô và sinh ảnh, sinh viên trực tiếp hiệu đính nội dung và bố cục để đảm bảo đóng góp cá nhân &gt;50%.</li>
                 </ul>
               </div>
             </div>
@@ -1142,49 +1184,117 @@ function App() {
         );
       case 5:
         return (
-          <div className="space-y-4 bg-slate-50/70 p-5 border border-slate-100 rounded-2xl">
-            <h6 className="text-xs font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-2">
-              ⚖️ Bộ nguyên tắc Đạo đức AI "7 Chữ Vàng" cho Dược sĩ Số tương lai
+          <div className="space-y-6 bg-slate-50/70 p-6 sm:p-8 border border-slate-100 rounded-2xl">
+            <h6 className="text-sm font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-3">
+              ⚖️ Chính sách ĐHQGHN, Kiểm chứng Ca lâm sàng & Bộ 7 Nguyên tắc Đạo đức
             </h6>
-            
-            {/* 7 Gold Principles Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              {[
-                { num: "1", title: "MINH BẠCH", en: "Transparency", desc: "Luôn chủ động khai báo trung thực và chi tiết mức độ can thiệp của bất kỳ công cụ AI nào trong mọi sản phẩm học tập hoặc báo cáo nghiên cứu." },
-                { num: "2", title: "XÁC THỰC", en: "Verification", desc: "Không bao giờ tin tưởng tuyệt đối vào AI. Mọi dữ liệu liên quan đến cơ chế bệnh học, liều lượng thuốc bắt buộc phải đối soát chéo với PubMed, Cochrane." },
-                { num: "3", title: "BẢO MẬT", en: "Privacy", desc: "Bảo vệ nghiêm ngặt quyền riêng tư của bệnh nhân. Tuyệt đối không tải thông tin cá nhân, hồ sơ bệnh án nhạy cảm lên các mô hình AI công cộng." },
-                { num: "4", title: "CÔNG BẰNG", en: "Fairness", desc: "Không sử dụng AI để tạo ra lợi thế cạnh tranh không trung thực trong học tập, thi cử hoặc cố tình bóp méo, làm giả dữ liệu nghiên cứu khoa học." },
-                { num: "5", title: "SÁNG TẠO", en: "Originality", desc: "Chỉ sử dụng AI như công cụ hỗ trợ gợi ý ý tưởng và cấu trúc thô. Nội dung cốt lõi, lập luận chuyên môn phải là sản phẩm chất xám của cá nhân." },
-                { num: "6", title: "TRÁCH NHIỆM", en: "Accountability", desc: "Bản thân sinh viên chịu trách nhiệm cao nhất trước pháp luật, nhà trường và giảng viên về tính chính xác, tính hợp pháp của mọi thông tin do mình ký tên." },
-                { num: "7", title: "HỌC HỎI LIÊN TỤC", en: "Continuous Learning", desc: "Chủ động cập nhật kiến thức mới về đạo đức công nghệ, các quy định pháp lý quốc gia và quy chế của ĐHQGHN liên quan đến trí tuệ nhân tạo." }
-              ].map((rule) => (
-                <div key={rule.num} className="bg-white p-4 rounded-xl border border-slate-100 space-y-1.5 shadow-xs hover-lift">
-                  <div className="flex items-center gap-2">
-                    <span className="w-5.5 h-5.5 rounded-lg bg-gradient-to-tr from-indigo-600 to-teal-500 flex items-center justify-center text-white text-[10px] font-black shrink-0">
-                      {rule.num}
-                    </span>
-                    <span className="text-slate-900 text-xs font-black font-sans leading-tight">
-                      {rule.title}
-                    </span>
-                  </div>
-                  <span className="text-[9px] uppercase font-extrabold text-teal-600 tracking-wider block font-sans">
-                    {rule.en}
-                  </span>
-                  <p className="text-[11px] text-slate-500 leading-relaxed text-justify font-semibold">
-                    {rule.desc}
-                  </p>
-                </div>
-              ))}
+
+            {/* Table 1: VNU Policies */}
+            <div className="space-y-3">
+              <span className="text-xs uppercase font-bold text-slate-500 tracking-wider block font-sans">
+                Bảng 1: Trục Chính Sách AI ĐHQGHN & Yêu Cầu Tuân Thủ:
+              </span>
+              <div className="overflow-x-auto rounded-xl border border-slate-200/50 bg-white">
+                <table className="w-full text-left border-collapse text-xs sm:text-sm font-sans">
+                  <thead>
+                    <tr className="bg-slate-50 text-slate-700 font-bold border-b border-slate-200/60">
+                      <th className="p-3 w-1/4">Trục Chính Sách</th>
+                      <th className="p-3 w-1/3">Nội Dung Quy Định</th>
+                      <th className="p-3 w-5/12">Tuân Thủ của Sinh Viên</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100 text-slate-600 font-semibold leading-relaxed">
+                    <tr>
+                      <td className="p-3 font-bold text-slate-900">1. Bảo mật dữ liệu Y tế</td>
+                      <td className="p-3 text-justify">Bảo vệ nghiêm ngặt thông tin cá nhân, hồ sơ bệnh án, lịch sử dịch tễ, và hình ảnh lâm sàng của bệnh nhân tại toàn bộ hệ thống các bệnh viện thực hành (Bạch Mai, Hospital E, 108...).</td>
+                      <td className="p-3 text-justify text-rose-700">Tuyệt đối không tải các dữ liệu thô chứa thông tin định danh bệnh nhân lên các mô hình AI công cộng. Mọi hành vi làm lộ dữ liệu y tế qua AI sẽ bị xử lý kỷ luật nặng.</td>
+                    </tr>
+                    <tr>
+                      <td className="p-3 font-bold text-slate-900">2. Xác thực tri thức chuyên ngành</td>
+                      <td className="p-3 text-justify">AI chỉ đóng vai trò trợ lý ngôn ngữ, hỗ trợ cấu trúc hoặc tìm kiếm gợi ý sơ cấp. Kết quả của AI không có giá trị thay thế phác đồ điều trị của Bộ Y tế.</td>
+                      <td className="p-3 text-justify text-emerald-800">Sinh viên bắt buộc phải kiểm chứng toàn bộ thông tin y khoa do AI tạo ra bằng cách đối chiếu trực tiếp với các nguồn cơ sở dữ liệu y học uy tín (PubMed, Cochrane Library, UpToDate, Dược thư Quốc gia Việt Nam).</td>
+                    </tr>
+                    <tr>
+                      <td className="p-3 font-bold text-slate-900">3. Minh bạch học thuật</td>
+                      <td className="p-3 text-justify">Quy định bắt buộc về việc công khai, minh bạch mức độ can thiệp của AI trong tất cả các sản phẩm học thuật như tiểu luận, báo cáo thực tập lâm sàng, khóa luận tốt nghiệp.</td>
+                      <td className="p-3 text-justify text-indigo-700">Sinh viên phải thiết lập một mục "Phụ lục Khai báo Ứng dụng AI" cuối tài liệu, nêu rõ công cụ sử dụng (ví dụ: ChatGPT-4o), mục đích sử dụng, và danh mục các câu lệnh (Prompt) đã dùng.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
 
-            {/* Case Study alert */}
-            <div className="p-4 bg-amber-50 border border-amber-100 rounded-xl space-y-1 mt-2">
-              <span className="text-[10px] uppercase font-black text-amber-800 tracking-wider block font-sans">
-                ⚠️ Đối soát Ca lâm sàng & Thẩm định Báo cáo CT Scan Phổi bằng AI:
+            {/* Table 2: Claude IMRAD Audit */}
+            <div className="space-y-3">
+              <span className="text-xs uppercase font-bold text-slate-500 tracking-wider block font-sans">
+                Bảng 2: Thẩm định Báo cáo AI (Bài báo CT Scan Ung thư phổi sớm):
               </span>
-              <p className="text-xs text-amber-950 font-semibold leading-relaxed text-justify">
-                Đã ứng dụng kỹ thuật Prompt nâng cao trên Claude 3.5 Sonnet để tóm tắt bài báo chẩn đoán sớm ung thư phổi qua CT Scan liều thấp theo chuẩn IMRAD. Tiến hành đối soát chéo và phát hiện thành công lỗi ảo tưởng nghiêm trọng của AI (đảo ngược giá trị giữa tỷ lệ Dương tính giả và Âm tính giả trong phần bàn luận) cùng tính thiên vị chủng tộc của dữ liệu huấn luyện, bảo đảm tính xác thực khoa học tuyệt đối.
-              </p>
+              <div className="overflow-x-auto rounded-xl border border-slate-200/50 bg-white">
+                <table className="w-full text-left border-collapse text-xs sm:text-sm font-sans">
+                  <thead>
+                    <tr className="bg-slate-50 text-slate-700 font-bold border-b border-slate-200/60">
+                      <th className="p-3 w-5/12">Kết quả do AI Tạo ra (Ưu điểm & Hạn chế)</th>
+                      <th className="p-3 w-5/12">Nội dung Sai sót / Lỗ hổng kỹ thuật phát hiện được</th>
+                      <th className="p-3 w-1/6">Hành động Hiệu đính</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100 text-slate-600 font-semibold leading-relaxed">
+                    <tr>
+                      <td className="p-3 text-justify">
+                        <strong className="text-emerald-800 block mb-0.5">Ưu điểm:</strong> Khả năng bóc tách cấu trúc IMRAD cực kỳ nhanh chóng; phân loại thông tin logic; dịch thuật các đoạn văn tiếng Anh chuyên ngành y sinh sang tiếng Việt trôi chảy.
+                      </td>
+                      <td className="p-3 text-justify text-rose-700">
+                        <strong className="block mb-0.5">Lỗi nghiêm trọng (Ảo tưởng AI):</strong> Mô hình đã đảo ngược vị trí giá trị giữa tỷ lệ Dương tính giả (False Positive) và Âm tính giả (False Negative) trong đoạn phân tích thảo luận, dẫn đến sai lệch bản chất toán học của thuật toán lâm sàng.
+                      </td>
+                      <td className="p-3 text-justify">Tiến hành tra cứu lại bảng số liệu gốc trong bài báo, chỉnh sửa lại chính xác các thông số phần trăm (%) của thuật toán.</td>
+                    </tr>
+                    <tr>
+                      <td className="p-3 text-justify">
+                        <strong className="text-amber-800 block mb-0.5">Hạn chế:</strong> AI có xu hướng tổng quát hóa phần thảo luận, làm mờ đi các hạn chế cốt lõi của nghiên cứu (như cỡ mẫu còn hẹp, chưa đa trung tâm).
+                      </td>
+                      <td className="p-3 text-justify text-rose-700">
+                        <strong className="block mb-0.5">Lỗ hổng:</strong> Bỏ sót phần cảnh báo về tính thiên vị dữ liệu (data bias) khi mô hình AI trong bài báo chỉ được huấn luyện trên một chủng tộc nhất định.
+                      </td>
+                      <td className="p-3 text-justify">Bổ dung nhận xét phản biện cá nhân vào phần Discussion, nhấn mạnh tính khả thi khi áp dụng tại Việt Nam.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            
+            {/* 7 Gold Principles Grid */}
+            <div className="space-y-3 pt-3">
+              <span className="text-xs uppercase font-bold text-slate-500 tracking-wider block font-sans">
+                Bộ nguyên tắc Đạo đức AI "7 Chữ Vàng" cá nhân:
+              </span>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {[
+                  { num: "1", title: "MINH BẠCH", en: "Transparency", desc: "Luôn chủ động khai báo trung thực và chi tiết mức độ can thiệp của bất kỳ công cụ AI nào trong mọi sản phẩm học tập hoặc báo cáo nghiên cứu." },
+                  { num: "2", title: "XÁC THỰC", en: "Verification", desc: "Không bao giờ tin tưởng tuyệt đối vào AI. Mọi dữ liệu liên quan đến cơ chế bệnh học, liều lượng thuốc bắt buộc phải đối soát chéo với PubMed, Cochrane." },
+                  { num: "3", title: "BẢO MẬT", en: "Privacy", desc: "Bảo vệ nghiêm ngặt quyền riêng tư của bệnh nhân. Tuyệt đối không tải thông tin cá nhân, hồ sơ bệnh án nhạy cảm lên các mô hình AI công cộng." },
+                  { num: "4", title: "CÔNG BẰNG", en: "Fairness", desc: "Không sử dụng AI để tạo ra lợi thế cạnh tranh không trung thực trong học tập, thi cử hoặc cố tình bóp méo, làm giả dữ liệu nghiên cứu khoa học." },
+                  { num: "5", title: "SÁNG TẠO", en: "Originality", desc: "Chỉ sử dụng AI như công cụ hỗ trợ gợi ý ý tưởng và cấu trúc thô. Nội dung cốt lõi, lập luận chuyên môn phải là sản phẩm chất xám của cá nhân." },
+                  { num: "6", title: "TRÁCH NHIỆM", en: "Accountability", desc: "Bản thân sinh viên chịu trách nhiệm cao nhất trước pháp luật, nhà trường và giảng viên về tính chính xác, tính hợp pháp của mọi thông tin do mình ký tên." },
+                  { num: "7", title: "HỌC HỎI LIÊN TỤC", en: "Continuous Learning", desc: "Chủ động cập nhật kiến thức mới về đạo đức công nghệ, các quy định pháp lý quốc gia và quy chế của ĐHQGHN liên quan đến trí tuệ nhân tạo." }
+                ].map((rule) => (
+                  <div key={rule.num} className="bg-white p-5 rounded-xl border border-slate-100 space-y-2 shadow-xs hover-lift">
+                    <div className="flex items-center gap-2">
+                      <span className="w-6 h-6 rounded-lg bg-gradient-to-tr from-indigo-600 to-teal-500 flex items-center justify-center text-white text-xs font-black shrink-0">
+                        {rule.num}
+                      </span>
+                      <span className="text-slate-900 text-xs sm:text-sm font-black font-sans leading-tight">
+                        {rule.title}
+                      </span>
+                    </div>
+                    <span className="text-[10px] uppercase font-extrabold text-teal-600 tracking-wider block font-sans">
+                      {rule.en}
+                    </span>
+                    <p className="text-xs text-slate-500 leading-relaxed text-justify font-semibold">
+                      {rule.desc}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         );
@@ -1192,7 +1302,6 @@ function App() {
         return null;
     }
   };
-
   return (
     <div className="flex flex-col min-h-screen gradient-bg-elegant text-[#1f2937] relative overflow-hidden">
       {/* Fixed Background Image - Elegant, Lightweight & High Performance */}

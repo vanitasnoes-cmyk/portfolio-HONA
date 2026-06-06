@@ -47,7 +47,7 @@ function Task1Supplements({ lang = 'vi' }: { lang?: 'vi' | 'en' }) {
                 YYYY-MM-DD_VNU1001_[Type]_[Content]_v[Version]
               </code>
               <span className="text-slate-500 dark:text-slate-400"> — example: </span>
-              <code className="font-mono text-[10px] dark:text-slate-300">2026-03-15_VNU1001_Regimen_AS_v2.pdf</code>
+              <code className="font-mono text-[10px] dark:text-slate-300">2026-03-15_VNU1001_Audit_LungCancer_v2.pdf</code>
             </li>
             <li>
               <strong className="text-slate-800 dark:text-slate-100">Cloud Shared Files:</strong>{' '}
@@ -83,7 +83,7 @@ function Task1Supplements({ lang = 'vi' }: { lang?: 'vi' | 'en' }) {
               YYYY-MM-DD_VNU1001_[Loai]_[NoiDung]_v[So]
             </code>
             <span className="text-slate-500 dark:text-slate-400"> — ví dụ: </span>
-            <code className="font-mono text-[10px] dark:text-slate-300">2026-03-15_VNU1001_PhacDo_AS_v2.pdf</code>
+            <code className="font-mono text-[10px] dark:text-slate-300">2026-03-15_VNU1001_DoiSoat_UngThuPhoi_v2.pdf</code>
           </li>
           <li>
             <strong className="text-slate-800 dark:text-slate-100">Nhóm đám mây:</strong>{' '}
@@ -140,7 +140,7 @@ function Task2Supplements({ lang = 'vi' }: { lang?: 'vi' | 'en' }) {
                 </tr>
                 <tr>
                   <td className="p-2.5 font-mono text-indigo-700 dark:text-indigo-400">filetype:pdf</td>
-                  <td className="p-2.5">filetype:pdf EULAR ankylosing spondylitis</td>
+                  <td className="p-2.5">filetype:pdf FDA bioanalytical method validation</td>
                   <td className="p-2.5">Only PDF documents</td>
                 </tr>
                 <tr>
@@ -217,7 +217,7 @@ function Task2Supplements({ lang = 'vi' }: { lang?: 'vi' | 'en' }) {
               </tr>
               <tr>
                 <td className="p-2.5 font-mono text-indigo-700 dark:text-indigo-400">filetype:pdf</td>
-                <td className="p-2.5">filetype:pdf EULAR ankylosing spondylitis</td>
+                <td className="p-2.5">filetype:pdf FDA bioanalytical method validation</td>
                 <td className="p-2.5">Chỉ tài liệu PDF</td>
               </tr>
               <tr>
@@ -259,7 +259,7 @@ function Task3Supplements({ lang = 'vi' }: { lang?: 'vi' | 'en' }) {
         <SupplementShell title="Chain-of-Thought — Clinical Pharmacy Case Study" rubricRef="§4 · Clinical CoT">
           <div className="bg-white dark:bg-slate-800/60 p-4 rounded-xl border border-slate-100 dark:border-slate-700/50 space-y-2 text-xs font-semibold text-slate-600 dark:text-slate-300">
             <p className="italic text-indigo-900/90 dark:text-indigo-300 border-l-2 border-indigo-400 pl-3">
-              Prompt: &quot;Female patient 38yo, AS, taking NSAIDs. Perform step-by-step reasoning (CoT): (1) evaluate disease activity, (2) biological indication per EULAR 2022, (3) safety during pregnancy — citing sources.&quot;
+              Prompt: &quot;Patient with early lung cancer risk. Perform step-by-step reasoning (CoT) to analyze CT scan clinical outcomes: (1) evaluate nodule characteristics, (2) determine malignancy risk category, (3) suggest follow-up screening plan — citing sources.&quot;
             </p>
             <p className="text-justify leading-relaxed">
               AI lists response by step; Pharmacy students <strong className="text-slate-800 dark:text-slate-100">must cross-check</strong> with Decision 361/QD-BYT and National Drug Formulary before noting down conclusions — Human-in-the-loop evidence (Lesson 6).
@@ -293,8 +293,7 @@ function Task3Supplements({ lang = 'vi' }: { lang?: 'vi' | 'en' }) {
       <SupplementShell title="Chain-of-Thought — Ca lâm sàng Dược" rubricRef="§4 · CoT lâm sàng">
         <div className="bg-white dark:bg-slate-800/60 p-4 rounded-xl border border-slate-100 dark:border-slate-700/50 space-y-2 text-xs font-semibold text-slate-600 dark:text-slate-300">
           <p className="italic text-indigo-900/90 dark:text-indigo-300 border-l-2 border-indigo-400 pl-3">
-            Prompt: &quot;Bệnh nhân nữ 38 tuổi, AS, đang dùng NSAID. Hãy suy luận từng bước (CoT): (1) đánh giá hoạt
-            động bệnh, (2) chỉ định sinh học theo EULAR 2022, (3) an toàn mang thai — trích dẫn nguồn.&quot;
+            Prompt: &quot;Bệnh nhân có nguy cơ ung thư phổi sớm. Hãy suy luận từng bước (CoT) để phân tích kết quả lâm sàng CT scan: (1) đánh giá đặc điểm nốt đơn độc, (2) xác định phân nhóm nguy cơ ác tính, (3) đề xuất lịch theo dõi tiếp theo — trích dẫn nguồn.&quot;
           </p>
           <p className="text-justify leading-relaxed">
             AI liệt kê theo bước; sinh viên Dược <strong className="text-slate-800 dark:text-slate-100">bắt buộc đối chiếu</strong> QĐ
@@ -331,7 +330,7 @@ function Task4Supplements({ lang = 'vi' }: { lang?: 'vi' | 'en' }) {
         <SupplementShell title="Netiquette & Team Conflict Resolution" rubricRef="§5 · Digital Culture">
           <ul className="text-xs text-slate-600 dark:text-slate-300 space-y-2 font-semibold list-disc pl-4 leading-relaxed">
             <li>
-              <strong className="text-slate-800 dark:text-slate-100">Netiquette:</strong> Reply to comments within 24h; clearly @mention members; turn on cameras during Zoom pharmacology discussions; do not edit directly when Suggesting Mode is active.
+              <strong className="text-slate-800 dark:text-slate-100">Netiquette:</strong> Reply to comments within 24h; clearly @mention members; turn on cameras during Google Meet pharmacology discussions; do not edit directly when Suggesting Mode is active.
             </li>
             <li>
               <strong className="text-slate-800 dark:text-slate-100">Content Conflict:</strong> When two clinical opinions differ on Google Docs — team leader holds a short vote on Jira, consults Version History, and finalizes per Ministry of Health guidelines / Q1 papers.
@@ -354,11 +353,11 @@ function Task4Supplements({ lang = 'vi' }: { lang?: 'vi' | 'en' }) {
         <ul className="text-xs text-slate-600 dark:text-slate-300 space-y-2 font-semibold list-disc pl-4 leading-relaxed">
           <li>
             <strong className="text-slate-800 dark:text-slate-100">Netiquette:</strong> Trả lời comment trong 24h; ghi rõ @tên thành viên;
-            họp Zoom bật camera khi thảo luận phác đồ; không chỉnh sửa trực tiếp khi đang dùng Suggesting Mode.
+            họp Google Meet bật camera khi thảo luận phác đồ; không chỉnh sửa trực tiếp khi đang dùng Suggesting Mode.
           </li>
           <li>
             <strong className="text-slate-800 dark:text-slate-100">Xung đột nội dung:</strong> Khi hai ý kiến lâm sàng khác nhau trên Google
-            Docs — trưởng nhóm tổ chức vote ngắn trên Trello, lưu Version History và chốt theo guideline Bộ Y tế /
+            Docs — trưởng nhóm tổ chức vote ngắn trên Jira, lưu Version History và chốt theo guideline Bộ Y tế /
             tài liệu Q1.
           </li>
           <li>
