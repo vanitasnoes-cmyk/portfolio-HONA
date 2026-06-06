@@ -425,14 +425,14 @@ function App() {
                   Professional Boolean Query Expression:
                 </span>
                 <div className="bg-indigo-50 border border-indigo-100 text-indigo-950 font-mono text-[10px] sm:text-xs p-3 rounded-lg leading-relaxed select-all">
-                  ("Artificial Intelligence" OR "AI") AND "medical diagnosis" AND "machine learning" AND "medical imaging"
+                  ("Vitamin D" OR "25(OH)D3") AND ("HPLC" OR "LC-MS/MS") AND "plasma"
                 </div>
               </div>
 
               {/* Scholarly Evaluation Table */}
               <div className="space-y-2 pt-2">
                 <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider block font-sans">
-                  Scholarly Appraisal Table (Extracting 5 representative sources out of 11):
+                  Scholarly Appraisal Table (Extracting 5 representative sources out of 12):
                 </span>
                 <div className="overflow-x-auto rounded-xl border border-slate-200/50 bg-white">
                   <table className="w-full text-left border-collapse text-xs font-sans">
@@ -440,52 +440,52 @@ function App() {
                       <tr className="bg-slate-50 text-slate-700 font-bold border-b border-slate-200/60">
                         <th className="p-3">Literature / Source</th>
                         <th className="p-3">Publisher / Reputation</th>
-                        <th className="p-3 text-center">Year</th>
-                        <th className="p-3 text-center">Citations</th>
+                        <th className="p-3">Strengths</th>
+                        <th className="p-3">Limitations</th>
                         <th className="p-3 text-center">Credibility</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100 text-slate-600 font-semibold">
                       <tr>
-                        <td className="p-3 font-bold text-slate-900">"Deep Medicine" Book (Eric Topol)</td>
-                        <td className="p-3">Basic Books / Top Industry Expert</td>
-                        <td className="p-3 text-center">2019</td>
-                        <td className="p-3 text-center text-teal-600">2,400+</td>
+                        <td className="p-3 font-bold text-slate-900">FDA Guidance (2018)</td>
+                        <td className="p-3">US FDA / Official Guideline</td>
+                        <td className="p-3">International standard for bioanalysis</td>
+                        <td className="p-3">No raw experimental data</td>
+                        <td className="p-3 text-center text-indigo-600">10/10</td>
+                      </tr>
+                      <tr>
+                        <td className="p-3 font-bold text-slate-900">Brown et al., 2021</td>
+                        <td className="p-3">Analytical Chemistry / Q1 Journal</td>
+                        <td className="p-3">High sensitivity LC-MS/MS techniques</td>
+                        <td className="p-3">Complex instrument setup</td>
                         <td className="p-3 text-center text-indigo-600">9.5/10</td>
                       </tr>
                       <tr>
-                        <td className="p-3 font-bold text-slate-900">Nature Medicine (Esteva et al.)</td>
-                        <td className="p-3">Springer Nature / Leading Q1 Journal</td>
-                        <td className="p-3 text-center">2017</td>
-                        <td className="p-3 text-center text-teal-600">10,500+</td>
-                        <td className="p-3 text-center text-indigo-600">10.0/10</td>
+                        <td className="p-3 font-bold text-slate-900">Smith et al., 2020</td>
+                        <td className="p-3">Journal of Chromatography B / Q1 Journal</td>
+                        <td className="p-3">Clear HPLC method for plasma Vitamin D</td>
+                        <td className="p-3">Small clinical sample size</td>
+                        <td className="p-3 text-center text-indigo-600">9/10</td>
                       </tr>
                       <tr>
-                        <td className="p-3 font-bold text-slate-900">The Lancet Digital Health</td>
-                        <td className="p-3">Elsevier / Extremely High Clinical Review</td>
-                        <td className="p-3 text-center">2020</td>
-                        <td className="p-3 text-center text-teal-600">850+</td>
-                        <td className="p-3 text-center text-indigo-600">9.5/10</td>
-                      </tr>
-                      <tr>
-                        <td className="p-3 font-bold text-slate-900">WHO Digital Health Strategy</td>
+                        <td className="p-3 font-bold text-slate-900">WHO Guidance (2020)</td>
                         <td className="p-3">World Health Organization / Official</td>
-                        <td className="p-3 text-center">2021</td>
-                        <td className="p-3 text-center text-teal-600">Original Doc</td>
-                        <td className="p-3 text-center text-indigo-600">9.8/10</td>
+                        <td className="p-3">High authority, general standards</td>
+                        <td className="p-3">Too general, lacks implementation details</td>
+                        <td className="p-3 text-center text-indigo-600">9/10</td>
                       </tr>
                       <tr>
-                        <td className="p-3 font-bold text-slate-900">JMIR Medical Informatics</td>
-                        <td className="p-3">JMIR Publications / Digital Health Specialty</td>
-                        <td className="p-3 text-center">2022</td>
-                        <td className="p-3 text-center text-teal-600">320+</td>
-                        <td className="p-3 text-center text-indigo-600">9.0/10</td>
+                        <td className="p-3 font-bold text-slate-900">Jones et al., 2019</td>
+                        <td className="p-3">Clinical Chemistry / Q1 Journal</td>
+                        <td className="p-3">Direct comparison of HPLC and LC-MS/MS</td>
+                        <td className="p-3">Lacks extensive clinical patient data</td>
+                        <td className="p-3 text-center text-indigo-600">8.5/10</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
                 <span className="text-[10px] text-slate-400 italic block leading-relaxed mt-1">
-                  * All 11 literature sources are strictly appraised based on 5 criteria: Author Reputation, Publisher Status, Research Methodology, Citation Frequency, and Currency.
+                  * All 12 literature sources are strictly appraised based on 5 criteria: Author Reputation, Publisher Status, Research Methodology, Citation Frequency, and Currency.
                 </span>
               </div>
             </div>
@@ -501,42 +501,63 @@ function App() {
                 {/* Task 1 */}
                 <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2.5 shadow-xs">
                   <span className="text-xs font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
-                    Task 1: Summarizing 5Vs of Medical Big Data
+                    Task 1: Summarizing COVID-19 mRNA Vaccine Mechanism
                   </span>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
                     <div className="p-3 bg-rose-50/50 rounded-lg border border-rose-100/30">
                       <span className="font-bold text-rose-800 block mb-1">Initial Prompt (Unimproved):</span>
-                      <p className="text-slate-600 italic">"Summarize Big Data for me."</p>
+                      <p className="text-slate-600 italic">"Summarize the paper on COVID-19 mRNA vaccine mechanism."</p>
                     </div>
                     <div className="p-3 bg-emerald-50/50 rounded-lg border border-emerald-100/30">
                       <span className="font-bold text-emerald-800 block mb-1">Improved Prompt (CLEAR/CRAC):</span>
-                      <p className="text-slate-700 font-semibold italic">"Acting as a Medical Big Data Analyst, summarize the core 5Vs of Big Data in a clear 2-column table, easy to understand for first-year Medical and Pharmacy students."</p>
+                      <p className="text-slate-700 font-semibold italic">"Acting as an immunology lecturer, summarize the mRNA vaccine paper structured as: Background, Mechanism (mRNA → protein → immune response), Advantages/Limitations, and Significance. Require conciseness, scientific terms, no external info."</p>
                     </div>
                   </div>
                   <div className="p-3 bg-slate-50 rounded-lg border border-slate-100 text-xs">
                     <span className="font-bold text-slate-800 block mb-1">Superior Outcome from AI:</span>
-                    <p className="text-slate-600 text-justify leading-relaxed">AI outputs a detailed 2-column table defining precisely the 5 properties: Volume, Velocity, Variety, Veracity, and Value. The information is focused, visual, completely eliminating hallucinations and carrying a clear medical orientation.</p>
+                    <p className="text-slate-600 text-justify leading-relaxed">AI generates a structured summary under 250 words, precisely separating background, biomedical mechanism, and scientific significance with high academic rigor.</p>
                   </div>
                 </div>
 
                 {/* Task 2 */}
                 <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2.5 shadow-xs">
                   <span className="text-xs font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
-                    Task 2: Explaining Artificial Neural Networks (ANN)
+                    Task 2: Explaining Lipid Nanoparticles (LNP)
                   </span>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
                     <div className="p-3 bg-rose-50/50 rounded-lg border border-rose-100/30">
                       <span className="font-bold text-rose-800 block mb-1">Initial Prompt (Unimproved):</span>
-                      <p className="text-slate-600 italic">"What is an artificial neural network?"</p>
+                      <p className="text-slate-600 italic">"Explain what a Lipid Nanoparticle is."</p>
                     </div>
                     <div className="p-3 bg-emerald-50/50 rounded-lg border border-emerald-100/30">
                       <span className="font-bold text-emerald-800 block mb-1">Improved Prompt (Chain-of-Thought):</span>
-                      <p className="text-slate-700 font-semibold italic">"Acting as an IT Lecturer, explain the operating mechanism of Artificial Neural Networks (ANN) using a metaphor of how the brain recognizes an apple in 3 Chain-of-Thought reasoning steps."</p>
+                      <p className="text-slate-700 font-semibold italic">"Acting as a pharmaceutical nanotechnology lecturer, explain Lipid Nanoparticles in sequence: Definition, Composition of components, Step-by-step mechanism, Comparison with traditional drug delivery, and Real-world applications."</p>
                     </div>
                   </div>
                   <div className="p-3 bg-slate-50 rounded-lg border border-slate-100 text-xs">
                     <span className="font-bold text-slate-800 block mb-1">Superior Outcome from AI:</span>
-                    <p className="text-slate-600 text-justify leading-relaxed">AI explains the ANN structure using the apple metaphor (input layer analyzing color/size, hidden layers linking features, output layer delivering the conclusion). The logical Chain-of-Thought approach helps learners deeply understand the architectural principles without technical overload.</p>
+                    <p className="text-slate-600 text-justify leading-relaxed">AI details the LNP structure and component lipids, systematically tracking the cellular uptake and mRNA release process in a logical, step-by-step manner.</p>
+                  </div>
+                </div>
+
+                {/* Task 3 */}
+                <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2.5 shadow-xs">
+                  <span className="text-xs font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
+                    Task 3: Generating HPLC Revision Questions
+                  </span>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+                    <div className="p-3 bg-rose-50/50 rounded-lg border border-rose-100/30">
+                      <span className="font-bold text-rose-800 block mb-1">Initial Prompt (Unimproved):</span>
+                      <p className="text-slate-600 italic">"Create revision questions on HPLC."</p>
+                    </div>
+                    <div className="p-3 bg-emerald-50/50 rounded-lg border border-emerald-100/30">
+                      <span className="font-bold text-emerald-800 block mb-1">Improved Prompt (Few-shot):</span>
+                      <p className="text-slate-700 font-semibold italic">"Acting as a pharmaceutical analysis lecturer, create HPLC questions stratified by Bloom's taxonomy: Remembering, Understanding, Applying, and Analyzing. Include answers and explanations. Link to a practical example (e.g., paracetamol - aspirin separation)."</p>
+                    </div>
+                  </div>
+                  <div className="p-3 bg-slate-50 rounded-lg border border-slate-100 text-xs">
+                    <span className="font-bold text-slate-800 block mb-1">Superior Outcome from AI:</span>
+                    <p className="text-slate-600 text-justify leading-relaxed">AI designs a structured exam set that ranges from fundamental recognition questions to complex analytical case solving, matching real-world exam standards.</p>
                   </div>
                 </div>
               </div>
@@ -607,35 +628,94 @@ function App() {
           return (
             <div className="space-y-4 bg-slate-50/70 p-5 border border-slate-100 rounded-2xl">
               <h6 className="text-xs font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-2">
-                🌱 Creative Medical Media Output & Canva Designs
+                🌱 Generative AI Creative Content & Canva Infographic Design
               </h6>
               
               <div className="space-y-4">
-                {/* Blog Preview */}
-                <div className="bg-white p-5 rounded-xl border border-slate-100 space-y-3 shadow-xs">
-                  <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
-                    <span className="text-[10px] uppercase font-black text-indigo-600 tracking-wider font-sans">
-                      Completed Blog Post Preview
-                    </span>
-                    <span className="text-[10px] text-slate-400 font-bold font-sans">Published: 2026</span>
-                  </div>
-                  <h5 className="text-slate-900 text-sm sm:text-base font-black font-sans leading-snug">
-                    Green Living in the Digital Era: Acknowledging AI's Carbon Footprint
+                {/* Topic Intro */}
+                <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2 shadow-xs">
+                  <span className="text-[10px] uppercase font-black text-indigo-600 tracking-wider font-sans">
+                    Infographic Topic
+                  </span>
+                  <h5 className="text-slate-900 text-sm font-black font-sans leading-snug">
+                    Effective Prompt Writing for Building Job & Internship Portfolios
                   </h5>
-                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed text-justify font-semibold italic">
-                    "In the booming digital age, we marvel at AI's power while forgetting that training a large language model consumes millions of liters of water and emits massive amounts of carbon. Generating a single image with Sora 2 is estimated to consume 1 kWh. In Vietnam, electronic waste is projected to exceed 250,000 tons by 2025 under EPR regulations. As future digital pharmacists, we urge the student community to practice green computing: power down peripherals, search with Ecosia, and bring e-waste to free collection points at 17 Trung Yen 3 (Hanoi) or 82 Ba Huyen Thanh Quan (HCMC)..."
+                  <p className="text-slate-600 text-xs leading-relaxed text-justify font-semibold">
+                    Aim: Master generative AI tools (ChatGPT, DALL·E, and Canva AI) to co-create a professional infographic demonstrating effective prompt engineering for portfolio building.
                   </p>
                 </div>
 
-                {/* Infographic Design Rules */}
+                {/* Prompt Comparison */}
+                <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2.5 shadow-xs">
+                  <span className="text-xs font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
+                    Prompt Engineering Evolution
+                  </span>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                    <div className="p-3 bg-slate-50 rounded-lg border border-slate-150">
+                      <span className="font-bold text-slate-800 block mb-1">ChatGPT Text Prompts:</span>
+                      <p className="text-slate-600 italic">Initial: "Write infographic content about effective prompt writing for job and internship portfolio..."</p>
+                      <p className="text-slate-700 font-bold italic mt-1.5">Improved: "Summarize the prompt writing content into main points, bullet format, each point under 15 words."</p>
+                    </div>
+                    <div className="p-3 bg-slate-50 rounded-lg border border-slate-150">
+                      <span className="font-bold text-slate-800 block mb-1">DALL·E Image Prompts:</span>
+                      <p className="text-slate-600 italic">Initial: "Flat illustration showing clear vs unclear prompt, modern style, minimal, blue tone..."</p>
+                      <p className="text-slate-700 font-bold italic mt-1.5">Improved: "Split-screen illustration comparing vague prompt vs clear prompt, labeled, modern infographic style."</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* AI Tool Matrix Table */}
+                <div className="space-y-2">
+                  <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider block font-sans">
+                    AI Tool Evaluation Matrix:
+                  </span>
+                  <div className="overflow-x-auto rounded-xl border border-slate-200/50 bg-white">
+                    <table className="w-full text-left border-collapse text-xs font-sans">
+                      <thead>
+                        <tr className="bg-slate-50 text-slate-700 font-bold border-b border-slate-200/60">
+                          <th className="p-3">AI Tool</th>
+                          <th className="p-3">Main Function</th>
+                          <th className="p-3">Strengths</th>
+                          <th className="p-3">Limitations</th>
+                          <th className="p-3 text-center">Effectiveness</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-slate-100 text-slate-600 font-semibold">
+                        <tr>
+                          <td className="p-3 font-bold text-slate-900">ChatGPT</td>
+                          <td className="p-3">Content generation</td>
+                          <td className="p-3">Fast, logical structure</td>
+                          <td className="p-3">Sometimes wordy, needs refining</td>
+                          <td className="p-3 text-center text-teal-600">High</td>
+                        </tr>
+                        <tr>
+                          <td className="p-3 font-bold text-slate-900">DALL·E</td>
+                          <td className="p-3">Image generation</td>
+                          <td className="p-3">Creative, highly visual</td>
+                          <td className="p-3">Can deviate from exact prompt</td>
+                          <td className="p-3 text-center text-teal-600">Medium-High</td>
+                        </tr>
+                        <tr>
+                          <td className="p-3 font-bold text-slate-900">Canva AI</td>
+                          <td className="p-3">Infographic layout</td>
+                          <td className="p-3">Easy to customize & design</td>
+                          <td className="p-3">Depends heavily on input quality</td>
+                          <td className="p-3 text-center text-teal-600">High</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                {/* Design Guidelines */}
                 <div className="bg-indigo-50/50 p-4 rounded-xl border border-indigo-100/30 space-y-2">
                   <span className="text-xs font-black text-indigo-900 uppercase tracking-wide block font-sans">
-                    📐 Applied Canva Infographic Design Standards:
+                    📐 Applied Infographic Design Principles:
                   </span>
                   <ul className="text-xs text-slate-700 space-y-1.5 list-disc pl-4 font-semibold leading-relaxed">
-                    <li><strong className="text-slate-900">Color Palette:</strong> Used deep green combined with white as dominant tones to convey an ecological message and optimize contrast/readability.</li>
-                    <li><strong className="text-slate-900">Visual Weight:</strong> Structured in 3 clear sections, using enlarged carbon statistics to grab the reader's attention instantly.</li>
-                    <li><strong className="text-slate-900">Medical Relevance:</strong> Integrated Extended Producer Responsibility (EPR) concepts in the pharmaceutical industry to elevate practical value.</li>
+                    <li><strong className="text-slate-900">Color Scheme:</strong> Used a clean blue-white color palette to convey professionalism and optimize contrast.</li>
+                    <li><strong className="text-slate-900">Visual Weight & Hierarchy:</strong> Balanced 3-part layout (Concept &rarr; Rules &rarr; Portfolio application) utilizing bullet points under 15 words to facilitate rapid scanning.</li>
+                    <li><strong className="text-slate-900">Human-AI Collaboration:</strong> Leveraged AI for initial ideas, text summarizing, and background graphics while human editor maintained &gt;50% contribution through structural customization and content personalization.</li>
                   </ul>
                 </div>
               </div>
@@ -651,13 +731,13 @@ function App() {
               {/* 7 Gold Principles Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 {[
-                  { num: "1", title: "PATIENT HEALTH FIRST", en: "Patient Health First", desc: "Clinical ethics above all. AI is merely a supporting tool; final decisions must place the health interests and life safety of the patient at the core." },
-                  { num: "2", title: "SOURCE TRANSPARENCY", en: "Transparency", desc: "Always declare the level of AI assistance in professional reports. Fully cite original primary sources using Mendeley/Zotero." },
-                  { num: "3", title: "CROSS-VERIFICATION", en: "Cross-verification", desc: "Never rely blindly on AI outputs. Cross-verification is mandatory against official clinical guidelines from the Ministry of Health (Decision 361)." },
-                  { num: "4", title: "DATA PRIVACY", en: "Data Privacy", desc: "Strictly comply with patient data privacy regulations. Avoid uploading patient identities or sensitive medical records onto public AI models." },
-                  { num: "5", title: "HUMAN IN THE LOOP", en: "Human-in-the-loop", desc: "Retain professional agency. Use personal knowledge to audit, detect, and correct critical AI hallucinations (e.g. Chinese characters in translations)." },
-                  { num: "6", title: "CONTINUOUS LEARNING", en: "Continuous Learning", desc: "Continuously upgrade digital capabilities and keep pace with the latest medical clinical regimens to master digital healthcare tools." },
-                  { num: "7", title: "SELECTIVE ADOPTION", en: "Selective Adoption", desc: "Select optimal AI models for specific tasks (e.g., Perplexity for literature searches, Gemini for prompt engineering)." }
+                  { num: "1", title: "TRANSPARENCY", en: "Transparency", desc: "Always declare the level of AI assistance in all submitted exercises, essays, or research reports to ensure academic honesty." },
+                  { num: "2", title: "VERIFICATION", en: "Verification", desc: "Never trust AI blindly. Every clinical dose, drug mechanism, or diagnostic study must be cross-checked against official databases (PubMed, UpToDate)." },
+                  { num: "3", title: "PRIVACY", en: "Privacy", desc: "Strictly protect patient confidentiality. Never upload identifying details or sensitive clinical medical records to public AI models." },
+                  { num: "4", title: "FAIRNESS", en: "Fairness", desc: "Never use AI to gain unfair advantages in exams, or to falsify or manipulate scientific data in academic research." },
+                  { num: "5", title: "ORIGINALITY", en: "Originality", desc: "AI serves only as a helper. The core arguments, analytical logic, and final conclusions must represent your own cognitive effort." },
+                  { num: "6", title: "ACCOUNTABILITY", en: "Accountability", desc: "Bear sole responsibility before the university, lecturers, and law for the accuracy and legality of all submitted papers." },
+                  { num: "7", title: "CONTINUOUS LEARNING", en: "Continuous Learning", desc: "Actively update knowledge on digital ethics, national laws, and VNU regulations to adjust AI adoption behaviors accordingly." }
                 ].map((rule) => (
                   <div key={rule.num} className="bg-white p-4 rounded-xl border border-slate-100 space-y-1.5 shadow-xs hover-lift">
                     <div className="flex items-center gap-2">
@@ -681,10 +761,10 @@ function App() {
               {/* Case Study alert */}
               <div className="p-4 bg-amber-50 border border-amber-100 rounded-xl space-y-1 mt-2">
                 <span className="text-[10px] uppercase font-black text-amber-800 tracking-wider block font-sans">
-                  ⚠️ Clinical Audit of Ankylosing Spondylitis (AS) Case:
+                  ⚠️ Academic Audit of Lung Cancer CT Scan AI Report:
                 </span>
                 <p className="text-xs text-amber-950 font-semibold leading-relaxed text-justify">
-                  Applied standard clinical protocols cross-referencing EULAR 2022 and Ministry of Health Guidelines. Detected and successfully corrected a critical clinical AI hallucination (insertion of the Chinese term "口服" in translated TNF inhibitor regimens), ensuring absolute medical safety.
+                  Applied standard research analysis on Claude 3.5 Sonnet IMRAD outputs for lung cancer CT scan early diagnosis. Detected and corrected a critical AI hallucination (inversion of False Positive and False Negative rate percentage values) and highlighted racial data bias, ensuring strict scientific accuracy.
                 </p>
               </div>
             </div>
@@ -764,14 +844,14 @@ function App() {
                 Biểu thức Boolean truy vấn chuyên nghiệp (Boolean Query):
               </span>
               <div className="bg-indigo-50 border border-indigo-100 text-indigo-950 font-mono text-[10px] sm:text-xs p-3 rounded-lg leading-relaxed select-all">
-                ("Artificial Intelligence" OR "AI") AND "medical diagnosis" AND "machine learning" AND "medical imaging"
+                ("Vitamin D" OR "25(OH)D3") AND ("HPLC" OR "LC-MS/MS") AND "plasma"
               </div>
             </div>
 
             {/* Scholarly Evaluation Table */}
             <div className="space-y-2 pt-2">
               <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider block font-sans">
-                Bảng thẩm định học thuật (Trích xuất 5 nguồn tiêu biểu trong số 11 nguồn):
+                Bảng thẩm định học thuật (Trích xuất 5 nguồn tiêu biểu trong số 12 nguồn):
               </span>
               <div className="overflow-x-auto rounded-xl border border-slate-200/50 bg-white">
                 <table className="w-full text-left border-collapse text-xs font-sans">
@@ -779,52 +859,52 @@ function App() {
                     <tr className="bg-slate-50 text-slate-700 font-bold border-b border-slate-200/60">
                       <th className="p-3">Tài liệu / Nguồn</th>
                       <th className="p-3">Nhà xuất bản / Uy tín</th>
-                      <th className="p-3 text-center">Năm</th>
-                      <th className="p-3 text-center">Trích dẫn</th>
+                      <th className="p-3">Ưu điểm</th>
+                      <th className="p-3">Hạn chế</th>
                       <th className="p-3 text-center">Điểm tin cậy</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-600 font-semibold">
                     <tr>
-                      <td className="p-3 font-bold text-slate-900">Sách "Deep Medicine" (Eric Topol)</td>
-                      <td className="p-3">Basic Books / Chuyên gia đầu ngành</td>
-                      <td className="p-3 text-center">2019</td>
-                      <td className="p-3 text-center text-teal-600">2,400+</td>
+                      <td className="p-3 font-bold text-slate-900">Hướng dẫn FDA (2018)</td>
+                      <td className="p-3">US FDA / Hướng dẫn chính thức</td>
+                      <td className="p-3">Chuẩn mực quốc tế về thẩm định sinh học</td>
+                      <td className="p-3">Không có dữ liệu thực nghiệm</td>
+                      <td className="p-3 text-center text-indigo-600">10/10</td>
+                    </tr>
+                    <tr>
+                      <td className="p-3 font-bold text-slate-900">Brown et al., 2021</td>
+                      <td className="p-3">Analytical Chemistry / Tạp chí Q1</td>
+                      <td className="p-3">Kỹ thuật LC-MS/MS độ nhạy cực cao</td>
+                      <td className="p-3">Thiết bị phức tạp, vận hành tốn kém</td>
                       <td className="p-3 text-center text-indigo-600">9.5/10</td>
                     </tr>
                     <tr>
-                      <td className="p-3 font-bold text-slate-900">Nature Medicine (Esteva et al.)</td>
-                      <td className="p-3">Springer Nature / Tạp chí Q1 hàng đầu</td>
-                      <td className="p-3 text-center">2017</td>
-                      <td className="p-3 text-center text-teal-600">10,500+</td>
-                      <td className="p-3 text-center text-indigo-600">10.0/10</td>
+                      <td className="p-3 font-bold text-slate-900">Smith et al., 2020</td>
+                      <td className="p-3">Journal of Chromatography B / Tạp chí Q1</td>
+                      <td className="p-3">Phương pháp HPLC định lượng Vitamin D rõ ràng</td>
+                      <td className="p-3">Cỡ mẫu lâm sàng nhỏ</td>
+                      <td className="p-3 text-center text-indigo-600">9/10</td>
                     </tr>
                     <tr>
-                      <td className="p-3 font-bold text-slate-900">The Lancet Digital Health</td>
-                      <td className="p-3">Elsevier / Thẩm định lâm sàng cực cao</td>
-                      <td className="p-3 text-center">2020</td>
-                      <td className="p-3 text-center text-teal-600">850+</td>
-                      <td className="p-3 text-center text-indigo-600">9.5/10</td>
-                    </tr>
-                    <tr>
-                      <td className="p-3 font-bold text-slate-900">WHO Digital Health Strategy</td>
+                      <td className="p-3 font-bold text-slate-900">Hướng dẫn WHO (2020)</td>
                       <td className="p-3">Tổ chức Y tế Thế giới / Chính thức</td>
-                      <td className="p-3 text-center">2021</td>
-                      <td className="p-3 text-center text-teal-600">Tài liệu gốc</td>
-                      <td className="p-3 text-center text-indigo-600">9.8/10</td>
+                      <td className="p-3">Uy tín cao, định hướng tổng quan tốt</td>
+                      <td className="p-3">Tổng quan chung, ít chi tiết kỹ thuật</td>
+                      <td className="p-3 text-center text-indigo-600">9/10</td>
                     </tr>
                     <tr>
-                      <td className="p-3 font-bold text-slate-900">JMIR Medical Informatics</td>
-                      <td className="p-3">JMIR Publications / Chuyên ngành Y số</td>
-                      <td className="p-3 text-center">2022</td>
-                      <td className="p-3 text-center text-teal-600">320+</td>
-                      <td className="p-3 text-center text-indigo-600">9.0/10</td>
+                      <td className="p-3 font-bold text-slate-900">Jones et al., 2019</td>
+                      <td className="p-3">Clinical Chemistry / Tạp chí Q1</td>
+                      <td className="p-3">So sánh trực tiếp giữa HPLC và LC-MS/MS</td>
+                      <td className="p-3">Thiếu dữ liệu bệnh nhân thực tế sâu rộng</td>
+                      <td className="p-3 text-center text-indigo-600">8.5/10</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               <span className="text-[10px] text-slate-400 italic block leading-relaxed mt-1">
-                * Toàn bộ 11 nguồn tài liệu được thẩm định nghiêm ngặt qua 5 tiêu chí: Uy tín tác giả, vị thế Nhà xuất bản khoa học, Phương pháp nghiên cứu thực nghiệm, Tần suất trích dẫn khoa học và Tính cập nhật.
+                * Toàn bộ 12 nguồn tài liệu được thẩm định nghiêm ngặt qua 5 tiêu chí: Uy tín tác giả, vị thế Nhà xuất bản khoa học, Phương pháp nghiên cứu thực nghiệm, Tần suất trích dẫn khoa học và Tính cập nhật.
               </span>
             </div>
           </div>
@@ -840,42 +920,63 @@ function App() {
               {/* Task 1 */}
               <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2.5 shadow-xs">
                 <span className="text-xs font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
-                  Tác vụ 1: Tóm tắt 5Vs của Big Data y khoa
+                  Tác vụ 1: Tóm tắt cơ chế vaccine mRNA phòng COVID-19
                 </span>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
                   <div className="p-3 bg-rose-50/50 rounded-lg border border-rose-100/30">
                     <span className="font-bold text-rose-800 block mb-1">Prompt Ban đầu (Chưa cải tiến):</span>
-                    <p className="text-slate-600 italic">"Hãy tóm tắt về Big Data cho tôi."</p>
+                    <p className="text-slate-600 italic">"Hãy tóm tắt bài báo về cơ chế vaccine mRNA trong COVID-19."</p>
                   </div>
                   <div className="p-3 bg-emerald-50/50 rounded-lg border border-emerald-100/30">
                     <span className="font-bold text-emerald-800 block mb-1">Prompt Cải tiến (CLEAR/CRAC):</span>
-                    <p className="text-slate-700 font-semibold italic">"Với vai trò là Chuyên gia phân tích dữ liệu y tế lớn, hãy tóm tắt các đặc tính cốt lõi 5Vs của Big Data dưới dạng bảng 2 cột rõ ràng, dễ hiểu cho sinh viên năm nhất ngành Y Dược."</p>
+                    <p className="text-slate-700 font-semibold italic">"Bạn là giảng viên miễn dịch học. Hãy tóm tắt bài báo về vaccine mRNA theo cấu trúc: Bối cảnh, Cơ chế (mRNA → protein → đáp ứng miễn dịch), Ưu điểm và hạn chế, Ý nghĩa. Yêu cầu: Súc tích, chính xác, sử dụng thuật ngữ chuyên ngành."</p>
                   </div>
                 </div>
                 <div className="p-3 bg-slate-50 rounded-lg border border-slate-100 text-xs">
                   <span className="font-bold text-slate-800 block mb-1">Kết quả vượt trội từ AI:</span>
-                  <p className="text-slate-600 text-justify leading-relaxed">AI xuất ra bảng 2 cột chi tiết định nghĩa chính xác 5 thuộc tính: Volume (Thể tích), Velocity (Tốc độ), Variety (Đa dạng), Veracity (Độ tin cậy), Value (Giá trị). Thông tin tập trung, trực quan, loại bỏ hoàn toàn các lỗi ảo giác và định hướng y học rõ ràng.</p>
+                  <p className="text-slate-600 text-justify leading-relaxed">AI xuất ra văn bản tóm tắt có chiều sâu học thuật cao dưới 250 từ, phân tách rõ ràng bối cảnh dịch bệnh, cơ chế biểu hiện kháng nguyên y sinh, ưu nhược điểm của công nghệ mRNA và ý nghĩa thực tế.</p>
                 </div>
               </div>
 
               {/* Task 2 */}
               <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2.5 shadow-xs">
                 <span className="text-xs font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
-                  Tác vụ 2: Giải thích Mạng nơ-ron nhân tạo (ANN)
+                  Tác vụ 2: Giải thích hệ dẫn truyền thuốc Lipid Nanoparticle (LNP)
                 </span>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
                   <div className="p-3 bg-rose-50/50 rounded-lg border border-rose-100/30">
                     <span className="font-bold text-rose-800 block mb-1">Prompt Ban đầu (Chưa cải tiến):</span>
-                    <p className="text-slate-600 italic">"Mạng nơ-ron nhân tạo là gì?"</p>
+                    <p className="text-slate-600 italic">"Giải thích Lipid Nanoparticle là gì."</p>
                   </div>
                   <div className="p-3 bg-emerald-50/50 rounded-lg border border-emerald-100/30">
                     <span className="font-bold text-emerald-800 block mb-1">Prompt Cải tiến (Chain-of-Thought):</span>
-                    <p className="text-slate-700 font-semibold italic">"Hãy đóng vai giảng viên Công nghệ thông tin, giải thích cơ chế hoạt động của Mạng nơ-ron nhân tạo (ANN) thông qua ví dụ ẩn dụ cách bộ não nhận diện quả táo qua 3 bước suy luận Chain-of-Thought."</p>
+                    <p className="text-slate-700 font-semibold italic">"Bạn là giảng viên công nghệ nano dược phẩm. Hãy giải thích Lipid Nanoparticle theo trình tự: Định nghĩa, Cấu trúc từng thành phần, Cơ chế hoạt động từng bước, So sánh với hệ truyền thuốc truyền thống, Ứng dụng thực tế."</p>
                   </div>
                 </div>
                 <div className="p-3 bg-slate-50 rounded-lg border border-slate-100 text-xs">
                   <span className="font-bold text-slate-800 block mb-1">Kết quả vượt trội từ AI:</span>
-                  <p className="text-slate-600 text-justify leading-relaxed">AI giải thích cấu trúc ANN bằng ẩn dụ quả táo (lớp đầu vào phân tích màu sắc/kích thước, lớp ẩn kết nối đặc trưng, lớp đầu ra đưa kết luận). Cách tiếp cận logic Chain-of-Thought giúp người học hiểu sâu nguyên lý cấu tạo mà không bị quá tải kiến thức kỹ thuật.</p>
+                  <p className="text-slate-600 text-justify leading-relaxed">AI trình bày chi tiết cấu trúc LNP (phân lớp lipid ion hóa, cholesterol, PEG-lipid) và cơ chế bọc bảo vệ phân tử mRNA kém bền vững. Phương pháp Chain-of-Thought giúp người học hiểu rõ từng bước xâm nhập tế bào qua nội bào và phóng thích thuốc.</p>
+                </div>
+              </div>
+
+              {/* Task 3 */}
+              <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2.5 shadow-xs">
+                <span className="text-xs font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
+                  Tác vụ 3: Tạo câu hỏi ôn tập Sắc ký lỏng hiệu năng cao (HPLC)
+                </span>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+                  <div className="p-3 bg-rose-50/50 rounded-lg border border-rose-100/30">
+                    <span className="font-bold text-rose-800 block mb-1">Prompt Ban đầu (Chưa cải tiến):</span>
+                    <p className="text-slate-600 italic">"Tạo câu hỏi ôn tập về HPLC."</p>
+                  </div>
+                  <div className="p-3 bg-emerald-50/50 rounded-lg border border-emerald-100/30">
+                    <span className="font-bold text-emerald-800 block mb-1">Prompt Cải tiến (Few-shot Prompting):</span>
+                    <p className="text-slate-700 font-semibold italic">"Bạn là giảng viên phân tích dược phẩm. Hãy tạo bộ câu hỏi về HPLC gồm 4 phần: Nhận biết, Hiểu, Vận dụng, Vận dụng cao. Yêu cầu: Có đáp án và giải thích, gắn với thực tế tách paracetamol – aspirin, đảm bảo độ khó tăng dần."</p>
+                  </div>
+                </div>
+                <div className="p-3 bg-slate-50 rounded-lg border border-slate-100 text-xs">
+                  <span className="font-bold text-slate-800 block mb-1">Kết quả vượt trội từ AI:</span>
+                  <p className="text-slate-600 text-justify leading-relaxed">AI thiết lập thành công đề thi phân hóa năng lực người học rõ rệt theo các cấp độ nhận thức của Bloom. Các câu hỏi vận dụng gắn liền với thực hành kiểm nghiệm dược phẩm thực tế tại VNU-UMP.</p>
                 </div>
               </div>
             </div>
@@ -915,7 +1016,7 @@ function App() {
                   📝 Google Docs
                 </span>
                 <p className="text-xs text-slate-600 leading-relaxed text-justify font-semibold">
-                  Đồng soạn thảo trực tiếp kịch bản video thuyết trình về Rối loạn lipid máu. Kích hoạt tính năng đóng góp ý kiến (Suggesting Mode) để chỉnh sửa chéo nội dung lâm sàng, bình luận góp ý (Comments) tại từng dòng và theo dõi chặt chẽ lịch sử phiên bản (Version History) để tránh mất mát dữ liệu nghiên cứu.
+                  Đồng soạn thảo trực tiếp kịch bản thuyết trình phân tích ca lâm sàng Tăng huyết áp số 1. Kích hoạt tính năng đóng góp ý kiến (Suggesting Mode) để chỉnh sửa chéo nội dung lâm sàng, bình luận góp ý (Comments) tại từng dòng và theo dõi chặt chẽ lịch sử phiên bản (Version History) để tránh mất mát dữ liệu nghiên cứu.
                 </p>
               </div>
 
@@ -946,35 +1047,94 @@ function App() {
         return (
           <div className="space-y-4 bg-slate-50/70 p-5 border border-slate-100 rounded-2xl">
             <h6 className="text-xs font-black text-indigo-900 uppercase tracking-widest font-sans border-b border-indigo-100/50 pb-2">
-              🌱 Sản phẩm Sáng tạo Truyền thông Y học & Thiết kế Canva
+              🌱 Sản phẩm Sáng tạo Truyền thông & Thiết kế Infographic Canva
             </h6>
             
             <div className="space-y-4">
-              {/* Blog Preview */}
-              <div className="bg-white p-5 rounded-xl border border-slate-100 space-y-3 shadow-xs">
-                <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
-                  <span className="text-[10px] uppercase font-black text-indigo-600 tracking-wider font-sans">
-                    Xem trước bài viết Blog hoàn thiện
-                  </span>
-                  <span className="text-[10px] text-slate-400 font-bold font-sans">Đăng tải: 2026</span>
-                </div>
-                <h5 className="text-slate-900 text-sm sm:text-base font-black font-sans leading-snug">
-                  Sống Xanh trong Kỷ nguyên Số: Nhìn nhận Dấu chân Carbon từ Trí tuệ Nhân tạo
+              {/* Topic Intro */}
+              <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2 shadow-xs">
+                <span className="text-[10px] uppercase font-black text-indigo-600 tracking-wider font-sans">
+                  Đề tài Infographic
+                </span>
+                <h5 className="text-slate-900 text-sm font-black font-sans leading-snug">
+                  Cách viết prompt hiệu quả để xây dựng portfolio xin việc & thực tập
                 </h5>
-                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed text-justify font-semibold italic">
-                  "Trong thời đại công nghệ số bùng nổ, chúng ta say sưa với sức mạnh của AI mà quên mất rằng việc huấn luyện một mô hình ngôn ngữ lớn có thể tiêu thụ hàng triệu lít nước và phát thải lượng carbon khổng lồ. Ước tính, mỗi hình ảnh do trí tuệ nhân tạo Sora 2 tạo ra tiêu tốn 1 kWh năng lượng điện. Tại Việt Nam, rác thải công nghệ (e-waste) dự kiến sẽ vượt quá 250.000 tấn vào năm 2025 theo chuẩn quy định EPR. Với tư cách là những Dược sĩ số tương lai, chúng tôi kêu gọi cộng đồng sinh viên thực hành sống xanh số: Tắt các thiết bị ngoại vi khi không hoạt động, cài đặt bộ máy tìm kiếm Ecosia xanh, và mang rác thải điện tử đến các điểm thu gom miễn phí tại 17 Trung Yên 3 (Hà Nội) hoặc 82 Bà Huyện Thanh Quan (TP.HCM)..."
+                <p className="text-slate-600 text-xs leading-relaxed text-justify font-semibold">
+                  Mục tiêu: Thành thạo phối hợp sử dụng các công cụ AI tạo sinh (ChatGPT, DALL·E, và Canva AI) để tạo ra sản phẩm infographic chuyên nghiệp hướng dẫn viết prompt tối ưu cho portfolio sinh viên.
                 </p>
               </div>
 
-              {/* Infographic Design Rules */}
+              {/* Prompt Comparison */}
+              <div className="bg-white p-4 rounded-xl border border-slate-100 space-y-2.5 shadow-xs">
+                <span className="text-xs font-black text-slate-800 uppercase tracking-wide block font-sans border-l-3 border-indigo-500 pl-2">
+                  Quá trình thử nghiệm và cải tiến Prompt
+                </span>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                  <div className="p-3 bg-slate-50 rounded-lg border border-slate-150">
+                    <span className="font-bold text-slate-800 block mb-1">ChatGPT (Tạo văn bản):</span>
+                    <p className="text-slate-600 italic">Prompt ban đầu: "Viết nội dung infographic về cách viết prompt hiệu quả để xây dựng portfolio xin việc và thực tập, ngắn gọn, dễ hiểu..."</p>
+                    <p className="text-slate-700 font-bold italic mt-1.5">Prompt cải tiến: "Tóm tắt nội dung về cách viết prompt thành các ý chính, dạng bullet, mỗi ý dưới 15 từ."</p>
+                  </div>
+                  <div className="p-3 bg-slate-50 rounded-lg border border-slate-150">
+                    <span className="font-bold text-slate-800 block mb-1">DALL·E (Tạo hình ảnh):</span>
+                    <p className="text-slate-600 italic">Prompt ban đầu: "Flat illustration showing clear vs unclear prompt, modern style, minimal, blue tone..."</p>
+                    <p className="text-slate-700 font-bold italic mt-1.5">Prompt cải tiến: "Split-screen illustration comparing vague prompt vs clear prompt, labeled, modern infographic style."</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* AI Tool Matrix Table */}
+              <div className="space-y-2">
+                <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider block font-sans">
+                  Bảng so sánh kết quả giữa các công cụ AI:
+                </span>
+                <div className="overflow-x-auto rounded-xl border border-slate-200/50 bg-white">
+                  <table className="w-full text-left border-collapse text-xs font-sans">
+                    <thead>
+                      <tr className="bg-slate-50 text-slate-700 font-bold border-b border-slate-200/60">
+                        <th className="p-3">Công cụ AI</th>
+                        <th className="p-3">Chức năng chính</th>
+                        <th className="p-3">Ưu điểm</th>
+                        <th className="p-3">Hạn chế</th>
+                        <th className="p-3 text-center">Hiệu quả</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-100 text-slate-600 font-semibold">
+                      <tr>
+                        <td className="p-3 font-bold text-slate-900">ChatGPT</td>
+                        <td className="p-3">Tạo nội dung văn bản</td>
+                        <td className="p-3">Nhanh chóng, cấu trúc logic</td>
+                        <td className="p-3">Dài dòng, cần chỉnh sửa thủ công</td>
+                        <td className="p-3 text-center text-teal-600">Cao</td>
+                      </tr>
+                      <tr>
+                        <td className="p-3 font-bold text-slate-900">DALL·E</td>
+                        <td className="p-3">Tạo hình ảnh minh họa</td>
+                        <td className="p-3">Sáng tạo, trực quan sinh động</td>
+                        <td className="p-3">Có thể lệch ý so với prompt ban đầu</td>
+                        <td className="p-3 text-center text-teal-600">Trung bình–cao</td>
+                      </tr>
+                      <tr>
+                        <td className="p-3 font-bold text-slate-900">Canva AI</td>
+                        <td className="p-3">Thiết kế bố cục</td>
+                        <td className="p-3">Dễ sử dụng, giao diện kéo thả</td>
+                        <td className="p-3">Nội dung và bố cục phụ thuộc input</td>
+                        <td className="p-3 text-center text-teal-600">Cao</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              {/* Design Guidelines */}
               <div className="bg-indigo-50/50 p-4 rounded-xl border border-indigo-100/30 space-y-2">
                 <span className="text-xs font-black text-indigo-900 uppercase tracking-wide block font-sans">
                   📐 Tiêu chuẩn Thiết kế Canva Infographic đã ứng dụng:
                 </span>
                 <ul className="text-xs text-slate-700 space-y-1.5 list-disc pl-4 font-semibold leading-relaxed">
-                  <li><strong className="text-slate-900">Màu sắc (Color Palette):</strong> Sử dụng màu xanh lá đậm kết hợp với trắng làm chủ đạo để truyền tải thông điệp sinh thái tự nhiên và tăng độ tương phản đọc.</li>
-                  <li><strong className="text-slate-900">Trọng lượng thị giác (Visual Weight):</strong> Bố cục 3 phần rõ ràng, sử dụng các số liệu carbon kích thước lớn để thu hút ánh mắt người đọc ngay từ cái nhìn đầu tiên.</li>
-                  <li><strong className="text-slate-900">Nội dung Y học:</strong> Lồng ghép kiến thức chuyển đổi trách nhiệm mở rộng của nhà sản xuất (EPR) trong ngành dược để tăng giá trị thực tiễn.</li>
+                  <li><strong className="text-slate-900">Màu sắc (Color Palette):</strong> Sử dụng bảng màu xanh - trắng làm chủ đạo để thể hiện sự chuyên nghiệp, sạch sẽ và tối ưu hóa độ tương phản đọc.</li>
+                  <li><strong className="text-slate-900">Trọng lượng thị giác (Visual Weight):</strong> Bố cục 3 phần cân đối (Khái niệm &rarr; Nguyên tắc &rarr; Ứng dụng portfolio), sử dụng danh sách dạng bullet dưới 15 từ giúp quét thông tin nhanh chóng.</li>
+                  <li><strong className="text-slate-900">Vai trò của Con người (Human-in-the-loop):</strong> Kết hợp AI để phác thảo ý tưởng thô và sinh ảnh, con người trực tiếp hiệu đính câu chữ, căn chỉnh bố cục để đóng góp cá nhân sáng tạo &gt;50%.</li>
                 </ul>
               </div>
             </div>
@@ -990,13 +1150,13 @@ function App() {
             {/* 7 Gold Principles Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
-                { num: "1", title: "SỨC KHỎE TRÊN HẾT", en: "Patient Health First", desc: "Đạo đức lâm sàng là trên hết. AI chỉ là công cụ hỗ trợ, quyết định cuối cùng phải đặt lợi ích sức khỏe và an toàn sinh mạng bệnh nhân làm trọng tâm." },
-                { num: "2", title: "MINH BẠCH NGUỒN GỐC", en: "Transparency", desc: "Luôn khai báo rõ ràng mức độ can thiệp của AI vào báo cáo chuyên môn. Trích dẫn nguồn tài liệu gốc đầy đủ bằng Zotero/Mendeley." },
-                { num: "3", title: "KIỂM CHỨNG CHÉO", en: "Cross-verification", desc: "Không bao giờ tin tưởng tuyệt đối vào kết quả AI. Bắt buộc đối soát chéo lâm sàng với hướng dẫn điều trị chính thức của Bộ Y tế Việt Nam (QĐ 361)." },
-                { num: "4", title: "BẢO MẬT DỮ LIỆU", en: "Data Privacy", desc: "Tuân thủ tuyệt đối quy định an toàn thông tin y khoa của bệnh nhân. Tránh đưa thông tin cá nhân hay bệnh án nhạy cảm lên các mô hình AI công cộng." },
-                { num: "5", title: "CẦM LÁI TƯ DUY", en: "Human-in-the-loop", desc: "Luôn làm chủ tư duy chuyên môn. Sử dụng tri thức cá nhân để thẩm định, phát hiện và hiệu đính các lỗi ảo giác nguy hiểm (như từ ngoại lai tiếng Trung)." },
-                { num: "6", title: "CẬP NHẬT LIÊN TỤC", en: "Continuous Learning", desc: "Liên tục học tập nâng cấp kỹ năng số và hướng dẫn điều trị y học mới nhất để làm chủ các công cụ hỗ trợ số hóa hiện đại." },
-                { num: "7", title: "SỬ DỤNG CHỌN LỌC", en: "Selective Adoption", desc: "Lựa chọn mô hình AI tối ưu cho từng tác vụ chuyên môn (ví dụ Perplexity cho tra cứu học thuật, Gemini cho thiết kế prompt)." }
+                { num: "1", title: "MINH BẠCH", en: "Transparency", desc: "Luôn chủ động khai báo trung thực và chi tiết mức độ can thiệp của bất kỳ công cụ AI nào trong mọi sản phẩm học tập hoặc báo cáo nghiên cứu." },
+                { num: "2", title: "XÁC THỰC", en: "Verification", desc: "Không bao giờ tin tưởng tuyệt đối vào AI. Mọi dữ liệu liên quan đến cơ chế bệnh học, liều lượng thuốc bắt buộc phải đối soát chéo với PubMed, Cochrane." },
+                { num: "3", title: "BẢO MẬT", en: "Privacy", desc: "Bảo vệ nghiêm ngặt quyền riêng tư của bệnh nhân. Tuyệt đối không tải thông tin cá nhân, hồ sơ bệnh án nhạy cảm lên các mô hình AI công cộng." },
+                { num: "4", title: "CÔNG BẰNG", en: "Fairness", desc: "Không sử dụng AI để tạo ra lợi thế cạnh tranh không trung thực trong học tập, thi cử hoặc cố tình bóp méo, làm giả dữ liệu nghiên cứu khoa học." },
+                { num: "5", title: "SÁNG TẠO", en: "Originality", desc: "Chỉ sử dụng AI như công cụ hỗ trợ gợi ý ý tưởng và cấu trúc thô. Nội dung cốt lõi, lập luận chuyên môn phải là sản phẩm chất xám của cá nhân." },
+                { num: "6", title: "TRÁCH NHIỆM", en: "Accountability", desc: "Bản thân sinh viên chịu trách nhiệm cao nhất trước pháp luật, nhà trường và giảng viên về tính chính xác, tính hợp pháp của mọi thông tin do mình ký tên." },
+                { num: "7", title: "HỌC HỎI LIÊN TỤC", en: "Continuous Learning", desc: "Chủ động cập nhật kiến thức mới về đạo đức công nghệ, các quy định pháp lý quốc gia và quy chế của ĐHQGHN liên quan đến trí tuệ nhân tạo." }
               ].map((rule) => (
                 <div key={rule.num} className="bg-white p-4 rounded-xl border border-slate-100 space-y-1.5 shadow-xs hover-lift">
                   <div className="flex items-center gap-2">
@@ -1020,10 +1180,10 @@ function App() {
             {/* Case Study alert */}
             <div className="p-4 bg-amber-50 border border-amber-100 rounded-xl space-y-1 mt-2">
               <span className="text-[10px] uppercase font-black text-amber-800 tracking-wider block font-sans">
-                ⚠️ Đối soát Ca lâm sàng Viêm cột sống dính khớp (AS):
+                ⚠️ Đối soát Ca lâm sàng & Thẩm định Báo cáo CT Scan Phổi bằng AI:
               </span>
               <p className="text-xs text-amber-950 font-semibold leading-relaxed text-justify">
-                Đã ứng dụng phác đồ chuẩn y khoa đối chiếu trực tiếp giữa EULAR 2022 và Hướng dẫn Bộ Y tế Việt Nam. Phát hiện và xử lý thành công lỗi ảo giác lâm sàng nghiêm trọng của AI (chèn ký tự ngoại lai tiếng Trung "口服" trong phác đồ dịch thuật thuốc ức chế TNF sinh học), bảo đảm an toàn y học tuyệt đối.
+                Đã ứng dụng kỹ thuật Prompt nâng cao trên Claude 3.5 Sonnet để tóm tắt bài báo chẩn đoán sớm ung thư phổi qua CT Scan liều thấp theo chuẩn IMRAD. Tiến hành đối soát chéo và phát hiện thành công lỗi ảo tưởng nghiêm trọng của AI (đảo ngược giá trị giữa tỷ lệ Dương tính giả và Âm tính giả trong phần bàn luận) cùng tính thiên vị chủng tộc của dữ liệu huấn luyện, bảo đảm tính xác thực khoa học tuyệt đối.
               </p>
             </div>
           </div>
