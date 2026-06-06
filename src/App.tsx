@@ -1775,6 +1775,8 @@ function App() {
             <RubricChecklist variant="portfolio" lang={lang} />
           </div>
         </section>
+      </div>
+    </div>
 
         {/* 5. Page: Bài tập thực hành (Dự án) - Transparent backdrop to show glowing orbs */}
         <section id="du-an" className="py-16 sm:py-20 px-4 sm:px-8 md:px-12 bg-transparent relative z-10">
@@ -2292,8 +2294,6 @@ function App() {
             </div>
           </div>
         </section>
-          </div>
-        </div>
 
         {/* 7. Academic Footer */}
         <footer className="bg-slate-950 border-t border-slate-900 py-12 px-6 text-center text-slate-400 relative z-10">
