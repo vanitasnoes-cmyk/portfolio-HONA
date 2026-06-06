@@ -1,0 +1,29 @@
+{
+  "name": "bm-nodejs-translation-tutorial",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@google-cloud/translate": "^6.3.1",
+    "bcp-47": "^1.0.8",
+    "businessmessages": "~1.0.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "google-auth-library": "^6.0.5",
+    "googleapis": "^71.0.0",
+    "http-errors": "~1.6.2",
+    "iso-639-1": "^2.1.9",
+    "moment": "^2.24.0",
+    "morgan": "~1.9.0",
+    "util": "^0.12.4",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-google": "^0.9.1"
+  }
+}

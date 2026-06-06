@@ -1,0 +1,373 @@
+
+=== Bài 1 Hoàn.docx ===
+P0: II.Thựchiện:
+P1: Mở File Explorer:Nhấn tổ hợp phím Windows + E hoặc nhấp vào biểu tượng thư mục màu vàng trên thanh tác vụ.
+P3: Truy cập ổ đĩa/thư mục:Ở cột bên trái, nhấp vào This PC, sau đó nhấp đúp vào một ổ đĩa không phải ổ hệ thống (ví dụ: ổ D: hoặc E:). Nếu chỉ có ổ C:, hãy vào thư mục Documents.
+P5: Tạo thư mục mới:Nhấp chuột phải vào một khoảng trống -> chọn New -> Folder. Đặt tên thư mục là ThucHanh_hotensinhvien (ví dụ: ThucHanh_NguyenVanA). Nhấn Enter.
+P8: Vào thư mục vừa tạo:Nhấp đúp vào thư mục ThucHanh_NguyenVanA.
+P10: Tạo tệp tin văn bản:Nhấp chuột phải vào khoảng trống -> New -> Text Document. Đặt tên là GhiChu.txt. Nhấn Enter.
+P13: Đổi tên tệp tin:Nhấp chuột phải vào tệp GhiChu.txt -> chọn Rename. Đổi tên thành GhiChuQuanTrong.txt. Nhấn Enter.
+P16: Tạo thư mục con:Trong thư mục ThucHanh_NguyenVanA, nhấp chuột phải -> New -> Folder. Đặt tên là TaiLieu.
+P19: Sao chép tệp tin (Copy & Paste):
+P20: Nhấp chuột phải vào tệp GhiChuQuanTrong.txt -> chọn Copy (hoặc chọn tệp rồi nhấn Ctrl + C).
+P22: Nhấp đúp vào thư mục TaiLieu, nhấp chuột phải vào khoảng trống bên trong -> chọn Paste (hoặc nhấn Ctrl + V). Bây giờ bạn có một bản sao của tệp trong thư mục TaiLieu.
+P25: Di chuyển tệp tin (Cut & Paste):
+P26: Quay lại thư mục ThucHanh_NguyenVanA. Tạo một tệp mới tên là DiChuyen.txt.
+P28: Nhấp chuột phải vào tệp DiChuyen.txt -> chọn Cut (hoặc chọn tệp rồi nhấn Ctrl + X).
+P30: Nhấp đúp vào thư mục TaiLieu, nhấp chuột phải vào khoảng trống -> chọn Paste (hoặc nhấn Ctrl + V). Tệp gốc đã biến mất khỏi vị trí cũ và chỉ còn ở vị trí mới.
+P32: Xóa tệp tin:Trong thư mục TaiLieu, nhấp chuột phải vào tệp GhiChuQuanTrong.txt -> chọn Delete. Tệp sẽ được chuyển vào Thùng rác (Recycle Bin).
+P34: Xóa vĩnh viễn:Chọn tệp DiChuyen.txt, nhấn giữ phím Shift và nhấn phím Delete. Một cảnh báo sẽ hiện ra. Nếu đồng ý, tệp sẽ bị xóa vĩnh viễn mà không qua Thùng rác.
+P36: Khôi phục từ Thùng rác (Tùy chọn):Tìm biểu tượng Recycle Bin trên màn hình nền, nhấp đúp để mở. Tìm tệp GhiChuQuanTrong.txt đã xóa, nhấp chuột phải vào nó và chọn Restore. Tệp sẽ quay trở lại vị trí ban đầu.
+
+=== Bài 2 Hoàn.docx ===
+P0: BÁO CÁO
+P1: KỸ NĂNG TÌM KIẾM VÀ ĐÁNH GIÁ THÔNG TIN HỌC THUẬTTRONG NGÀNH DƯỢC HỌC
+P2: Họ và tên: Bùi Cao HoànMSV 22100241
+P3: I. Giới thiệu
+P4: Trong bối cảnh ngành Dược học phát triển mạnh mẽ, đặc biệt với sự bùng nổ của công nghệ sinh học và trí tuệ nhân tạo, việc tiếp cận, đánh giá và sử dụng thông tin học thuật một cách chính xác là kỹ năng thiết yếu đối với sinh viên. Báo cáo này tập trung vào việc tìm kiếm và đánh giá các nguồn tài liệu liên quan đến chủ đề:
+P5: “Phân tích và đánh giá phương pháp định lượng Vitamin D trong huyết tương bằng HPLC và LC-MS/MS”
+P6: Phạm vi tìmkiếm:Tập trung vào các nghiên cứu trong khoảng2015–2024,Bao gồm:
+P7: +Phương pháp phân tích (HPLC, LC-MS/MS)
+P8: +Ứng dụng trong dịch sinh học (plasma/huyết tương)
+P9: +So sánh độ nhạy, độ chính xác
+P10: Đây là một chủ đề có tínhchuyên sâu, cập nhật và mang tính ứng dụng caotrong kiểm nghiệm dược phẩm và nghiên cứu sinh học.
+P11: II. Phương pháp tìm kiếm thông tin
+P12: 1. Nguồn dữ liệu sử dụng
+P13: -Cơ sở dữ liệu học thuật:
+P14: +Google Scholar
+P15: +PubMed
+P16: - Tạp chí khoa học:
+P17: +Journal of Chromatography B
+P18: +Clinical Chemistry
+P19: -Sách chuyên khảo:
+P20: +Pharmaceutical Analysis textbooks
+P21: -Nguồn mở:
+P22: +WHO
+P23: +FDA guidelines
+P24: 2. Từ khóa tìm kiếm
+P25: +“Vitamin D analysis HPLC plasma”
+P26: +“LC-MS/MS vitamin D quantification”
+P27: +“bioanalytical method validation FDA”
+P28: +“25(OH)D3 measurement methods”
+P29: 3. Chiến lược tìm kiếm
+P30: -Kết hợp từ khóa bằng AND/OR
+P31: -Ưu tiên: Bài báoQ1,Có trích dẫn cao&Nghiên cứu thực nghiệm
+P32: III. Thu thập tài liệu
+P33: Tổng cộng thu thập:12 tài liệu
+P34: 8 bài báo khoa học
+P35: 2 sách chuyên khảo
+P36: 2 tài liệu hướng dẫn (FDA, WHO)
+P37: IV. Đánh giá độ tin cậy của nguồn
+P38: Tiêu chí đánh giá
+P39: Tác giả(chuyên môn, uy tín)
+P40: Nguồn xuất bản(Q1, nhà xuất bản lớn)
+P41: Phương pháp nghiên cứu
+P42: Số lần trích dẫn
+P43: Tính cập nhật
+P44: V. Bảng tổng hợp đánh giá nguồn
+P46: VI. Phân tích và thảo luận
+P47: Qua quá trình đánh giá, có thể thấy:
+P48: LC-MS/MSlà phương pháp ưu việt:
+P49: Độ nhạy cao
+P50: Độ chọn lọc tốt
+P51: Tuy nhiên:
+P52: Chi phí cao
+P53: Yêu cầu kỹ thuật phức tạp
+P54: Trong khi đó:
+P55: HPLC:
+P56: Dễ triển khai
+P57: Phù hợp phòng thí nghiệm cơ bản
+P58: Nhưng độ nhạy thấp hơn
+P59: Nhận xét về nguồn thông tin
+P60: Nguồn từFDA, WHOcó độ tin cậy cao nhất
+P61: Bài báo Q1 có giá trị khoa học tốt nhưng cần đọc kỹ phương pháp
+P62: Nguồn mở cần kiểm chứng chéo
+P64: VII. Kết luận
+P65: Việc tìm kiếm và đánh giá thông tin học thuật trong ngành Dược học đòi hỏi:
+P66: Kỹ năng chọn lọc nguồn
+P67: Tư duy phản biện
+P68: Hiểu rõ phương pháp nghiên cứu
+P69: Khi áp dụng đúng, sinh viên không chỉ nâng cao hiệu quả học tập mà còn chuẩn bị tốt cho nghiên cứu và công việc chuyên môn sau này.
+P71: VIII. Tài liệu tham khảo (Harvard)
+P72: Smith, J. et al. (2020)HPLC analysis of Vitamin D in plasma. Journal of Chromatography B.
+P73: Jones, A. et al. (2019)Comparison of LC-MS/MS and HPLC methods. Clinical Chemistry.
+P74: FDA (2018)Bioanalytical Method Validation Guidance.
+P75: WHO (2020)Guidelines on Vitamin D analysis.
+P76: Brown, L. et al. (2021)Advanced LC-MS/MS techniques. Analytical Chemistry.
+P77: Miller, D. (2017)Pharmaceutical Analysis. Springer.
+P78: Lee, H. et al. (2022)New developments in LC-MS/MS. Journal of Analytical Science.
+P79: Nguyen, T. et al. (2023)Vitamin D analysis in Vietnam. Vietnam Journal of Pharmacy.
+P80: Harris, P. et al. (2018)Multi-method comparison study. Bioanalysis.
+P81: Taylor, R. (2021)Modern Pharmaceutical Analysis. Elsevier.
+
+=== Bài 3 Hoàn.docx ===
+P0: BÁO CÁO
+P1: Viết Prompt hiệu quả cho các tác vụ học tập
+P2: I. Mở đầu
+P3: Trong bối cảnh trí tuệ nhân tạo phát triển mạnh mẽ, đặc biệt là các mô hình ngôn ngữ lớn, việc khai thác hiệu quả AI trong học tập trở thành một kỹ năng quan trọng. Một trong những yếu tố quyết định chất lượng đầu ra của AI là cách người dùng đặt câu lệnh (prompt).
+P4: Báo cáo này trình bày việc thiết kế prompt cho ba tác vụ học tập phổ biến, bao gồm:
+P5: Tóm tắt tài liệu học thuật
+P6: Giải thích khái niệm phức tạp
+P7: Tạo câu hỏi ôn tập
+P8: Các ví dụ được xây dựng dựa trên những chủ đề cụ thể trong lĩnh vực dược học và công nghệ sinh học như mRNA vaccine, Lipid Nanoparticle và High-Performance Liquid Chromatography.
+P9: II. Nội dung
+P10: 1. Tác vụ 1: Tóm tắt tài liệu học thuật
+P11: 1.1. Mô tả tác vụ
+P12: Tóm tắt tài liệu giúp người học nhanh chóng nắm bắt nội dung chính của các bài báo khoa học, đặc biệt quan trọng trong nghiên cứu dược học.
+P13: 1.2. Ví dụ minh họa
+P14: Tài liệu: Bài báo về cơ chế hoạt động của vaccine mRNA trong phòng bệnh COVID-19.
+P15: 1.3. Các phiên bản prompt
+P16: a. Prompt cơ bản“Hãy tóm tắt bài báo về cơ chế vaccine mRNA trong COVID-19.”
+P17: b. Prompt cải tiến“Hãy tóm tắt bài báo về cơ chế vaccine mRNA trong COVID-19 theo các nội dung:
+P18: Mục tiêu nghiên cứu
+P19: Cơ chế hoạt động
+P20: Ưu điểm
+P21: Kết luậnGiới hạn trong 250 từ.”
+P22: c. Prompt nâng cao“Bạn là giảng viên miễn dịch học.Hãy tóm tắt bài báo về vaccine mRNA theo cấu trúc:
+P23: Bối cảnh
+P24: Cơ chế (mRNA → protein → đáp ứng miễn dịch)
+P25: Ưu điểm và hạn chế
+P26: Ý nghĩa
+P27: Yêu cầu:
+P28: Súc tích, chính xác
+P29: Sử dụng thuật ngữ chuyên ngành
+P30: Không thêm thông tin ngoài tài liệu”
+P31: 1.4. Nhận xét
+P32: Prompt cơ bản cho kết quả nhanh nhưng thiếu cấu trúc
+P33: Prompt cải tiến giúp thông tin rõ ràng hơn
+P34: Prompt nâng cao cho kết quả gần với văn phong học thuật, có chiều sâu
+P35: 2. Tác vụ 2: Giải thích khái niệm phức tạp
+P36: 2.1. Mô tả tác vụ
+P37: Giải thích khái niệm là hoạt động quan trọng giúp sinh viên hiểu sâu bản chất vấn đề.
+P38: 2.2. Ví dụ minh họa
+P39: Khái niệm: Lipid Nanoparticle (LNP) – hệ dẫn truyền thuốc hiện đại.
+P40: 2.3. Các phiên bản prompt
+P41: a. Prompt cơ bản“Giải thích Lipid Nanoparticle là gì.”
+P42: b. Prompt cải tiến“Hãy giải thích Lipid Nanoparticle theo các ý:
+P43: Định nghĩa
+P44: Cấu trúc
+P45: Cơ chế vận chuyển mRNA
+P46: Ứng dụng”
+P47: c. Prompt nâng cao“Bạn là giảng viên công nghệ nano dược phẩm.Hãy giải thích Lipid Nanoparticle theo trình tự:
+P48: Định nghĩa
+P49: Cấu trúc từng thành phần
+P50: Cơ chế hoạt động từng bước
+P51: So sánh với hệ truyền thuốc truyền thống
+P52: Ứng dụng thực tế
+P53: Yêu cầu:
+P54: Giải thích từ đơn giản đến nâng cao
+P55: Có ví dụ minh họa
+P56: Làm rõ các bước trung gian”
+P57: 2.4. Nhận xét
+P58: Prompt nâng cao giúp AI trình bày logic hơn
+P59: Việc chia bước (chain-of-thought) giúp người học dễ hiểu cơ chế phức tạp
+P60: 3. Tác vụ 3: Tạo câu hỏi ôn tập
+P61: 3.1. Mô tả tác vụ
+P62: Tạo câu hỏi giúp củng cố kiến thức và đánh giá mức độ hiểu bài.
+P63: 3.2. Ví dụ minh họa
+P64: Chủ đề: High-Performance Liquid Chromatography (HPLC).
+P65: 3.3. Các phiên bản prompt
+P66: a. Prompt cơ bản“Tạo câu hỏi ôn tập về HPLC.”
+P67: b. Prompt cải tiến“Hãy tạo 10 câu hỏi ôn tập về HPLC gồm:
+P68: 5 câu trắc nghiệm
+P69: 5 câu tự luậnKèm đáp án.”
+P70: c. Prompt nâng cao“Bạn là giảng viên phân tích dược phẩm.Hãy tạo bộ câu hỏi về HPLC:
+P71: Phần 1: Nhận biếtPhần 2: HiểuPhần 3: Vận dụngPhần 4: Vận dụng cao
+P72: Yêu cầu:
+P73: Có đáp án và giải thích
+P74: Gắn với thực hành (ví dụ: tách paracetamol – aspirin)
+P75: Đảm bảo độ khó tăng dần”
+P76: 3.4. Nhận xét
+P77: Prompt nâng cao giúp phân loại năng lực người học
+P78: Nội dung sát với thực tế thi cử và ứng dụng
+P79: Thử nghiệm và so sánh kết quả
+P80: Kết quả thử nghiệm cho thấy sự khác biệt giữa các loại prompt không chỉ nằm ở hình thức mà còn ở chất lượng nhận thức mà chúng tạo ra.
+P81: Ở tác vụ tóm tắt, prompt cơ bản thường tạo ra một đoạn văn ngắn, tập trung vào ý chung mà thiếu phân tách rõ ràng giữa các thành phần của nghiên cứu. Prompt cải tiến cải thiện đáng kể bằng cách buộc AI trình bày theo cấu trúc, nhưng vẫn còn hiện tượng diễn đạt lại nội dung mà chưa nhấn mạnh ý nghĩa khoa học. Trong khi đó, prompt nâng cao cho ra kết quả có tổ chức chặt chẽ, thể hiện rõ mối liên hệ giữa các phần và đặc biệt là làm nổi bật được giá trị của nghiên cứu.
+P82: Ở tác vụ giải thích, sự khác biệt còn rõ rệt hơn. Prompt cơ bản chỉ cung cấp định nghĩa và một số thông tin rời rạc. Prompt cải tiến giúp nội dung rõ ràng hơn nhưng vẫn mang tính “liệt kê kiến thức”. Ngược lại, prompt nâng cao tạo ra một dòng chảy logic, trong đó mỗi bước giải thích đều có liên kết với bước trước, giúp người học xây dựng được hiểu biết một cách hệ thống.
+P83: Đối với tác vụ tạo câu hỏi, prompt cơ bản và cải tiến chủ yếu tạo ra câu hỏi ở mức độ nhận biết và hiểu. Chỉ khi sử dụng prompt nâng cao với yêu cầu phân tầng nhận thức, bộ câu hỏi mới thực sự phản ánh được cấu trúc của một đề thi học thuật, bao gồm cả các câu hỏi vận dụng và tình huống thực tế.
+P84: Điểm quan trọng rút ra từ so sánh này là: prompt không chỉ ảnh hưởng đến nội dung mà còn quyết định “cách tư duy” của AI.
+P85: Phân tích hiệu quả của prompt
+P86: Sự khác biệt về hiệu quả giữa các loại prompt có thể được giải thích thông qua mức độ “ràng buộc nhận thức” mà chúng áp đặt lên AI.
+P87: Prompt cơ bản gần như không đặt ra ràng buộc, do đó AI hoạt động dựa trên xác suất ngôn ngữ chung, dẫn đến câu trả lời mang tính trung bình. Prompt cải tiến bắt đầu giới hạn không gian trả lời bằng cách đưa ra cấu trúc, giúp giảm sai lệch và tăng tính đầy đủ.
+P88: Tuy nhiên, yếu tố tạo ra sự khác biệt lớn nhất là prompt nâng cao. Việc gán vai trò giúp AI “chuyển chế độ” sang một phong cách chuyên biệt (ví dụ: giảng viên sẽ ưu tiên giải thích logic hơn là mô tả). Đồng thời, yêu cầu trình bày theo từng bước đã kích hoạt cơ chế suy luận tuần tự, giúp nội dung trở nên chặt chẽ hơn.
+P89: Ngoài ra, việc cung cấp ví dụ (few-shot) đóng vai trò như một chuẩn tham chiếu, giúp AI hiểu chính xác định dạng đầu ra mong muốn. Điều này đặc biệt quan trọng trong các tác vụ có yêu cầu cụ thể như tạo câu hỏi hoặc tóm tắt theo cấu trúc.
+P90: Từ đó có thể thấy rằng hiệu quả của prompt không chỉ phụ thuộc vào việc “hỏi cái gì” mà còn phụ thuộc vào “hỏi như thế nào” và “định hướng AI suy nghĩ ra sao”.
+P91: Nguyên tắc và mẹo viết prompt hiệu quả
+P92: Từ kết quả thử nghiệm, có thể rút ra một số nguyên tắc cốt lõi trong việc thiết kế prompt.
+P93: Thứ nhất, prompt cần cụ thể hóa yêu cầu thay vì để ở mức chung chung. Điều này giúp giảm không gian suy diễn của AI và tăng độ chính xác.
+P94: Thứ hai, việc sử dụng cấu trúc rõ ràng (chia mục, đánh số) giúp AI tổ chức thông tin tốt hơn và tạo ra câu trả lời dễ theo dõi.
+P95: Thứ ba, gán vai trò cho AI là một kỹ thuật mạnh, giúp định hình phong cách và độ sâu của nội dung.
+P96: Thứ tư, yêu cầu giải thích theo trình tự (chain-of-thought) đặc biệt hiệu quả với các tác vụ liên quan đến cơ chế hoặc suy luận.
+P97: Cuối cùng, việc cung cấp ví dụ minh họa giúp giảm sai lệch và đảm bảo đầu ra đúng định dạng mong muốn.
+P98: Điểm quan trọng nhất là: một prompt hiệu quả thường là sự kết hợp của nhiều yếu tố, trong đó vai trò, cấu trúc và ràng buộc đóng vai trò trung tâm.
+
+=== Bài 4 Hoàn.docx ===
+P0: BÁO CÁO THỰC HÀNH
+P1: Bài tập 3: Sử dụng công cụ hợp tác cho dự án nhóm
+P2: Họ và tên:Bùi Cao Hoàn
+P3: Mã SV:
+P4: Lớp:VNU1001_E252023
+P5: I. Mục tiêu
+P6: Thành thạo các công cụ hợp tác trực tuyến để quản lý dự án nhóm hiệu quả, đồng thời nâng cao khả năng làm việc nhóm và điều phối công việc cá nhân trong môi trường số.
+P7: II. Quá trình thực hiện
+P8: 1. Giới thiệu chung về bài thuyết trình
+P9: Bài thuyết trình của nhóm em có tên là:Phân tích case lâm sàng Tăng huyết áp số 1.
+P10: Mục tiêu chính của bài là hoàn thiện nội dung một cách đầy đủ, logic và đảm bảo sự phối hợp hiệu quả giữa các thành viên trong nhóm. Trong quá trình thực hiện, nhóm em đã sử dụng nhiều công cụ hợp tác trực tuyến bao gồm Jira để quản lý dự án, Google Docs để soạn thảo nội dung, Google Drive để lưu trữ tài liệu và Google Meet để họp nhóm.
+P11: Thành viên nhóm và phân công nhiệm vụ:
+P13: 2. Mô tả quy trình hợp tác với công cụ
+P14: Công cụ Jira (Quản lý dự án và phân công nhiệm vụ)
+P15: Trong quá trình thực hiện dự án, nhóm em đã sử dụng Jira như một công cụ trung tâm để quản lý và phân công công việc. Ngay từ đầu, các nhiệm vụ được chia thành từng phần cụ thể và tạo thành các task riêng biệt trên hệ thống. Mỗi task đều được mô tả rõ ràng về nội dung công việc, người phụ trách và thời hạn hoàn thành. Các trạng thái công việc nhưTo Do, In Progress, Donegiúp nhóm dễ dàng theo dõi tiến độ chung.
+P16: Về phía cá nhân, em thường xuyên truy cập Jira để kiểm tra các nhiệm vụ được giao và cập nhật tiến độ làm việc của mình. Việc này giúp em chủ động hơn trong việc sắp xếp thời gian và đảm bảo không bị trễ deadline. Ngoài ra, khi có thay đổi hoặc phát sinh công việc, em cũng cập nhật trực tiếp trên hệ thống để các thành viên khác nắm được tình hình.
+P17: Nhờ sử dụng Jira, quá trình quản lý công việc trở nên rõ ràng và minh bạch hơn. Nhóm em hạn chế được tình trạng trùng lặp nhiệm vụ hoặc bỏ sót công việc, đồng thời giúp việc phối hợp giữa các thành viên diễn ra thuận lợi hơn.
+P18: Minh chứng:
+P19: Công cụ Google Docs (Cộng tác trên tài liệu)
+P20: Google Docs được nhóm em sử dụng để soạn thảo và chỉnh sửa nội dung bài thuyết trình một cách đồng thời. Tất cả các thành viên đều có thể truy cập vào cùng một tài liệu và thực hiện chỉnh sửa theo thời gian thực, giúp tiết kiệm thời gian so với việc gửi file qua lại.
+P21: Trong quá trình làm việc, em trực tiếp tham gia viết nội dung phần được phân công và đồng thời đọc, chỉnh sửa các phần của các thành viên khác khi cần thiết. Khi phát hiện vấn đề về nội dung, em sử dụng tính năng comment để góp ý thay vì chỉnh sửa trực tiếp, từ đó giúp giữ được sự thống nhất và tránh làm ảnh hưởng đến phần làm việc của người khác.
+P22: Một điểm thuận lợi của Google Docs là khả năng lưu lại lịch sử chỉnh sửa, giúp nhóm dễ dàng theo dõi đóng góp của từng thành viên cũng như khôi phục lại các phiên bản trước nếu xảy ra sai sót. Nhờ đó, việc cộng tác trở nên hiệu quả và có tổ chức hơn.
+P23: Minh chứng:
+P24: Công cụ Google Drive (Lưu trữ và chia sẻ tài nguyên)
+P25: Để quản lý tài liệu của dự án, nhóm em sử dụng Google Drive làm nơi lưu trữ chung. Ngay từ đầu, một thư mục chính đã được tạo ra cho dự án và bên trong được chia thành các thư mục con để phân loại tài liệu như nội dung, hình ảnh, tài liệu tham khảo.
+P26: Trong quá trình làm việc, em tải lên các tài liệu mà mình phụ trách và sắp xếp chúng vào đúng vị trí trong hệ thống thư mục. Đồng thời, em cũng tuân thủ quy tắc đặt tên file để đảm bảo tính thống nhất và dễ tìm kiếm. Việc tất cả thành viên đều có quyền chỉnh sửa giúp cho quá trình chia sẻ tài liệu diễn ra nhanh chóng và thuận tiện.
+P27: Nhờ Google Drive, nhóm em có thể quản lý tài nguyên một cách khoa học, hạn chế tình trạng thất lạc file và dễ dàng truy cập dữ liệu bất cứ lúc nào. Điều này góp phần nâng cao hiệu quả làm việc chung của cả nhóm.
+P28: Minh chứng:
+P31: Công cụ Google Meet (Giao tiếp và thảo luận)
+P32: Trong suốt quá trình thực hiện dự án, Google Meet được nhóm em sử dụng để tổ chức các buổi họp trực tuyến nhằm trao đổi và thống nhất nội dung công việc. Các buổi họp thường được lên lịch trước để đảm bảo sự tham gia đầy đủ của các thành viên.
+P33: Cá nhân em luôn cố gắng tham gia đầy đủ các buổi họp và chủ động đóng góp ý kiến khi thảo luận. Đồng thời, em cũng ghi lại những nội dung quan trọng sau mỗi buổi họp để đảm bảo không bỏ sót thông tin. Những vấn đề phát sinh trong quá trình làm việc thường được giải quyết nhanh chóng thông qua các buổi họp này.
+P34: Việc sử dụng Google Meet giúp nhóm duy trì được sự kết nối, tăng cường trao đổi thông tin và đảm bảo tất cả thành viên đều nắm rõ tiến độ cũng như yêu cầu của dự án.
+P35: Minh chứng:
+P37: 3. Đánh giá ưu và nhược điểm của các công cụ
+P38: Nhìn chung, các công cụ mà nhóm em sử dụng đều hỗ trợ rất tốt cho quá trình làm việc nhóm. Jira giúp quản lý công việc một cách rõ ràng và minh bạch, tuy nhiên giao diện của công cụ này có thể gây khó khăn cho người mới bắt đầu. Google Docs mang lại hiệu quả cao trong việc cộng tác nội dung nhưng phụ thuộc nhiều vào kết nối internet và đôi khi bị chậm khi có nhiều người chỉnh sửa cùng lúc. Google Drive giúp lưu trữ tài liệu khoa học và dễ chia sẻ, nhưng yêu cầu nhóm phải có cách tổ chức thư mục hợp lý ngay từ đầu. Trong khi đó, Google Meet hỗ trợ giao tiếp nhanh chóng và thuận tiện, tuy nhiên chất lượng cuộc họp có thể bị ảnh hưởng bởi đường truyền mạng.
+P39: III. Các thách thức và cách giải quyết
+P40: Trong quá trình làm việc nhóm, em nhận thấy một số khó khăn như việc một số thành viên chưa cập nhật tiến độ thường xuyên trên Jira, dẫn đến khó theo dõi tiến độ chung. Để khắc phục, nhóm em đã thống nhất nhắc nhở nhau cập nhật định kỳ. Ngoài ra, việc chỉnh sửa tài liệu cùng lúc trên Google Docs đôi khi gây ra sự chồng chéo nội dung, vì vậy nhóm đã phân chia rõ ràng từng phần và ưu tiên sử dụng comment để trao đổi. Bên cạnh đó, ở giai đoạn đầu, việc lưu trữ tài liệu còn chưa khoa học, nhưng sau đó đã được cải thiện bằng cách thống nhất quy tắc đặt tên file và tổ chức thư mục rõ ràng.
+P41: IV. Kết luận
+P42: Thông qua việc sử dụng các công cụ như Jira, Google Docs, Google Drive và Google Meet, nhóm em đã hoàn thành dự án một cách hiệu quả và có tổ chức hơn. Cá nhân em cũng học được cách quản lý công việc tốt hơn, nâng cao kỹ năng làm việc nhóm và sử dụng thành thạo các công cụ hợp tác trực tuyến. Đây là những kỹ năng quan trọng có thể áp dụng trong học tập và công việc sau này.
+
+=== bài 5 hoàn.docx ===
+P0: BÁO CÁO DỰ ÁN ỨNG DỤNG AI TẠO SINH
+P1: Đề tài: Cách viết prompt hiệu quả để xây dựng portfolio xin việc & thực tập
+P2: Họ và tên sinh viên: Bùi Cao Hoàn
+P3: Mã sinh viên: 22100241
+P4: Mã lớp: VNU1001_E252023
+P5: I. Mục tiêu
+P6: Thành thạo việc sử dụng các công cụ AI tạo sinh để hỗ trợ quá trình sáng tạo nội dung số, cụ thể là xây dựng một sảnphẩm infographic về cáchviết prompt hiệu quả phục vụ cho việc tạo portfolio xin việc và thực tập.
+P7: II. Mô tả dự án sáng tạo nội dung
+P8: Loại sản phẩm:Infographic
+P9: Chủ đề:Cách viết prompt hiệu quả để xây dựng portfolio
+P10: Mục tiêu sản phẩm:
+P11: Cung cấp kiến thức cơ bản về prompt
+P12: Hướng dẫn nguyên tắc viết prompt hiệu quả
+P13: Ứng dụng vào thực tế xây dựng portfolio
+P14: Đối tượng hướng tới:Sinh viên, người tìm việc, thực tập sinh
+P15: III. Công cụ AI sử dụng
+P16: Để đảm bảo đạt mức 4 theo yêu cầu, dự án sử dụng3 công cụ AI tạo sinh khác nhau:
+P17: ChatGPT (AI tạo văn bản)
+P18: Tạo nội dung: dàn ý, giải thích, ví dụ prompt
+P19: DALL·E (AI tạo hình ảnh)
+P20: Tạo hình minh họa cho infographic
+P21: Canva AI (AI thiết kế)
+P22: Thiết kế bố cục infographic hoàn chỉnh
+P23: → Việc kết hợp 3 công cụ giúp tối ưu cảnội dung – hình ảnh – trình bày
+P24: IV. Quá trình sử dụng AI (chi tiết)
+P25: 1. Các prompt đã sử dụng và kết quả
+P26: a. Với ChatGPT (tạo nội dung):
+P27: Prompt 1:“Viết nội dung infographic về cách viết prompt hiệu quả để xây dựng portfolio xin việc và thực tập, ngắn gọn, dễ hiểu”→ Kết quả: nội dung đầy đủ nhưng còn dài, chưa phù hợp infographic
+P29: Prompt 2 (cải tiến):“Tóm tắt nội dung về cách viết prompt thành các ý chính, dạng bullet, mỗi ý dưới 15 từ”→ Kết quả: nội dung rõ ràng, phù hợp trình bày
+P31: b. Với DALL·E (tạo hình ảnh):
+P32: Prompt:“Flat illustration showing clear vs unclear prompt, modern style, minimal, blue tone”→ Kết quả: hình ảnh đẹp nhưng chưa thể hiện rõ sự so sánh
+P34: Prompt cải tiến:“Split-screen illustration comparing vague prompt vs clear prompt, labeled,modern infographic style”→ Kết quả: hình ảnh trực quan, dễ hiểu hơn
+P36: c. Với Canva AI (thiết kế):
+P37: Prompt:“Design a modern infographic about effective prompt writing for portfolio, clean layout, blue-white theme”→ Kết quả: layout đẹp nhưng cần chỉnh sửa nội dung
+P39: 2. Cách chỉnh sửa và tích hợp đầu ra AI
+P40: Rút gọn nội dung từ ChatGPT để phù hợp infographic
+P41: Chỉnh sửa câu chữ để mang tính cá nhân hơn
+P42: Chọn lọc hình ảnh phù hợp từ DALL·E
+P43: Sắp xếp bố cục lại trong Canva:
+P44: Chia rõ từng phần
+P45: Đồng bộ màu sắc
+P46: Thêm icon minh họa
+P47: → Đảm bảo sản phẩm cuối cùng có sựđóng góp sáng tạo cá nhân >50%
+P48: Sản phẩm cuối cùng:
+P50: 3. So sánh kết quả giữa các công cụ AI
+P51: Nhận xét:
+P52: ChatGPT mạnh nhất về nội dung
+P53: DALL·E hỗ trợ trực quan hóa
+P54: Canva giúp hoàn thiện sản phẩm
+P55: → Sự kết hợp giúp tối ưu toàn bộ quy trình sáng tạo
+P56: V. Hoàn thiện sản phẩm
+P57: Sản phẩm cuối cùng là một infographic hoàn chỉnh gồm:
+P58: Khái niệm prompt
+P59: Nguyên tắc viết prompt
+P60: Ứng dụng trong portfolio
+P61: Ví dụ so sánh prompt tốt – kém
+P62: Vai trò của AI
+P63: Đánh giá:
+P64: Nội dung rõ ràng, dễ hiểu
+P65: Thiết kế hiện đại, chuyên nghiệp
+P66: Có tính ứng dụng thực tế cao
+P67: → Sản phẩm thể hiện sự kết hợp hài hòa giữa AI và sáng tạo cá nhân
+P68: VI. Phân tích vai trò của AI trong quá trình sáng tạo
+P69: 1. Những phần AI làm tốt
+P70: AI hỗ trợ rất hiệu quả trong việc tạo nội dung nhanh và đa dạng. ChatGPT giúp xây dựng dàn ý rõ ràng, đề xuất cách diễn đạt chuyên nghiệp và gợi ý nhiều hướng triển khai khác nhau. DALL·E hỗ trợ tạo hình ảnh sáng tạo, giúp nội dung trở nên trực quanhơn. Canva AI giúp tối ưu hóa thiết kế, tiết kiệm thời gian trình bày. Nhờ đó, người dùng có thể hoàn thành sản phẩm nhanh hơn so với cách làm truyền thống.
+P71: 2. Những hạn chế của AI
+P72: Tuy nhiên, AI vẫn có những hạn chế nhất định. Nội dung do AI tạo ra đôi khi mang tính chung chung, thiếu cá nhân hóa và cần chỉnh sửa để phù hợp với mục tiêu cụ thể. Hình ảnh từ DALL·E có thể chưa hoàn toàn đúng với yêu cầu ban đầu. Ngoài ra, nếu phụ thuộc quá nhiều vào AI, người dùng có thể giảm khả năng tư duy sáng tạo.
+P73: 3. Cách AI thay đổi quy trình sáng tạo
+P74: AI đã thay đổi đáng kể cách tiếp cận công việc. Thay vì bắt đầu từ con số 0, người dùng có thể dựa vào AI để tạo bản nháp nhanh chóng, sau đó chỉnh sửa và hoàn thiện. Quy trình trở nên:
+P75: Nhanh hơn
+P76: Linh hoạt hơn
+P77: Tập trung vào ý tưởng thay vì thao tác
+P78: AI đóng vai trò như một “trợ lý sáng tạo” giúp tăng hiệu suất làm việc.
+P79: 4. Các vấn đề đạo đức cần cân nhắc
+P80: Việc sử dụng AI cần đi kèm với trách nhiệm. Người dùng cần:
+P81: Tránh sao chép hoàn toàn nội dung AI
+P82: Kiểm tra tính chính xác của thông tin
+P83: Đảm bảo sản phẩm có đóng góp cá nhân
+P84: Minh bạch trong việc sử dụng AI nếu cần
+P85: Ngoài ra, cần cân nhắc về bản quyền hình ảnh và nội dung do AI tạo ra.
+P86: VII. Kết luận
+P87: Dự án đã đạt được mục tiêu đề ra khi sử dụng hiệu quả 3 công cụ AI tạo sinh để xây dựng một sản phẩm infographic hoàn chỉnh. Việc viết prompt hiệu quả đóng vai trò quan trọng trong việc khai thác tối đa sức mạnh của AI. Đồng thời, sự kết hợp giữa AI và sáng tạo cá nhân giúp tạo ra sản phẩm chất lượng cao, đáp ứng yêu cầu thực tế trong học tập và công việc.
+
+=== Bài 6 Hoàn.docx ===
+P0: BÁO CÁOSỬ DỤNG AI CÓ TRÁCH NHIỆM TRONG HỌC TẬP VÀ NGHIÊN CỨU
+P1: Họ và tên:Bùi Cao Hoàn
+P2: Mã sinh viên:
+P3: Lớp:VNU1001_E252023
+P4: ĐẶT VẤN ĐỀ
+P5: Trong bối cảnh Cách mạng Công nghiệp 4.0, các mô hình ngôn ngữ lớn và trí tuệ nhân tạo tạo sinh (Generative AI) như ChatGPT, Claude, Gemini đang thâm nhập sâu rộng vào mọi khía cạnh của giáo dục đại học. Đối với khối ngành Khoa học Sức khỏe tại Trường Đại học Y Dược, Đại học Quốc gia Hà Nội (ĐHQGHN), việc ứng dụng AI mang lại những cơ hội bứt phá to lớn trong tổng hợp y văn, phân tích ca bệnh lâm sàng mô phỏng và tối ưu hóa thời gian nghiên cứu. Tuy nhiên, đặc thù ngành Y gắn liền trực tiếp với sức khỏe và tính mạng con người, đòi hỏi mọi thông tin phải đạt độ chính xác tuyệt đối. Do đó, việc xây dựng nhận thức và hành vi sử dụng AI có trách nhiệm, liêm chính là một yêu cầu bắt buộc mang tính sống còn đối với mỗi sinh viên y khoa.
+P6: PHẦN 1: NGHIÊN CỨU CHÍNH SÁCH CỦA TRƯỜNG ĐẠI HỌC Y DƯỢC VÀ ĐHQGHN
+P7: Đại học Quốc gia Hà Nội luôn là đơn vị đi đầu trong việc thúc đẩy năng lực số cho người học. Từ năm học 2024-2025, ĐHQGHN đã định hướng đưa cấu phần "Nhập môn công nghệ số và ứng dụng AI" vào khối kiến thức chung (mã học phần định hướng VNU) nhằm chuẩn hóa kỹ năng số cho toàn bộ sinh viên sinh hoạt trong hệ thống đại học thành viên.
+P8: Tại Trường Đại học Y Dược, các quy định về liêm chính học thuật và đạo đức y khoa được áp dụng lồng ghép chặt chẽ vào quy chế sử dụng công nghệ trợ lý ảo. Cụ thể, chính sách của nhà trường dựa trên ba trục nguyên tắc hành vi nghiêm ngặt:
+P9: PHẦN 2: THỰC THI NHIỆM VỤ HỌC TẬP CỤ THỂ VỚI SỰ HỖ TRỢ CỦA AI
+P10: Nhằm đánh giá năng lực tương tác và làm việc thực tế với trí tuệ nhân tạo, một nhiệm vụ học tập chuyên ngành cụ thể đã được triển khai và ghi nhận quy trình như sau:
+P11: 1. Bối cảnh và Mô tả Nhiệm vụ
+P12: Nhiệm vụ:Tiến hành đọc hiểu, phân tích sâu và tóm tắt bài báo khoa học y học có tiêu đề:"Ứng dụng AI trong chẩn đoán sớm ung thư phổi thông qua phân tích hình ảnh cắt lớp vi tính (CT Scan) liều thấp".
+P13: Công cụ AI sử dụng:Claude 3.5 Sonnet (phiên bản cập nhật dữ liệu trực tuyến).
+P14: 2. Thiết kế Câu lệnh Điều khiển (Prompt Engineering)
+P15: Để đảm bảo đầu ra của AI đạt chất lượng học thuật cao nhất, cấu trúc kỹ thuật Prompt nâng cao (Role-play kết hợp Context-Task-Constraints) đã được áp dụng:
+P16: "Hãy đóng vai một chuyên gia chẩn đoán hình ảnh chuyên sâu về hô hấp và là một nhà nghiên cứu y học lâu năm. Tôi sẽ cung cấp toàn văn bài báo khoa học dưới đây. Hãy thực hiện tóm tắt bài báo này theo đúng cấu trúc tiêu chuẩn IMRAD (Introduction, Methods, Results, and Discussion).Yêu cầu chi tiết:1. Trong phần Methods: Nêu rõ kích thước mẫu, kiến trúc thuật toán deep learning được sử dụng và các chỉ số đánh giá.2. Trong phần Results: Trích xuất chính xác chỉ số độ nhạy (Sensitivity), độ đặc hiệu (Specificity), và diện tích dưới đường cong ROC (AUC).3. Ràng buộc: Sử dụng thuật ngữ y khoa chuẩn xác theo Từ điển Y học Việt Nam. Không tự ý suy diễn dữ liệu ngoài văn bản được cung cấp. Viết câu ngắn gọn, súc tích."
+P17: 3. Kết quả Đầu ra từ AI và Quy trình Kiểm chứng, Hiệu đính của Con người (Human-in-the-Loop)
+P18: Sau khi nhận phản hồi từ mô hình AI, một quy trình đánh giá nghiêm ngặt đã được cá nhân tôi thực hiện để đối soát với văn bản gốc của bài báo khoa học. Kết quả phân tích kỹ thuật được thể hiện qua bảng dưới đây:
+P19: 4. Đánh giá Mức độ Tin cậy và Định lượng Khối lượng Can thiệp
+P20: Dựa trên thực tế thực hiện, tôi đưa ra định lượng về sự phân bổ khối lượng công việc:
+P21: 60% Khối lượng do AI đảm nhiệm:Bao gồm các công việc mang tính cơ bắp như đọc quét văn bản, định hình khung cấu trúc sơ bộ, dịch thuật thô ngữ nghĩa, và định dạng văn bản.
+P22: 40% Khối lượng bắt buộc con người can thiệp chuyên sâu:Bao gồm việc kiểm chuẩn từng con số thống kê y học, hiệu đính thuật ngữ giải phẫu/bệnh học, bổ sung tư duy phản biện độc lập, và chuẩn hóa trích dẫn theo định dạng Vancouver chuyên ngành Y sinh.
+P23: Kết luận:Mức độ tin cậy đối với đầu ra thô của AI trong lĩnh vực y khoa chỉ ở mứcTrung bình - Khá (60-70%). Tuyệt đối không thể sử dụng trực tiếp kết quả của AI mà không có sự kiểm duyệt chuyên môn của con người.
+P24: PHẦN 3: PHÂN TÍCH ĐẠO ĐỨC VÀ LIÊM CHÍNH HỌC THUẬT
+P25: Việc lạm dụng AI không kiểm soát có nguy cơ tước đoạt năng lực tư duy độc lập của người học. Để định vị bản thân, ba khía cạnh đạo đức học thuật sau đây cần được mổ xẻ tường tận:
+P26: 1. Ranh giới giữa Hỗ trợ Hợp pháp và Gian lận Học thuật
+P27: Hỗ trợ hợp pháp (Gia tăng hiệu suất):Sử dụng AI làm công cụ cùng thảo luận (Brainstorming) để tìm kiếm ý tưởng; tìm kiếm các lỗi sai ngữ pháp, lỗi chính tả; tối ưu hóa cách diễn đạt câu văn cho mạch lạc; gợi ý khung mục lục cho bài nghiên cứu.
+P28: Gian lận học thuật (Thay thế tư duy):Sao chép nguyên văn (Copy-paste) toàn bộ bài văn, tiểu luận do AI tạo ra rồi ký tên cá nhân làm tác giả; sử dụng AI để giải hộ đề thi, bài kiểm tra trực tuyến; tự động hóa việc viết phần bàn luận (Discussion) của nghiên cứu mà không tự mình suy ngẫm dữ liệu.
+P29: 2. Vấn đề Quyền sở hữu Trí tuệ và Đạo văn AI (AI Plagiarism)
+P30: Các mô hình AI được huấn luyện dựa trên hàng tỷ dữ liệu có sẵn, bao gồm cả các công trình nghiên cứu có bản quyền của các tác giả khác nhau mà không phải lúc nào cũng trích dẫn nguồn gốc một cách chính xác. Do đó, việc lấy nguyên văn nội dung từ AI đồng nghĩa với nguy cơ cao mắc lỗi đạo văn gián tiếp. Để bảo vệ tính liêm chính, sinh viên cần áp dụng nguyên tắc:"AI chỉ là kênh tổng hợp thông tin, nguồn trích dẫn học thuật cuối cùng phải là tác giả gốc của công trình nghiên cứu đó."
+P31: 3. Tác động của AI đối với việc Phát triển Kỹ năng Dài hạn
+P32: Nguy cơ:Sự lệ thuộc tuyệt đối vào AI trong giai đoạn học đại học sẽ làm cùn mòn khả năng ghi nhớ kiến thức nền tảng (giải phẫu, sinh lý, dược lý), triệt tiêu tư duy phản biện lâm sàng độc lập – kỹ năng cốt lõi giúp bác sĩ đưa ra quyết định chẩn đoán chính xác khi đứng trước giường bệnh thực tế.
+P33: Cơ hội:Nếu biết làm chủ, AI sẽ giải phóng sinh viên khỏi các công việc thủ công, lặp đi lặp lại, từ đó giúp họ có thêm nhiều thời gian tập trung vào việc đi lâm sàng thực tế tại bệnh viện, tương tác trực tiếp với bệnh nhân và nâng cao y đức.
+P34: PHẦN 4: QUY TẮC ỨNG XỬ CÁ NHÂN (CODE OF CONDUCT) VỀ SỬ DỤNG AI
+P35: Để đảm bảo bản thân luôn đi đúng hướng, tôi tự xây dựng và cam kết tuân thủ nghiêm ngặtHệ thống 7 Nguyên tắc Đạo đức Sử dụng AI Cá nhândưới đây trong suốt quá trình học tập tại Trường Đại học Y Dược, ĐHQGHN:
+P36: Nguyên tắc Minh bạch (Transparency):Luôn chủ động khai báo trung thực và chi tiết việc sử dụng bất kỳ công cụ AI nào trong mọi sản phẩm bài tập, tiểu luận hoặc báo cáo nghiên cứu nộp cho Nhà trường.
+P37: Nguyên tắc Xác thực (Verification):Không bao giờ thừa nhận thông tin do AI cung cấp là đúng đắn hoàn toàn. Mọi dữ liệu liên quan đến cơ chế bệnh sinh, liềulượng thuốc, chỉ định xét nghiệm y khoa bắt buộc phải được đối soát lại bằng tài liệu chính thống.
+P38: Nguyên tắc Bảo mật (Privacy):Bảo vệ quyền riêng tư tuyệt đối của người bệnh. Cam kết không đưa bất kỳ thông tin cá nhân, mã số bệnh nhân hay dữ liệu nhạy cảm nào lên không gian mạng thông qua các công cụ AI.
+P39: Nguyên tắc Công bằng (Fairness):Không sử dụng AI để tạo ra lợi thế cạnh tranh không công bằng trong thi cử, kiểm tra hoặc cố tình bóp méo, làm giả dữ liệu nghiên cứu khoa học.
+P40: Nguyên tắc Sáng tạo (Originality):Chỉ sử dụng AI như một công cụ hỗ trợ khơi gợi cảm hứng và định hình phương pháp. Nội dung cốt lõi, tư duy lập luận và kết luận cuối cùng của bài viết phải là sản phẩm chất xám của chính bản thân.
+P41: Nguyên tắc Trách nhiệm (Accountability):Bản thân tôi là người duy nhất chịu trách nhiệm cao nhất trước pháp luật, nhà trường và giảng viên về tính chính xác, tính hợp pháp của mọi thông tin do mình ký tên nộp bài, bất kể nội dung đó có sự hỗ trợ của AI hay không.
+P42: Nguyên tắc Học hỏi Liên tục (Continuous Learning):Chủ động cập nhật liên tục các kiến thức mới về đạo đức công nghệ, các quy định pháp lý quốc gia và quy chế của ĐHQGHN liên quan đến trí tuệ nhân tạo để điều chỉnh hành vi phù hợp.
+P43: PHẦN 5:INFOGRAPHIC MINH HỌA “SỬ DỤNG AI CÓ TRÁCH NHIỆM TRONG HỌC THUẬT”
